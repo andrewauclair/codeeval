@@ -79,7 +79,7 @@ int main(int argc, char* argv[])
 */
 		for (int t_i = 0; t_i < 4; ++t_i)
 		{
-			int t_nNum = (int)pow(t_a, t_i + 1);
+			int t_nNum = (int)pow((float)t_a, t_i + 1);
 			int t_nOnes = nOnes(t_nNum);
 			t_ac[t_nOnes]++;
 			t_anNums[t_i] = t_nOnes;

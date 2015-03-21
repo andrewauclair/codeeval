@@ -2,3 +2,7 @@
 codeeval.opensdf
 *.sdf
 *.user
+*.obj
+codeeval/Debug/
+Debug/
+ipch/
