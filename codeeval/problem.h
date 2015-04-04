@@ -7,7 +7,7 @@ using namespace std;
 enum EDifficulty
 {
 	eDiff_Easy = 0,
-	eDiff_Mod,
+	eDiff_Med,
 	eDiff_Hard,
 
 	eDiff_Max,

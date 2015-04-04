@@ -9,6 +9,7 @@ using namespace std;
 #if _EDITOR
 
 #include "13.h"
+#include "helpers/cpucycles.h"
 
 static const char * fsc_pChzName = "Remove Characters";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/13/";
@@ -41,6 +42,10 @@ int main(int argc, char* argv[])
 	t_file.open(argv[1], ios::in);
 #endif
 
+#if _EDITOR
+	uint64_t t_cycles = rdtsc();
+#endif
+
 	while (getline(t_file, t_strInput))
 	{
 		if (t_strInput.empty())
@@ -63,4 +68,9 @@ int main(int argc, char* argv[])
 
 		cout << t_strText << endl;
 	}
+
+#if _EDITOR
+	uint64_t t_cFinalCycles = rdtsc() - t_cycles;
+	cout << "Cycles used: " << t_cFinalCycles << endl;
+#endif
 }

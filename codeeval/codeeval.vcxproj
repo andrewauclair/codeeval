@@ -74,6 +74,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1.cpp" />
+    <ClCompile Include="10.cpp" />
     <ClCompile Include="13.cpp" />
     <ClCompile Include="144.cpp" />
     <ClCompile Include="147.cpp" />
@@ -84,13 +86,19 @@
     <ClCompile Include="160.cpp" />
     <ClCompile Include="163.cpp" />
     <ClCompile Include="2.cpp" />
+    <ClCompile Include="25.cpp" />
     <ClCompile Include="27.cpp" />
+    <ClCompile Include="3.cpp" />
+    <ClCompile Include="4.cpp" />
     <ClCompile Include="52.cpp" />
     <ClCompile Include="74.cpp" />
     <ClCompile Include="76.cpp" />
+    <ClCompile Include="8.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="1.h" />
+    <ClInclude Include="10.h" />
     <ClInclude Include="13.h" />
     <ClInclude Include="144.h" />
     <ClInclude Include="147.h" />
@@ -102,10 +110,15 @@
     <ClInclude Include="160.h" />
     <ClInclude Include="163.h" />
     <ClInclude Include="2.h" />
+    <ClInclude Include="25.h" />
     <ClInclude Include="27.h" />
+    <ClInclude Include="3.h" />
+    <ClInclude Include="4.h" />
     <ClInclude Include="52.h" />
     <ClInclude Include="74.h" />
     <ClInclude Include="76.h" />
+    <ClInclude Include="8.h" />
+    <ClInclude Include="helpers\cpucycles.h" />
     <ClInclude Include="problem.h" />
     <ClInclude Include="problems.h" />
   </ItemGroup>

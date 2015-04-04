@@ -1,19 +1,47 @@
 #ifndef _PROBLEMS_H_
 #define _PROBLEMS_H_
 
+#include "1.h"
 #include "2.h"
+#include "3.h"
+#include "4.h"
+//#include "5.h"
+//#include "6.h"
+//#include "7.h"
+//#include "8.h"
+//#include "9.h"
+//#include "10.h"
+//#include "11.h"
+//#include "12.h"
 #include "13.h"
+
+#include "15.h"
 #include "16.h"
+
+#include "18.h"
+#include "19.h"
+
+#include "25.h"
+
 #include "27.h"
+
 #include "52.h"
+
 #include "74.h"
+
 #include "76.h"
+
 #include "144.h"
+
 #include "147.h"
+
 #include "152.h"
 #include "153.h"
+
 #include "156.h"
+
 #include "160.h"
+
 #include "163.h"
 
 static const int fsc_cEasyProblems = 54;
@@ -23,10 +51,10 @@ static const int fsc_cProblems = fsc_cEasyProblems + fsc_cModerateProblems + fsc
 
 static CProblem* g_apProblems[fsc_cProblems] =
 {
-	NULL, // 1
+	new CP1(), // 1
 	new CP2(), // 2
-	NULL, // 3
-	NULL, // 4
+	new CP3(), // 3
+	new CP4(), // 4
 	NULL, // 5
 	NULL, // 6
 	NULL, // 7
@@ -37,17 +65,17 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 12
 	new CP13(), // 13
 	NULL, // 14
-	NULL, // 15
+	new CP15(), // 15
 	new CP16(), // 16
 	NULL, // 17
-	NULL, // 18
-	NULL, // 19
+	new CP18(), // 18
+	new CP19(), // 19
 	NULL, // 20
 	NULL, // 21
 	NULL, // 22
 	NULL, // 23
 	NULL, // 24
-	NULL, // 25
+	new CP25(), // 25
 	NULL, // 26
 	new CP27(), // 27
 	NULL, // 28

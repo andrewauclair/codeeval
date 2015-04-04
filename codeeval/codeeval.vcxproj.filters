@@ -60,6 +60,24 @@
     <ClCompile Include="144.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="25.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="8.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem.h">
@@ -111,6 +129,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="144.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\cpucycles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="25.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="8.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="10.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
