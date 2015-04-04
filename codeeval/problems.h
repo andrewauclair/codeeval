@@ -53,6 +53,21 @@
 
 #include "79.h"
 
+#include "82.h"
+#include "83.h"
+
+#include "87.h"
+
+#include "91.h"
+#include "92.h"
+#include "93.h"
+
+#include "96.h"
+#include "97.h"
+#include "98.h"
+#include "99.h"
+#include "100.h"
+
 #include "144.h"
 
 #include "147.h"
@@ -154,25 +169,25 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP79(), // 79
 	NULL, // 80
 	NULL, // 81
-	NULL, // 82
-	NULL, // 83
+	new CP82(), // 82
+	new CP83(), // 83
 	NULL, // 84
 	NULL, // 85
 	NULL, // 86
-	NULL, // 87
+	new CP87(), // 87
 	NULL, // 88
 	NULL, // 89
 	NULL, // 90
-	NULL, // 91
-	NULL, // 92
-	NULL, // 93
+	new CP91(), // 91
+	new CP92(), // 92
+	new CP93(), // 93
 	NULL, // 94
 	NULL, // 95
-	NULL, // 96
-	NULL, // 97
-	NULL, // 98
-	NULL, // 99
-	NULL, // 100
+	new CP96(), // 96
+	new CP97(), // 97
+	new CP98(), // 98
+	new CP99(), // 99
+	new CP100(), // 100
 	NULL, // 101
 	NULL, // 102
 	NULL, // 103

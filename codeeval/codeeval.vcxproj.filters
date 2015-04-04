@@ -144,6 +144,39 @@
     <ClCompile Include="79.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="82.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="83.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="87.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="91.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="92.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="93.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="96.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="97.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="98.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="99.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="100.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem.h">
@@ -282,6 +315,39 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="79.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="82.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="83.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="87.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="91.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="92.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="93.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="96.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="97.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="98.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="99.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="100.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

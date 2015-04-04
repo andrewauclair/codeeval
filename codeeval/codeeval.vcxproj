@@ -76,6 +76,7 @@
   <ItemGroup>
     <ClCompile Include="1.cpp" />
     <ClCompile Include="10.cpp" />
+    <ClCompile Include="100.cpp" />
     <ClCompile Include="13.cpp" />
     <ClCompile Include="144.cpp" />
     <ClCompile Include="147.cpp" />
@@ -116,11 +117,22 @@
     <ClCompile Include="76.cpp" />
     <ClCompile Include="79.cpp" />
     <ClCompile Include="8.cpp" />
+    <ClCompile Include="82.cpp" />
+    <ClCompile Include="83.cpp" />
+    <ClCompile Include="87.cpp" />
+    <ClCompile Include="91.cpp" />
+    <ClCompile Include="92.cpp" />
+    <ClCompile Include="93.cpp" />
+    <ClCompile Include="96.cpp" />
+    <ClCompile Include="97.cpp" />
+    <ClCompile Include="98.cpp" />
+    <ClCompile Include="99.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.h" />
     <ClInclude Include="10.h" />
+    <ClInclude Include="100.h" />
     <ClInclude Include="13.h" />
     <ClInclude Include="144.h" />
     <ClInclude Include="147.h" />
@@ -162,6 +174,16 @@
     <ClInclude Include="76.h" />
     <ClInclude Include="79.h" />
     <ClInclude Include="8.h" />
+    <ClInclude Include="82.h" />
+    <ClInclude Include="83.h" />
+    <ClInclude Include="87.h" />
+    <ClInclude Include="91.h" />
+    <ClInclude Include="92.h" />
+    <ClInclude Include="93.h" />
+    <ClInclude Include="96.h" />
+    <ClInclude Include="97.h" />
+    <ClInclude Include="98.h" />
+    <ClInclude Include="99.h" />
     <ClInclude Include="helpers\cpucycles.h" />
     <ClInclude Include="problem.h" />
     <ClInclude Include="problems.h" />
