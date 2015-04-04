@@ -14,7 +14,7 @@ static const char * fsc_pChzName = "Minimum Coins";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/74/";
 static const int fsc_nNumber = 74;
 static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Nil;
+static const EDifficulty fsc_eDifficulty = eDiff_Med;
 
 CP74::CP74()
 	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)

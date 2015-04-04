@@ -78,6 +78,72 @@
     <ClCompile Include="10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="18.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="19.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="21.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="26.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="29.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="30.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="31.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="39.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="40.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="46.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="57.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="62.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="63.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="67.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="68.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="79.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem.h">
@@ -150,6 +216,72 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="15.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="18.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="19.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="20.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="21.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="22.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="23.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="26.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="29.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="30.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="31.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="39.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="40.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="46.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="57.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="62.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="63.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="67.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="68.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="79.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
