@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleLoggerHelper", "ConsoleLoggerHelper\ConsoleLoggerHelper.vcxproj", "{8554E76B-C2F9-E7C6-A801-CA9CCFA5419B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleLoggerLib", "ConsoleLoggerLib.vcxproj", "{C119F6A2-214A-0B55-5776-915AA807A2BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_console", "ConsoleLogger_DEMO\ConsoleLogger_DEMO.vcxproj", "{9595E17B-F113-1633-D1EF-C41C651677A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8554E76B-C2F9-E7C6-A801-CA9CCFA5419B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8554E76B-C2F9-E7C6-A801-CA9CCFA5419B}.Debug|Win32.Build.0 = Debug|Win32
+		{8554E76B-C2F9-E7C6-A801-CA9CCFA5419B}.Release|Win32.ActiveCfg = Release|Win32
+		{8554E76B-C2F9-E7C6-A801-CA9CCFA5419B}.Release|Win32.Build.0 = Release|Win32
+		{8554E76B-C2F9-E7C6-A801-CA9CCFA5419B}.Template|Win32.ActiveCfg = Release|Win32
+		{8554E76B-C2F9-E7C6-A801-CA9CCFA5419B}.Template|Win32.Build.0 = Release|Win32
+		{C119F6A2-214A-0B55-5776-915AA807A2BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C119F6A2-214A-0B55-5776-915AA807A2BC}.Debug|Win32.Build.0 = Debug|Win32
+		{C119F6A2-214A-0B55-5776-915AA807A2BC}.Release|Win32.ActiveCfg = Release|Win32
+		{C119F6A2-214A-0B55-5776-915AA807A2BC}.Release|Win32.Build.0 = Release|Win32
+		{C119F6A2-214A-0B55-5776-915AA807A2BC}.Template|Win32.ActiveCfg = Template|Win32
+		{C119F6A2-214A-0B55-5776-915AA807A2BC}.Template|Win32.Build.0 = Template|Win32
+		{9595E17B-F113-1633-D1EF-C41C651677A5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9595E17B-F113-1633-D1EF-C41C651677A5}.Debug|Win32.Build.0 = Debug|Win32
+		{9595E17B-F113-1633-D1EF-C41C651677A5}.Release|Win32.ActiveCfg = Release|Win32
+		{9595E17B-F113-1633-D1EF-C41C651677A5}.Release|Win32.Build.0 = Release|Win32
+		{9595E17B-F113-1633-D1EF-C41C651677A5}.Template|Win32.ActiveCfg = Template|Win32
+		{9595E17B-F113-1633-D1EF-C41C651677A5}.Template|Win32.Build.0 = Template|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

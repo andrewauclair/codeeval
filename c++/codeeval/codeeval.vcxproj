@@ -50,10 +50,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ConsoleLogger.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -87,6 +90,7 @@
     <ClCompile Include="16.cpp" />
     <ClCompile Include="160.cpp" />
     <ClCompile Include="163.cpp" />
+    <ClCompile Include="167.cpp" />
     <ClCompile Include="18.cpp" />
     <ClCompile Include="19.cpp" />
     <ClCompile Include="2.cpp" />
@@ -127,6 +131,9 @@
     <ClCompile Include="97.cpp" />
     <ClCompile Include="98.cpp" />
     <ClCompile Include="99.cpp" />
+    <ClCompile Include="consoleInput.cpp" />
+    <ClCompile Include="consoleOutput.cpp" />
+    <ClCompile Include="consolePerformance.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -144,6 +151,7 @@
     <ClInclude Include="16.h" />
     <ClInclude Include="160.h" />
     <ClInclude Include="163.h" />
+    <ClInclude Include="167.h" />
     <ClInclude Include="18.h" />
     <ClInclude Include="19.h" />
     <ClInclude Include="2.h" />
@@ -184,6 +192,9 @@
     <ClInclude Include="97.h" />
     <ClInclude Include="98.h" />
     <ClInclude Include="99.h" />
+    <ClInclude Include="consoleInput.h" />
+    <ClInclude Include="consoleOutput.h" />
+    <ClInclude Include="consolePerformance.h" />
     <ClInclude Include="helpers\cpucycles.h" />
     <ClInclude Include="problem.h" />
     <ClInclude Include="problems.h" />

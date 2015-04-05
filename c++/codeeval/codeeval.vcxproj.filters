@@ -177,6 +177,18 @@
     <ClCompile Include="100.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="167.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consoleInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consoleOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consolePerformance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem.h">
@@ -348,6 +360,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="100.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="167.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consolePerformance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consoleOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consoleInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

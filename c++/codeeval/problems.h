@@ -81,6 +81,8 @@
 
 #include "163.h"
 
+#include "167.h"
+
 static const int fsc_cEasyProblems = 63;
 static const int fsc_cModerateProblems = 64;
 static const int fsc_cHardProblems = 63;
@@ -254,7 +256,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 164
 	NULL, // 165
 	NULL, // 166
-	NULL, // 167
+	new CP167(), // 167
 	NULL, // 168
 	NULL, // 169
 	NULL, // 170
