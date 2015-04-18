@@ -21,7 +21,8 @@ void cls(void);
 void clear_eol(void);
 void clear_eol(WORD color);
 void gotoxy(int x,int y);
-void movetoxy(int x, int y, int width, int height);
+void movexy(int x, int y);
+void setsize(int width, int height);
 int getxy(int *x,int *y);
 int getx(void);
 int gety(void);
@@ -98,6 +99,8 @@ long ConsoleExLoop(void)
 		COMMAND_CLEAR_SCREEN,
 		COMMAND_COLORED_CLEAR_SCREEN,
 		COMMAND_GOTOXY,
+		COMMAND_MOVEXY,
+		COMMAND_SETSIZE,
 		COMMAND_CLEAR_EOL,
 		COMMAND_COLORED_CLEAR_EOL
 	};
@@ -197,6 +200,23 @@ long ConsoleExLoop(void)
 				gotoxy(xy>>16,xy&0x0000FFFF);
 			}
 				break;
+
+			case COMMAND_MOVEXY:
+				{
+					DWORD xy;
+					ReadPipe(xy);
+					movexy(xy >> 16, xy & 0x0000FFFF);
+				}
+				break;
+
+			case COMMAND_SETSIZE:
+				{
+					DWORD wh;
+					ReadPipe(wh);
+					setsize(wh >> 16, wh & 0x0000FFFF);
+				}
+				break;
+
 			case COMMAND_CLEAR_EOL:
 				{
 					clear_eol();
@@ -327,7 +347,7 @@ int main(int argc, char* argv[])
 			*p2=c;
 		}
 
-		g_hWindow = FindWindow(NULL, header);
+		g_hWindow = GetConsoleWindow();//FindWindow(NULL, header);
 
 		// Set buffer-size
 		{
@@ -450,9 +470,18 @@ void gotoxy(int x,int y)
 	SetConsoleCursorPosition(g_hConsole, coordScreen);
 }
 
-void movetoxy(int x, int y, int width, int height)
+void movexy(int x, int y)
 {
-	MoveWindow(g_hWindow, x, y, width, height, true);
+	SetWindowPos(g_hWindow, 0, x, y, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
+	//MoveWindow(g_hWindow, x, y, width, height, true);
+}
+
+void setsize(int width, int height)
+{
+	RECT t_rect;
+	GetWindowRect(g_hWindow, &t_rect);
+
+	MoveWindow(g_hWindow, t_rect.left, t_rect.top, width, height, true);
 }
 
 int getxy(int *x,int *y)

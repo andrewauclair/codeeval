@@ -45,3 +45,6 @@ for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
 	>>"%textFile%" echo(!line!
 	endlocal
 )
+
+echo. 2>codeeval\%problem%.txt
+echo. 2>codeeval\%problem%_out.txt

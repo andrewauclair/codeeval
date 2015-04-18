@@ -149,6 +149,8 @@ class CConsoleLoggerEx : public CConsoleLogger
 		COMMAND_CLEAR_SCREEN,
 		COMMAND_COLORED_CLEAR_SCREEN,
 		COMMAND_GOTOXY,
+		COMMAND_MOVEXY,
+		COMMAND_SETSIZE,
 		COMMAND_CLEAR_EOL,
 		COMMAND_COLORED_CLEAR_EOL
 	};
@@ -199,9 +201,11 @@ public:
 	int cprintf(const char *format,...);
 	
 	// goto(x,y)
-	void gotoxy(int x,int y);
+	void gotoxy(int x, int y);
 
+	void movexy(int x, int y);
 
+	void setsize(int width, int height);
 
 	DWORD	GetCurrentColor(void)
 	{ return m_dwCurrentAttributes; }

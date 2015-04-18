@@ -13,7 +13,7 @@ using namespace std;
 static const char * fsc_pChzName = "Fizz Buzz";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/1/";
 static const int fsc_nNumber = 1;
-static const bool fsc_fFinished = false;
+static const bool fsc_fFinished = true;
 static const EDifficulty fsc_eDifficulty = eDiff_Easy;
 
 CP1::CP1()

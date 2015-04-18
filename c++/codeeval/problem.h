@@ -36,7 +36,7 @@ public:
 	bool fFinished() const { return m_fFinished; };
 	EDifficulty eDifficulty() const { return m_eDifficulty; };
 
-	virtual void vRun() {};
+	virtual void vRun() = 0;
 
 protected:
 

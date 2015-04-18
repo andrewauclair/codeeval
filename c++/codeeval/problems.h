@@ -12,12 +12,12 @@
 //#include "9.h"
 //#include "10.h"
 //#include "11.h"
-//#include "12.h"
+#include "12.h"
 #include "13.h"
 
 #include "15.h"
 #include "16.h"
-
+#include "17.h"
 #include "18.h"
 #include "19.h"
 #include "20.h"
@@ -36,6 +36,8 @@
 
 #include "39.h"
 #include "40.h"
+
+#include "44.h"
 
 #include "46.h"
 
@@ -77,15 +79,25 @@
 
 #include "156.h"
 
+#include "158.h"
+
 #include "160.h"
 
 #include "163.h"
 
 #include "167.h"
 
-static const int fsc_cEasyProblems = 63;
+#include "178.h"
+#include "179.h"
+
+#include "184.h"
+
+#include "191.h"
+#include "192.h"
+
+static const int fsc_cEasyProblems = 64;
 static const int fsc_cModerateProblems = 64;
-static const int fsc_cHardProblems = 63;
+static const int fsc_cHardProblems = 64;
 static const int fsc_cProblems = fsc_cEasyProblems + fsc_cModerateProblems + fsc_cHardProblems;
 
 static CProblem* g_apProblems[fsc_cProblems] =
@@ -101,12 +113,12 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 9
 	NULL, // 10
 	NULL, // 11
-	NULL, // 12
+	new CP12(), // 12
 	new CP13(), // 13
 	NULL, // 14
 	new CP15(), // 15
 	new CP16(), // 16
-	NULL, // 17
+	new CP17(), // 17
 	new CP18(), // 18
 	new CP19(), // 19
 	new CP20(), // 20
@@ -133,7 +145,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 41
 	NULL, // 42
 	NULL, // 43
-	NULL, // 44
+	new CP44(), // 44
 	NULL, // 45
 	new CP46(), // 46
 	NULL, // 47
@@ -247,7 +259,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 155
 	new CP156(), // 156
 	NULL, // 157
-	NULL, // 158
+	new CP158(), // 158
 	NULL, // 159
 	new CP160(), // 160
 	NULL, // 161
@@ -267,19 +279,21 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 175
 	NULL, // 176
 	NULL, // 177
-	NULL, // 178
-	NULL, // 179
+	new CP178(), // 178
+	new CP179(), // 179
 	NULL, // 180
 	NULL, // 181
 	NULL, // 182
 	NULL, // 183
-	NULL, // 184
+	new CP184(), // 184
 	NULL, // 185
 	NULL, // 186
 	NULL, // 187
 	NULL, // 188
 	NULL, // 189
 	NULL, // 190
+	new CP191(), // 191
+	new CP192(), // 192
 };
 
 #endif

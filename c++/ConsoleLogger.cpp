@@ -404,6 +404,38 @@ void CConsoleLoggerEx::gotoxy(int x,int y)
 	LeaveCriticalSection();
 }	
 
+//////////////////////////////////////////////////////////////////////////
+// movexy(x,y) : sets the console to x,y location
+//////////////////////////////////////////////////////////////////////////
+void CConsoleLoggerEx::movexy(int x, int y)
+{
+	DWORD dwWritten=(DWORD)-1;
+	// we assume that in iSize < 2^24, because we're using only 3 bytes of iSize
+	// 32BIT: send DWORD = 4bytes: one byte is the command (COMMAND_MOVEXY), and 3 bytes for size
+	DWORD command = COMMAND_MOVEXY<<24;
+	EnterCriticalSection();
+	WriteFile (m_hPipe, &command, sizeof(DWORD), &dwWritten, NULL);
+	command = (x<<16) | y;
+	WriteFile(m_hPipe, &command, sizeof(DWORD), &dwWritten, NULL);
+	LeaveCriticalSection();
+}
+
+//////////////////////////////////////////////////////////////////////////
+// movexy(x,y) : sets the console to x,y location
+//////////////////////////////////////////////////////////////////////////
+void CConsoleLoggerEx::setsize(int width, int height)
+{
+	DWORD dwWritten=(DWORD)-1;
+
+	// we assume that in iSize < 2^24, because we're using only 3 bytes of iSize
+	// 32BIT: send DWORD = 4bytes: one byte is the command (COMMAND_SETSIZE), and 3 bytes for size
+	DWORD command = COMMAND_SETSIZE<<24;
+	EnterCriticalSection();
+	WriteFile(m_hPipe, &command, sizeof(DWORD), &dwWritten, NULL);
+	command = (width << 16) | height;
+	WriteFile(m_hPipe, &command, sizeof(DWORD), &dwWritten, NULL);
+	LeaveCriticalSection();
+}
 
 //////////////////////////////////////////////////////////////////////////
 // cprintf(attr,str,...) : prints a formatted string with the "attributes" color

@@ -184,7 +184,7 @@ void vPrintNumber(int t_nNum)
 static const char * fsc_pChzName = "Text Dollar";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/52/";
 static const int fsc_nNumber = 52;
-static const bool fsc_fFinished = true;
+static const bool fsc_fFinished = false; // Partially, 97.5/100
 static const EDifficulty fsc_eDifficulty = eDiff_Nil;
 
 CP52::CP52()

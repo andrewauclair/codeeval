@@ -12,6 +12,7 @@ public:
 
 	void cout(string p_str);
 	void vSetPos(int p_x, int p_y);
+	void vClear();
 
 private:
 	CConsoleLoggerEx console;
