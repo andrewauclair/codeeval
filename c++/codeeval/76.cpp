@@ -56,11 +56,19 @@ int main(int argc, char* argv[])
 		getline(t_line, t_strOriginal, ',');
 		getline(t_line, t_strRotate, ',');
 
-		int t_nFirst = t_strRotate.find_first_of(t_strOriginal[0]);
+		bool t_fValid = false;
+		for (int t_i = 0; t_i < t_strOriginal.length(); ++t_i)
+		{
+			string t_str = t_strOriginal.substr(t_i, t_strOriginal.length() - t_i) + t_strOriginal.substr(0, t_i);
 
-		string t_strMatch = t_strRotate.substr(t_nFirst, t_strRotate.length() - t_nFirst) + t_strRotate.substr(0, t_nFirst);
+			if (t_str.compare(t_strRotate) == 0)
+			{
+				t_fValid = true;
+				break;
+			}
+		}
 
-		if (t_strOriginal.compare(t_strMatch) == 0)
+		if (t_fValid)
 		{
 			cout << "True" << endl;
 		}

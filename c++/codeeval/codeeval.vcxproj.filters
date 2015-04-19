@@ -19,9 +19,6 @@
     <Filter Include="Header Files\21-40">
       <UniqueIdentifier>{c973cf57-e418-4602-9802-fc62881d4a26}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\41-60">
-      <UniqueIdentifier>{476473f7-3053-41ea-ad6b-12459ded0ea7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\61-80">
       <UniqueIdentifier>{ef85594f-5854-4b3b-afcf-87802a0974b8}</UniqueIdentifier>
     </Filter>
@@ -72,6 +69,9 @@
     </Filter>
     <Filter Include="Source Files\181-200">
       <UniqueIdentifier>{ad94bb22-79dd-49fd-a856-39a12b9e4e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\41-60">
+      <UniqueIdentifier>{476473f7-3053-41ea-ad6b-12459ded0ea7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -275,6 +275,27 @@
     </ClCompile>
     <ClCompile Include="17.cpp">
       <Filter>Source Files\1-20</Filter>
+    </ClCompile>
+    <ClCompile Include="146.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="78.cpp">
+      <Filter>Source Files\61-80</Filter>
+    </ClCompile>
+    <ClCompile Include="101.cpp">
+      <Filter>Source Files\101-120</Filter>
+    </ClCompile>
+    <ClCompile Include="66.cpp">
+      <Filter>Source Files\61-80</Filter>
+    </ClCompile>
+    <ClCompile Include="148.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="181.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="75.cpp">
+      <Filter>Source Files\61-80</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -487,6 +508,27 @@
     </ClInclude>
     <ClInclude Include="17.h">
       <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="146.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="78.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="101.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="66.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="148.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="181.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="75.h">
+      <Filter>Header Files\61-80</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
