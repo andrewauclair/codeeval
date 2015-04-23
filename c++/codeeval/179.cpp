@@ -74,55 +74,68 @@ int main(int argc, char* argv[])
 			{
 				int one = t_str[t_i] - '0';
 
-				t_anDisplays[t_iDisplay] |= one << (8 - t_i);
+				t_anDisplays[t_iDisplay] |= one << (8 - t_i - 1);
 			}
 			t_iDisplay++;
 		}
+		
 		bool t_fCorrect = true;
-		int t_id = 0;
-		for (int t_i = 0; t_i < t_strValue.length(); ++t_i)
+
+		if (t_strValue.length() - 1 > 12)
 		{
-			if (t_strValue[t_i] == '.')
+			t_fCorrect = false;
+		}
+		else
+		{
+			for (int t_id = 0; t_id <= 12 - (t_strValue.length() - 1); ++t_id)
 			{
-				continue;
-			}
-			else
-			{
-				bool t_fPeriod = false;
-				if (t_i + 1 < t_strValue.length())
+				t_fCorrect = true;
+				for (int t_i = 0; t_i < t_strValue.length(); ++t_i)
 				{
-					if (t_strValue[t_i + 1] == '.')
+					if (t_strValue[t_i] == '.')
 					{
-						t_fPeriod = true;
+						continue;
+					}
+					else
+					{
+						bool t_fPeriod = false;
+						if (t_i + 1 < t_strValue.length())
+						{
+							if (t_strValue[t_i + 1] == '.')
+							{
+								t_fPeriod = true;
+							}
+						}
+
+						int n = t_strValue[t_i] - '0';
+						int num = t_anNumbers[n];
+						int cor = t_anDisplays[t_id];
+						if (t_fPeriod)
+						{
+							num |= 1;
+						}
+
+						int v = cor & num;
+						if (v != num)
+						{
+							// something can't be displayed
+							t_fCorrect = false;
+							break;
+						}
+
+						t_id++;
 					}
 				}
 
-				int n = t_strValue[t_i] - '0';
-				int num = t_anNumbers[n];
-				int cor = t_anDisplays[t_id];
-				if (t_fPeriod)
+				if (t_fCorrect)
 				{
-					num |= 1;
-				}
-
-				int v = cor & num;
-				if (v != num)
-				{
-					// something can't be displayed
-					t_fCorrect = false;
+					cout << "1" << endl;
 					break;
 				}
-
-				t_id++;
 			}
-
 		}
 
-		if (t_fCorrect)
-		{
-			cout << "1" << endl;
-		}
-		else
+		if (!t_fCorrect)
 		{
 			cout << "0" << endl;
 		}

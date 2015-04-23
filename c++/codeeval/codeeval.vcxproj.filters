@@ -297,6 +297,39 @@
     <ClCompile Include="75.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
+    <ClCompile Include="71.cpp">
+      <Filter>Source Files\61-80</Filter>
+    </ClCompile>
+    <ClCompile Include="189.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="149.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="166.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="173.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="174.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="180.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="186.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="183.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="139.cpp">
+      <Filter>Source Files\121-140</Filter>
+    </ClCompile>
+    <ClCompile Include="14.cpp">
+      <Filter>Source Files\1-20</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem.h">
@@ -529,6 +562,39 @@
     </ClInclude>
     <ClInclude Include="75.h">
       <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="71.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="189.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="149.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="166.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="173.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="174.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="180.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="186.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="183.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="139.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="14.h">
+      <Filter>Header Files\1-20</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

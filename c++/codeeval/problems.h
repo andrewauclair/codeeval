@@ -50,6 +50,8 @@
 #include "67.h"
 #include "68.h"
 
+#include "71.h"
+
 #include "74.h"
 #include "75.h"
 #include "76.h"
@@ -73,11 +75,14 @@
 #include "100.h"
 #include "101.h"
 
+#include "139.h"
+
 #include "144.h"
 
 #include "146.h"
 #include "147.h"
 #include "148.h"
+#include "149.h"
 
 #include "152.h"
 #include "153.h"
@@ -90,14 +95,23 @@
 
 #include "163.h"
 
+#include "166.h"
 #include "167.h"
+
+#include "173.h"
+#include "174.h"
 
 #include "178.h"
 #include "179.h"
-
+#include "180.h"
 #include "181.h"
 
+#include "183.h"
 #include "184.h"
+
+#include "186.h"
+
+#include "189.h"
 
 #include "191.h"
 #include "192.h"
@@ -179,7 +193,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP68(), // 68
 	NULL, // 69
 	NULL, // 70
-	NULL, // 71
+	new CP71(), // 71
 	NULL, // 72
 	NULL, // 73
 	new CP74(), // 74
@@ -247,7 +261,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 136
 	NULL, // 137
 	NULL, // 138
-	NULL, // 139
+	new CP139(), // 139
 	NULL, // 140
 	NULL, // 141
 	NULL, // 142
@@ -257,7 +271,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP146(), // 146
 	new CP147(), // 147
 	new CP148(), // 148
-	NULL, // 149
+	new CP149(), // 149
 	NULL, // 150
 	NULL, // 151
 	new CP152(), // 152
@@ -274,30 +288,30 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP163(), // 163
 	NULL, // 164
 	NULL, // 165
-	NULL, // 166
+	new CP166(), // 166
 	new CP167(), // 167
 	NULL, // 168
 	NULL, // 169
 	NULL, // 170
 	NULL, // 171
 	NULL, // 172
-	NULL, // 173
-	NULL, // 174
+	new CP173(), // 173
+	new CP174(), // 174
 	NULL, // 175
 	NULL, // 176
 	NULL, // 177
 	new CP178(), // 178
 	new CP179(), // 179
-	NULL, // 180
+	new CP180(), // 180
 	new CP181(), // 181
 	NULL, // 182
-	NULL, // 183
+	new CP183(), // 183
 	new CP184(), // 184
 	NULL, // 185
-	NULL, // 186
+	new CP186(), // 186
 	NULL, // 187
 	NULL, // 188
-	NULL, // 189
+	new CP189(), // 189
 	NULL, // 190
 	new CP191(), // 191
 	new CP192(), // 192

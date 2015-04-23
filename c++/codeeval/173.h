@@ -1,13 +1,13 @@
-#ifndef _CP139_H_
-#define _CP139_H_
+#ifndef _CP173_H_
+#define _CP173_H_
 #include "problem.h"
-class CP139 : public CProblem
+class CP173 : public CProblem
 {
 	typedef CProblem super;
 	
 public:
-	CP139();
-	virtual ~CP139();
+	CP173();
+	virtual ~CP173();
 	virtual void vRun();
 protected:
 };
