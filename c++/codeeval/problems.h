@@ -8,7 +8,7 @@
 //#include "5.h"
 //#include "6.h"
 //#include "7.h"
-//#include "8.h"
+#include "8.h"
 //#include "9.h"
 //#include "10.h"
 //#include "11.h"
@@ -26,7 +26,7 @@
 #include "23.h"
 #include "24.h"
 #include "25.h"
-
+#include "26.h"
 #include "27.h"
 
 #include "29.h"
@@ -78,8 +78,33 @@
 #include "99.h"
 #include "100.h"
 #include "101.h"
+#include "102.h"
+#include "103.h"
+#include "104.h"
+
+#include "106.h"
+#include "107.h"
+
+#include "111.h"
+#include "112.h"
+#include "113.h"
+
+#include "115.h"
+#include "116.h"
+
+#include "122.h"
+
+#include "124.h"
+
+#include "128.h"
+
+#include "131.h"
+#include "132.h"
+
+#include "136.h"
 
 #include "139.h"
+#include "140.h"
 
 #include "144.h"
 
@@ -135,7 +160,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 5
 	NULL, // 6
 	NULL, // 7
-	NULL, // 8
+	new CP8(), // 8
 	NULL, // 9
 	NULL, // 10
 	NULL, // 11
@@ -153,7 +178,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP23(), // 23
 	new CP24(), // 24
 	new CP25(), // 25
-	NULL, // 26
+	new CP26(), // 26
 	new CP27(), // 27
 	NULL, // 28
 	new CP29(), // 29
@@ -229,45 +254,45 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP99(), // 99
 	new CP100(), // 100
 	new CP101(), // 101
-	NULL, // 102
-	NULL, // 103
-	NULL, // 104
+	new CP102(), // 102
+	new CP103(), // 103
+	new CP104(), // 104
 	NULL, // 105
-	NULL, // 106
-	NULL, // 107
+	new CP106(), // 106
+	new CP107(), // 107
 	NULL, // 108
 	NULL, // 109
 	NULL, // 110
-	NULL, // 111
-	NULL, // 112
-	NULL, // 113
+	new CP111(), // 111
+	new CP112(), // 112
+	new CP113(), // 113
 	NULL, // 114
-	NULL, // 115
-	NULL, // 116
+	new CP115(), // 115
+	new CP116(), // 116
 	NULL, // 117
 	NULL, // 118
 	NULL, // 119
 	NULL, // 120
 	NULL, // 121
-	NULL, // 122
+	new CP122(), // 122
 	NULL, // 123
-	NULL, // 124
+	new CP124(), // 124
 	NULL, // 125
 	NULL, // 126
 	NULL, // 127
-	NULL, // 128
+	new CP128(), // 128
 	NULL, // 129
 	NULL, // 130
-	NULL, // 131
-	NULL, // 132
+	new CP131(), // 131
+	new CP132(), // 132
 	NULL, // 133
 	NULL, // 134
 	NULL, // 135
-	NULL, // 136
+	new CP136(), // 136
 	NULL, // 137
 	NULL, // 138
 	new CP139(), // 139
-	NULL, // 140
+	new CP140(), // 140
 	NULL, // 141
 	NULL, // 142
 	NULL, // 143

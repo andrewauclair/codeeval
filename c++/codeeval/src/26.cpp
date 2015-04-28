@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
 	struct stat filestatus;
 
 #if _EDITOR
-	stat("26_in.txt", &filestatus);
+	stat("in/26_in.txt", &filestatus);
 #else
 	stat(argv[1], &filestatus);
 #endif

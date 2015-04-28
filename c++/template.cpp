@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
 	string t_strInput;
 
 #if _EDITOR
-	t_file.open("%_in.txt", ios::in);
+	t_file.open("in/%_in.txt", ios::in);
 #else
 	t_file.open(argv[1], ios::in);
 #endif
@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if ! _EDITOR
+#if !_EDITOR
 	return 0;
 #endif
 }

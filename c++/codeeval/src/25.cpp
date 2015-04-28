@@ -1,10 +1,4 @@
 #include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <sstream>
-#include <algorithm>
-using namespace std;
 
 #if _EDITOR
 
@@ -30,12 +24,10 @@ void CP25::vRun()
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
-	string t_strInput;
-
-	for (int t_i = 1; t_i < 100; t_i += 2)
+	unsigned int t_i = 1;
+	for (t_i = 1; t_i < 100; t_i += 2)
 	{
-		cout << t_i << endl;
+		std::cout << t_i << std::endl;
 	}
 
 #if !_EDITOR

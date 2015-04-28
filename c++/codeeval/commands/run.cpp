@@ -75,7 +75,7 @@ void CRun::vWriteProblemInput(int p_nProblem)
 	stringstream t_ss;
 	t_ss << p_nProblem;
 
-	string t_strFile = t_ss.str() + ".txt";
+	string t_strFile = "in/" + t_ss.str() + "_in.txt";
 			
 	t_file.open(t_strFile.c_str(), ios::in);
 
