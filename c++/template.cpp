@@ -23,9 +23,7 @@ CP%::~CP%()
 }
 
 void CP%::vRun()
-
 #else
-
 int main(int argc, char* argv[])
 #endif
 {
@@ -33,7 +31,7 @@ int main(int argc, char* argv[])
 	string t_strInput;
 
 #if _EDITOR
-	t_file.open("%.txt", ios::in);
+	t_file.open("%_in.txt", ios::in);
 #else
 	t_file.open(argv[1], ios::in);
 #endif
@@ -42,4 +40,10 @@ int main(int argc, char* argv[])
 	{
 		
 	}
+
+	t_file.close();
+
+#if ! _EDITOR
+	return 0;
+#endif
 }

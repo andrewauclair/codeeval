@@ -6,89 +6,54 @@
 #include <Windows.h>
 
 #include "problems.h"
-
-#include "consoleInput.h"
-#include "consoleOutput.h"
-#include "consolePerformance.h"
+#include "commands.h"
+#include "globals.h"
 
 using namespace std;
 
 void vCreateConsoles();
 void vWriteConsoleStart();
-void vWriteProblemInput(int p_nProblem);
-
-HWND g_winHandle = NULL;
-CConsoleInput * g_inputConsole = NULL;
-CConsoleOutput * g_outputConsole = NULL;
 
 int main()
 {
 	vCreateConsoles();
 
+	vWriteConsoleStart();
 	
-
-	
-
 	// display some stats on the other consoles till we need them for other things
 
 	// entered, solved, unsolved, total
 	// easy, moderate, hard
+	string t_strInput;
 
-	int t_nInput = 0;
-	streambuf* t_coutStream = cout.rdbuf();
-	ostringstream t_output;
-
-	while (t_nInput != -1)
+	while (true)
 	{
-		string t_strInput;
-
-		cout << "Problem: ";
+		cout << " : ";
 		
-		cin >> t_nInput;
+		getline(cin, t_strInput);
 
-		cout << endl;
-		assert(t_nInput < sizeof(g_apProblems));
+		istringstream line(t_strInput);
+		vector<string> t_aArgs = vector<string>();
+		string t_str;
 
-		// clear the consoles
-		g_inputConsole->vClear();
-		g_outputConsole->vClear();
-		
-		if (g_apProblems[t_nInput - 1] != NULL)
+		while (getline(line, t_str, ' '))
 		{
-			vWriteProblemInput(t_nInput);
+			t_aArgs.push_back(t_str);
+		}
 
-			cout.rdbuf(t_output.rdbuf());
-			g_apProblems[t_nInput - 1]->vRun();
-			cout.rdbuf(t_coutStream);
-			
-			stringstream t_ss;
-			t_ss << t_nInput;
-		
-			ifstream t_file(t_ss.str() + "_out.txt");
-			string t_strCompare = "";
-			
-			if (t_file.is_open())
+		for (int t_i = 0; t_i < gsc_cCommands; ++t_i)
+		{
+			if (g_apCommands[t_i]->strCmd().compare(t_aArgs[0]) == 0)
 			{
-				t_file.seekg(0, ios::end);
-				t_strCompare.reserve(t_file.tellg());
-				t_file.seekg(0, ios::beg);
-
-				t_strCompare.assign((istreambuf_iterator<char>(t_file)),
-									 istreambuf_iterator<char>());
+				g_apCommands[t_i]->vRun(t_aArgs);
 			}
-
-			g_outputConsole->vCompare(t_output.str(), t_strCompare);
-			t_output.str("");
 		}
-		else
+
+		if (t_aArgs[0].compare("exit") == 0)
 		{
-			cout << "This problem hasn't been added yet.";
+			return 0;
 		}
-
-		cout << endl;
 	}
-
-	cin.get();
 }
 
 void vCreateConsoles()
@@ -125,38 +90,9 @@ void vCreateConsoles()
 
 void vWriteConsoleStart()
 {
-	cout << "<code_eval> c++ solutions" << endl;
+	cout << "<code_eval> c++ solutions" << endl << endl;
 
 	// clear the consoles
 	g_inputConsole->vClear();
 	g_outputConsole->vClear();
-}
-
-void vWriteProblemInput(int p_nProblem)
-{
-	// read in the input file for this problem and send it to the input console window
-	fstream t_file;
-	stringstream t_ss;
-	t_ss << p_nProblem;
-
-	string t_strFile = t_ss.str() + ".txt";
-			
-	t_file.open(t_strFile.c_str(), ios::in);
-
-	string t_str;
-
-	if (t_file.is_open())
-	{
-		while (getline(t_file, t_str))
-		{
-			g_inputConsole->cout(t_str + "\n");
-		}
-	}
-	else
-	{
-		g_inputConsole->cout("This problem has no input.");
-	}
-
-	t_ss.str("");
-	t_file.close();
 }

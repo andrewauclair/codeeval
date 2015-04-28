@@ -73,6 +73,18 @@
     <Filter Include="Header Files\41-60">
       <UniqueIdentifier>{476473f7-3053-41ea-ad6b-12459ded0ea7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\in">
+      <UniqueIdentifier>{726ec58a-410f-4893-9393-15a8c15df2fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\out">
+      <UniqueIdentifier>{4ea25f63-5f3a-4e86-9024-e9d09fc31550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\commands">
+      <UniqueIdentifier>{b784edc1-42c5-4a9d-b2f0-92c0a5da969d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\commands">
+      <UniqueIdentifier>{e3be192b-8dd4-4a08-ad51-98cb487d5de6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -87,248 +99,296 @@
     <ClCompile Include="consolePerformance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="1.cpp">
+    <ClCompile Include="src\1.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="10.cpp">
+    <ClCompile Include="src\2.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="100.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="12.cpp">
+    <ClCompile Include="src\3.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="13.cpp">
+    <ClCompile Include="src\4.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="144.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="147.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="15.cpp">
+    <ClCompile Include="src\5.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="152.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="153.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="156.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="158.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="16.cpp">
+    <ClCompile Include="src\6.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="160.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="163.cpp">
-      <Filter>Source Files\161-180</Filter>
-    </ClCompile>
-    <ClCompile Include="167.cpp">
-      <Filter>Source Files\161-180</Filter>
-    </ClCompile>
-    <ClCompile Include="178.cpp">
-      <Filter>Source Files\161-180</Filter>
-    </ClCompile>
-    <ClCompile Include="179.cpp">
-      <Filter>Source Files\161-180</Filter>
-    </ClCompile>
-    <ClCompile Include="18.cpp">
+    <ClCompile Include="src\8.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="184.cpp">
-      <Filter>Source Files\181-200</Filter>
-    </ClCompile>
-    <ClCompile Include="19.cpp">
+    <ClCompile Include="src\10.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="20.cpp">
+    <ClCompile Include="src\12.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="2.cpp">
+    <ClCompile Include="src\13.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="191.cpp">
-      <Filter>Source Files\181-200</Filter>
-    </ClCompile>
-    <ClCompile Include="192.cpp">
-      <Filter>Source Files\181-200</Filter>
-    </ClCompile>
-    <ClCompile Include="21.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="22.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="29.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="23.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="24.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="25.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="26.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="27.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="3.cpp">
+    <ClCompile Include="src\14.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="30.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="31.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="32.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="39.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="40.cpp">
-      <Filter>Source Files\21-40</Filter>
-    </ClCompile>
-    <ClCompile Include="4.cpp">
+    <ClCompile Include="src\15.cpp">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
-    <ClCompile Include="44.cpp">
+    <ClCompile Include="src\16.cpp">
+      <Filter>Source Files\1-20</Filter>
+    </ClCompile>
+    <ClCompile Include="src\17.cpp">
+      <Filter>Source Files\1-20</Filter>
+    </ClCompile>
+    <ClCompile Include="src\18.cpp">
+      <Filter>Source Files\1-20</Filter>
+    </ClCompile>
+    <ClCompile Include="src\19.cpp">
+      <Filter>Source Files\1-20</Filter>
+    </ClCompile>
+    <ClCompile Include="src\20.cpp">
+      <Filter>Source Files\1-20</Filter>
+    </ClCompile>
+    <ClCompile Include="src\21.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\22.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\23.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\24.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\25.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\26.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\27.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\29.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\30.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\31.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\32.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\37.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\39.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\40.cpp">
+      <Filter>Source Files\21-40</Filter>
+    </ClCompile>
+    <ClCompile Include="src\41.cpp">
       <Filter>Source Files\41-60</Filter>
     </ClCompile>
-    <ClCompile Include="46.cpp">
+    <ClCompile Include="src\44.cpp">
       <Filter>Source Files\41-60</Filter>
     </ClCompile>
-    <ClCompile Include="52.cpp">
+    <ClCompile Include="src\46.cpp">
       <Filter>Source Files\41-60</Filter>
     </ClCompile>
-    <ClCompile Include="57.cpp">
+    <ClCompile Include="src\52.cpp">
       <Filter>Source Files\41-60</Filter>
     </ClCompile>
-    <ClCompile Include="62.cpp">
+    <ClCompile Include="src\57.cpp">
+      <Filter>Source Files\41-60</Filter>
+    </ClCompile>
+    <ClCompile Include="src\62.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
-    <ClCompile Include="63.cpp">
+    <ClCompile Include="src\63.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
-    <ClCompile Include="67.cpp">
+    <ClCompile Include="src\66.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
-    <ClCompile Include="68.cpp">
+    <ClCompile Include="src\67.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
-    <ClCompile Include="74.cpp">
+    <ClCompile Include="src\68.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
-    <ClCompile Include="76.cpp">
+    <ClCompile Include="src\70.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
-    <ClCompile Include="79.cpp">
+    <ClCompile Include="src\71.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
-    <ClCompile Include="82.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="83.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="87.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="91.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="92.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="93.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="96.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="97.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="98.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="99.cpp">
-      <Filter>Source Files\81-100</Filter>
-    </ClCompile>
-    <ClCompile Include="8.cpp">
-      <Filter>Source Files\1-20</Filter>
-    </ClCompile>
-    <ClCompile Include="17.cpp">
-      <Filter>Source Files\1-20</Filter>
-    </ClCompile>
-    <ClCompile Include="146.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="78.cpp">
+    <ClCompile Include="src\74.cpp">
       <Filter>Source Files\61-80</Filter>
     </ClCompile>
-    <ClCompile Include="101.cpp">
+    <ClCompile Include="src\75.cpp">
+      <Filter>Source Files\61-80</Filter>
+    </ClCompile>
+    <ClCompile Include="src\76.cpp">
+      <Filter>Source Files\61-80</Filter>
+    </ClCompile>
+    <ClCompile Include="src\78.cpp">
+      <Filter>Source Files\61-80</Filter>
+    </ClCompile>
+    <ClCompile Include="src\79.cpp">
+      <Filter>Source Files\61-80</Filter>
+    </ClCompile>
+    <ClCompile Include="src\81.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\82.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\83.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\87.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\91.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\92.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\93.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\94.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\96.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\97.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\98.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\99.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\100.cpp">
+      <Filter>Source Files\81-100</Filter>
+    </ClCompile>
+    <ClCompile Include="src\101.cpp">
       <Filter>Source Files\101-120</Filter>
     </ClCompile>
-    <ClCompile Include="66.cpp">
-      <Filter>Source Files\61-80</Filter>
-    </ClCompile>
-    <ClCompile Include="148.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="181.cpp">
-      <Filter>Source Files\181-200</Filter>
-    </ClCompile>
-    <ClCompile Include="75.cpp">
-      <Filter>Source Files\61-80</Filter>
-    </ClCompile>
-    <ClCompile Include="71.cpp">
-      <Filter>Source Files\61-80</Filter>
-    </ClCompile>
-    <ClCompile Include="189.cpp">
-      <Filter>Source Files\181-200</Filter>
-    </ClCompile>
-    <ClCompile Include="149.cpp">
-      <Filter>Source Files\141-160</Filter>
-    </ClCompile>
-    <ClCompile Include="166.cpp">
-      <Filter>Source Files\161-180</Filter>
-    </ClCompile>
-    <ClCompile Include="173.cpp">
-      <Filter>Source Files\161-180</Filter>
-    </ClCompile>
-    <ClCompile Include="174.cpp">
-      <Filter>Source Files\161-180</Filter>
-    </ClCompile>
-    <ClCompile Include="180.cpp">
-      <Filter>Source Files\161-180</Filter>
-    </ClCompile>
-    <ClCompile Include="186.cpp">
-      <Filter>Source Files\181-200</Filter>
-    </ClCompile>
-    <ClCompile Include="183.cpp">
-      <Filter>Source Files\181-200</Filter>
-    </ClCompile>
-    <ClCompile Include="139.cpp">
+    <ClCompile Include="src\139.cpp">
       <Filter>Source Files\121-140</Filter>
     </ClCompile>
-    <ClCompile Include="14.cpp">
-      <Filter>Source Files\1-20</Filter>
+    <ClCompile Include="src\144.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\146.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\147.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\148.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\149.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\150.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\152.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\153.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\156.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\158.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\160.cpp">
+      <Filter>Source Files\141-160</Filter>
+    </ClCompile>
+    <ClCompile Include="src\163.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\166.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\167.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\172.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\173.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\174.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\177.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\178.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\179.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\180.cpp">
+      <Filter>Source Files\161-180</Filter>
+    </ClCompile>
+    <ClCompile Include="src\181.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\183.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\184.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\186.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\189.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\191.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\192.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\filecheck.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\done.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\outcheck.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\run.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\finishcheck.cpp">
+      <Filter>Source Files\commands</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -350,301 +410,574 @@
     <ClInclude Include="consoleInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="1.h">
+    <ClInclude Include="include\1.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="10.h">
+    <ClInclude Include="include\2.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="13.h">
+    <ClInclude Include="include\3.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="16.h">
+    <ClInclude Include="include\4.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="15.h">
+    <ClInclude Include="include\5.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="12.h">
+    <ClInclude Include="include\6.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="2.h">
+    <ClInclude Include="include\8.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="20.h">
+    <ClInclude Include="include\10.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="21.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="29.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="22.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="23.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="24.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="25.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="26.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="27.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="100.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="144.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="147.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="150.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="152.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="153.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="156.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="160.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="158.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="163.h">
-      <Filter>Header Files\161-180</Filter>
-    </ClInclude>
-    <ClInclude Include="179.h">
-      <Filter>Header Files\161-180</Filter>
-    </ClInclude>
-    <ClInclude Include="167.h">
-      <Filter>Header Files\161-180</Filter>
-    </ClInclude>
-    <ClInclude Include="178.h">
-      <Filter>Header Files\161-180</Filter>
-    </ClInclude>
-    <ClInclude Include="4.h">
+    <ClInclude Include="include\12.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="18.h">
+    <ClInclude Include="include\13.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="19.h">
+    <ClInclude Include="include\14.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="3.h">
+    <ClInclude Include="include\15.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="184.h">
-      <Filter>Header Files\181-200</Filter>
-    </ClInclude>
-    <ClInclude Include="192.h">
-      <Filter>Header Files\181-200</Filter>
-    </ClInclude>
-    <ClInclude Include="191.h">
-      <Filter>Header Files\181-200</Filter>
-    </ClInclude>
-    <ClInclude Include="30.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="40.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="31.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="32.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="39.h">
-      <Filter>Header Files\21-40</Filter>
-    </ClInclude>
-    <ClInclude Include="44.h">
-      <Filter>Header Files\41-60</Filter>
-    </ClInclude>
-    <ClInclude Include="57.h">
-      <Filter>Header Files\41-60</Filter>
-    </ClInclude>
-    <ClInclude Include="46.h">
-      <Filter>Header Files\41-60</Filter>
-    </ClInclude>
-    <ClInclude Include="52.h">
-      <Filter>Header Files\41-60</Filter>
-    </ClInclude>
-    <ClInclude Include="62.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="79.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="63.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="67.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="68.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="74.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="76.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="8.h">
+    <ClInclude Include="include\16.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="82.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="99.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="83.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="87.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="91.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="92.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="93.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="96.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="97.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="98.h">
-      <Filter>Header Files\81-100</Filter>
-    </ClInclude>
-    <ClInclude Include="17.h">
+    <ClInclude Include="include\17.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="146.h">
-      <Filter>Header Files\141-160</Filter>
+    <ClInclude Include="include\18.h">
+      <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="78.h">
-      <Filter>Header Files\61-80</Filter>
+    <ClInclude Include="include\19.h">
+      <Filter>Header Files\1-20</Filter>
     </ClInclude>
-    <ClInclude Include="101.h">
+    <ClInclude Include="include\20.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\101.h">
       <Filter>Header Files\101-120</Filter>
     </ClInclude>
-    <ClInclude Include="66.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="148.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="181.h">
-      <Filter>Header Files\181-200</Filter>
-    </ClInclude>
-    <ClInclude Include="75.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="71.h">
-      <Filter>Header Files\61-80</Filter>
-    </ClInclude>
-    <ClInclude Include="189.h">
-      <Filter>Header Files\181-200</Filter>
-    </ClInclude>
-    <ClInclude Include="149.h">
-      <Filter>Header Files\141-160</Filter>
-    </ClInclude>
-    <ClInclude Include="166.h">
-      <Filter>Header Files\161-180</Filter>
-    </ClInclude>
-    <ClInclude Include="173.h">
-      <Filter>Header Files\161-180</Filter>
-    </ClInclude>
-    <ClInclude Include="174.h">
-      <Filter>Header Files\161-180</Filter>
-    </ClInclude>
-    <ClInclude Include="180.h">
-      <Filter>Header Files\161-180</Filter>
-    </ClInclude>
-    <ClInclude Include="186.h">
-      <Filter>Header Files\181-200</Filter>
-    </ClInclude>
-    <ClInclude Include="183.h">
-      <Filter>Header Files\181-200</Filter>
-    </ClInclude>
-    <ClInclude Include="139.h">
+    <ClInclude Include="include\139.h">
       <Filter>Header Files\121-140</Filter>
     </ClInclude>
-    <ClInclude Include="14.h">
-      <Filter>Header Files\1-20</Filter>
+    <ClInclude Include="include\144.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\146.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\147.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\148.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\149.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\150.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\152.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\153.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\156.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\158.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\160.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\163.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\166.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\167.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\172.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\173.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\174.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\177.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\178.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\179.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\180.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\181.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\183.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\184.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\186.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\189.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\191.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\192.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\21.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\22.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\23.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\24.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\25.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\26.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\27.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\29.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\30.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\31.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\32.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\37.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\39.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\40.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\41.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\44.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\46.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\52.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\57.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\62.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\63.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\66.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\67.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\68.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\70.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\71.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\74.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\75.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\76.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\78.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\79.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\81.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\82.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\83.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\87.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\91.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\92.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\93.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\94.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\96.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\97.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\98.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\99.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\100.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\filecheck.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\done.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\outcheck.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\run.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\finishcheck.h">
+      <Filter>Header Files\commands</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="1.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\2_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="2.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\5_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="13.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\6_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="16.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\12_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="27.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\13_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="52.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\14_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="74.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\16_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="76.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\17_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="139.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\27_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="144.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\31_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="147.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\37_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="152.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\41_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="153.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\44_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="156.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\52_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="160.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\66_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
-    <None Include="163.txt">
-      <Filter>Resource Files</Filter>
+    <None Include="in\70_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\71_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\74_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\75_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\76_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\78_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\81_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\94_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\98_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\101_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\139_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\144_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\146_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\147_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\148_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\149_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\150_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\152_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\153_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\156_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\158_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\160_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\163_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\166_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\167_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\172_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\173_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\174_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\177_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\178_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\179_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\180_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\181_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\183_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\184_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\186_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\189_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\192_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\5_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\6_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\12_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\14_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\17_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\25_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\37_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\41_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\66_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\70_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\71_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\75_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\76_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\78_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\81_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\94_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\139_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\146_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\148_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\149_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\150_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\158_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\166_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\172_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\173_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\174_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\177_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\179_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\180_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\181_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\183_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\186_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\189_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\192_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\101_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\39_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\39_out.txt">
+      <Filter>Resource Files\out</Filter>
     </None>
   </ItemGroup>
 </Project>

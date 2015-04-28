@@ -40,4 +40,14 @@ int main(int argc, char* argv[])
 #else
 	t_file.open(argv[1], ios::in);
 #endif
+
+	while (getline(t_file, t_strInput))
+	{
+	}
+
+	t_file.close();
+
+#if !_EDITOR
+	return 0;
+#endif
 }

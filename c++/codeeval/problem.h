@@ -8,10 +8,7 @@ enum EDifficulty
 {
 	eDiff_Easy = 0,
 	eDiff_Med,
-	eDiff_Hard,
-
-	eDiff_Max,
-	eDiff_Nil = -1
+	eDiff_Hard
 };
 
 class CProblem
@@ -23,6 +20,7 @@ public:
 		  m_strURL(p_strURL), 
 		  m_nNumber(p_nNumber),
 		  m_fFinished(p_fFinished),
+		  m_fInputRequired(true),
 		  m_eDifficulty(p_eDifficulty)
 	{}
 
@@ -34,6 +32,8 @@ public:
 	int nNumber() const { return m_nNumber; };
 
 	bool fFinished() const { return m_fFinished; };
+	bool fInputRequired() const { return m_fInputRequired; };
+
 	EDifficulty eDifficulty() const { return m_eDifficulty; };
 
 	virtual void vRun() = 0;
@@ -45,7 +45,8 @@ protected:
 	int m_nNumber;
 
 	bool m_fFinished;
-	
+	bool m_fInputRequired;
+
 	EDifficulty m_eDifficulty;
 };
 
