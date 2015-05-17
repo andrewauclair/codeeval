@@ -1,0 +1,14 @@
+*.sdf
+*.suo
+*.user
+c++/Debug
+c++/Release
+c++/codeeval/Debug
+c++/codeeval/Release
+c++/ipch
+c#/codeeval/bin/Debug
+c#/codeeval/bin/Release
+c#/codeeval/obj
+c#/ConsoleHelper/obj
+c#/ConsoleHelper/bin/Debug
+c#/ConsoleHelper/bin/Release

@@ -5,16 +5,16 @@
 #include "2.h"
 #include "3.h"
 #include "4.h"
-//#include "5.h"
-//#include "6.h"
-//#include "7.h"
+#include "5.h"
+#include "6.h"
+#include "7.h"
 #include "8.h"
-//#include "9.h"
-//#include "10.h"
-//#include "11.h"
+#include "9.h"
+#include "10.h"
+#include "11.h"
 #include "12.h"
 #include "13.h"
-
+#include "14.h"
 #include "15.h"
 #include "16.h"
 #include "17.h"
@@ -28,11 +28,13 @@
 #include "25.h"
 #include "26.h"
 #include "27.h"
-
+#include "28.h"
 #include "29.h"
 #include "30.h"
 #include "31.h"
 #include "32.h"
+
+#include "34.h"
 
 #include "37.h"
 
@@ -40,11 +42,19 @@
 #include "40.h"
 #include "41.h"
 
+#include "43.h"
 #include "44.h"
-
+#include "45.h"
 #include "46.h"
+#include "47.h"
+
+#include "50.h"
 
 #include "52.h"
+
+#include "54.h"
+
+#include "59.h"
 
 #include "62.h"
 #include "63.h"
@@ -56,6 +66,7 @@
 #include "70.h"
 #include "71.h"
 
+#include "73.h"
 #include "74.h"
 #include "75.h"
 #include "76.h"
@@ -84,7 +95,9 @@
 
 #include "106.h"
 #include "107.h"
+#include "108.h"
 
+#include "110.h"
 #include "111.h"
 #include "112.h"
 #include "113.h"
@@ -92,6 +105,7 @@
 #include "115.h"
 #include "116.h"
 
+#include "121.h"
 #include "122.h"
 
 #include "124.h"
@@ -121,11 +135,14 @@
 #include "158.h"
 
 #include "160.h"
+#include "161.h"
 
 #include "163.h"
 
 #include "166.h"
 #include "167.h"
+
+#include "170.h"
 
 #include "172.h"
 #include "173.h"
@@ -145,10 +162,13 @@
 
 #include "191.h"
 #include "192.h"
+#include "193.h"
 
-static const int fsc_cEasyProblems = 64;
-static const int fsc_cModerateProblems = 65;
-static const int fsc_cHardProblems = 64;
+#include "196.h"
+
+static const int fsc_cEasyProblems = 65;
+static const int fsc_cModerateProblems = 66;
+static const int fsc_cHardProblems = 65;
 static const int fsc_cProblems = fsc_cEasyProblems + fsc_cModerateProblems + fsc_cHardProblems;
 
 static CProblem* g_apProblems[fsc_cProblems] =
@@ -157,16 +177,16 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP2(), // 2
 	new CP3(), // 3
 	new CP4(), // 4
-	NULL, // 5
-	NULL, // 6
-	NULL, // 7
+	new CP5(), // 5
+	new CP6(), // 6
+	new CP7(), // 7
 	new CP8(), // 8
-	NULL, // 9
-	NULL, // 10
-	NULL, // 11
+	new CP9(), // 9
+	new CP10(), // 10
+	new CP11(), // 11
 	new CP12(), // 12
 	new CP13(), // 13
-	NULL, // 14
+	new CP14(), // 14
 	new CP15(), // 15
 	new CP16(), // 16
 	new CP17(), // 17
@@ -180,13 +200,13 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP25(), // 25
 	new CP26(), // 26
 	new CP27(), // 27
-	NULL, // 28
+	new CP28(), // 28
 	new CP29(), // 29
 	new CP30(), // 30
 	new CP31(), // 31
 	new CP32(), // 32
 	NULL, // 33
-	NULL, // 34
+	new CP34(), // 34
 	NULL, // 35
 	NULL, // 36
 	new CP37(), // 37
@@ -195,23 +215,23 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP40(), // 40
 	new CP41(), // 41
 	NULL, // 42
-	NULL, // 43
+	new CP43(), // 43
 	new CP44(), // 44
-	NULL, // 45
+	new CP45(), // 45
 	new CP46(), // 46
-	NULL, // 47
+	new CP47(), // 47
 	NULL, // 48
 	NULL, // 49
-	NULL, // 50
+	new CP50(), // 50
 	NULL, // 51
 	new CP52(), // 52
 	NULL, // 53
-	NULL, // 54
+	new CP54(), // 54
 	NULL, // 55
 	NULL, // 56
 	NULL, // 57
 	NULL, // 58
-	NULL, // 59
+	new CP59(), // 59
 	NULL, // 60
 	NULL, // 61
 	new CP62(), // 62
@@ -225,7 +245,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP70(), // 70
 	new CP71(), // 71
 	NULL, // 72
-	NULL, // 73
+	new CP73(), // 73
 	new CP74(), // 74
 	new CP75(), // 75
 	new CP76(), // 76
@@ -260,9 +280,9 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 105
 	new CP106(), // 106
 	new CP107(), // 107
-	NULL, // 108
+	new CP108(), // 108
 	NULL, // 109
-	NULL, // 110
+	new CP110(), // 110
 	new CP111(), // 111
 	new CP112(), // 112
 	new CP113(), // 113
@@ -273,7 +293,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 118
 	NULL, // 119
 	NULL, // 120
-	NULL, // 121
+	new CP121(), // 121
 	new CP122(), // 122
 	NULL, // 123
 	new CP124(), // 124
@@ -313,7 +333,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP158(), // 158
 	NULL, // 159
 	new CP160(), // 160
-	NULL, // 161
+	new CP161(), // 161
 	NULL, // 162
 	new CP163(), // 163
 	NULL, // 164
@@ -322,7 +342,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP167(), // 167
 	NULL, // 168
 	NULL, // 169
-	NULL, // 170
+	new CP170(), // 170
 	NULL, // 171
 	new CP172(), // 172
 	new CP173(), // 173
@@ -345,7 +365,10 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 190
 	new CP191(), // 191
 	new CP192(), // 192
-	NULL, // 193
+	new CP193(), // 193
+	NULL, // 194
+	NULL, // 195
+	new CP196(), // 196
 };
 
 #endif

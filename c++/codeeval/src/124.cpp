@@ -9,6 +9,32 @@ using namespace std;
 
 #include "124.h"
 
+void CP124::vBubbleSort(vector<int> &p_vector)
+#else
+void vBubbleSort(vector<int> &p_vector)
+#endif
+{
+	bool t_fSwapped = false;
+
+	do
+	{
+		t_fSwapped = false;
+
+		for (int t_i = 1; t_i < p_vector.size(); ++t_i)
+		{
+			if (p_vector[t_i] < p_vector[t_i - 1])
+			{
+				int t_str = p_vector[t_i];
+				p_vector[t_i] = p_vector[t_i - 1];
+				p_vector[t_i - 1] = t_str;
+				t_fSwapped = true;
+			}
+		}
+	} while (t_fSwapped);
+}
+
+#if _EDITOR
+
 static const char * fsc_pChzName = "Road Trip";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/124/";
 static const int fsc_nNumber = 124;
@@ -39,12 +65,11 @@ int main(int argc, char* argv[])
 #endif
 
 	string t_str;
+	vector<int> t_arynValues = vector<int>();
+	int t_nDist = 0;
 
 	while (getline(t_file, t_strInput))
 	{
-		vector<int> t_arynValues = vector<int>();
-		int t_nDist = 0;
-
 		istringstream line(t_strInput);
 
 		while (getline(line, t_str, ';'))
@@ -56,6 +81,9 @@ int main(int argc, char* argv[])
 			getline(line2, t_strDist, ',');
 			t_arynValues.push_back(atoi(t_strDist.c_str()));
 		}
+
+		//vBubbleSort(t_arynValues);
+
 
 		// loop finding the closest city and removing it from the list
 		int t_nClosest = 10000000;
@@ -86,6 +114,8 @@ int main(int argc, char* argv[])
 		}
 
 		cout << endl;
+
+		t_arynValues.clear();
 	}
 
 	t_file.close();

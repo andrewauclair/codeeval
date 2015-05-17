@@ -14,7 +14,6 @@ public:
 	virtual void vRun();
 
 protected:
-	int nOnes(int p_nNum);
 };
 
 #endif

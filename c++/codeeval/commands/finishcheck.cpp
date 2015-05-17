@@ -21,6 +21,10 @@ void CFinishCheck::vRun(const vector<string> &p_aArgs)
 	streambuf* t_coutStream = cout.rdbuf();
 	ostringstream t_output;
 
+	streamsize t_precision = cout.precision();
+	streamsize t_fill = cout.fill();
+	streamsize t_width = cout.width();
+
 	// call run on all non-NULL problems
 	for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
 	{
@@ -34,6 +38,10 @@ void CFinishCheck::vRun(const vector<string> &p_aArgs)
 			cout.rdbuf(t_output.rdbuf());
 			g_apProblems[t_i]->vRun();
 			cout.rdbuf(t_coutStream);
+
+			cout.precision(t_precision);
+			cout.fill(t_fill);
+			cout.width(t_width);
 
 			ifstream t_file("out/" + t_ss.str() + "_out.txt");
 			string t_strCompare = "";

@@ -21,7 +21,7 @@ int main()
 	vWriteConsoleStart();
 	
 	// display some stats on the other consoles till we need them for other things
-
+	
 	// entered, solved, unsolved, total
 	// easy, moderate, hard
 	string t_strInput;

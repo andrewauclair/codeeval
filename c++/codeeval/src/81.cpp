@@ -55,12 +55,13 @@ int main(int argc, char* argv[])
 	t_file.open(argv[1], ios::in);
 #endif
 
+	vector<int> t_aValues = vector<int>();
+	string t_str;
+
 	while (getline(t_file, t_strInput))
 	{
-		vector<int> t_aValues = vector<int>();
 		istringstream line(t_strInput);
-		string t_str;
-
+		
 		while (getline(line, t_str, ','))
 		{
 			t_aValues.push_back(atoi(t_str.c_str()));
@@ -68,6 +69,8 @@ int main(int argc, char* argv[])
 
 		// find the number of combos of 4 in this vector
 		int t_c = (nFactorial(t_aValues.size())) / (nFactorial(4) / (float)nFactorial(t_aValues.size() - 4));
+
+		t_aValues.clear();
 	}
 
 	t_file.close();

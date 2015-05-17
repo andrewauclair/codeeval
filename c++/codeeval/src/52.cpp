@@ -175,6 +175,10 @@ void vPrintNumber(int p_nNum)
 		cout << "One";
 		t_nUsed = 1;
 	}
+	else if (p_nNum == 0)
+	{
+		cout << "Zero";
+	}
 
 	p_nNum -= t_nUsed;
 
@@ -191,7 +195,7 @@ void vPrintNumber(int p_nNum)
 static const char * fsc_pChzName = "Text Dollar";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/52/";
 static const int fsc_nNumber = 52;
-static const bool fsc_fFinished = false; // Partially, 97.5/100
+static const bool fsc_fFinished = true;
 static const EDifficulty fsc_eDifficulty = eDiff_Hard;
 
 CP52::CP52()
@@ -228,14 +232,7 @@ int main(int argc, char* argv[])
 
 		vPrintNumber(t_nNum);
 
-		if (t_nNum > 1)
-		{
-			cout << "Dollars" << endl;
-		}
-		else
-		{
-			cout << "Dollar" << endl;
-		}
+		cout << "Dollar" << endl;
 	}
 
 	t_file.close();

@@ -1,5 +1,0 @@
-C:\Users\Andrew\Documents\GitHub\codeeval\c#\codeeval\codeeval\bin\Debug\codeeval.exe
-C:\Users\Andrew\Documents\GitHub\codeeval\c#\codeeval\codeeval\bin\Debug\codeeval.pdb
-C:\Users\Andrew\Documents\GitHub\codeeval\c#\codeeval\codeeval\obj\x86\Debug\codeeval.exe
-C:\Users\Andrew\Documents\GitHub\codeeval\c#\codeeval\codeeval\obj\x86\Debug\codeeval.pdb
-C:\Users\Andrew\Documents\GitHub\codeeval\c#\codeeval\codeeval\obj\x86\Debug\codeeval.csprojResolveAssemblyReference.cache

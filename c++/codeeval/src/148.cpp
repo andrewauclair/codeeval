@@ -127,7 +127,7 @@ int main(int argc, char* argv[])
 			t_g = hue2rgb(p, q, t_h);
 			t_b = hue2rgb(p, q, t_h - 1/3.0f);
 		
-			cout << "RGB(" << floor(t_r * 255 + 0.5f) << "," << floor(t_g * 255 + 0.5f) << "," << floor(t_b * 255 + 0.5f) << ")" << endl;
+			cout << "RGB(" << (int)floor(t_r * 255 + 0.5f) << "," << (int)floor(t_g * 255 + 0.5f) << "," << (int)floor(t_b * 255 + 0.5f) << ")" << endl;
 		}
 		else if (t_strInput.substr(0, 3).compare("HSV") == 0)
 		{
@@ -203,7 +203,7 @@ int main(int argc, char* argv[])
 				}break;
 			}
 
-			cout << "RGB(" << floor(t_r * 255 + 0.5f) << "," << floor(t_g * 255 + 0.5f) << "," << floor(t_b * 255 + 0.5f) << ")" << endl;
+			cout << "RGB(" << (int)floor(t_r * 255 + 0.5f) << "," << (int)floor(t_g * 255 + 0.5f) << "," << (int)floor(t_b * 255 + 0.5f) << ")" << endl;
 		}
 	}
 
