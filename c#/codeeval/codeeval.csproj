@@ -63,13 +63,46 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="src\1-20\CP10.cs" />
+    <Compile Include="src\1-20\CP11.cs" />
+    <Compile Include="src\1-20\CP12.cs" />
+    <Compile Include="src\1-20\CP13.cs" />
+    <Compile Include="src\1-20\CP14.cs" />
+    <Compile Include="src\1-20\CP15.cs" />
+    <Compile Include="src\1-20\CP16.cs" />
+    <Compile Include="src\1-20\CP17.cs" />
+    <Compile Include="src\1-20\CP18.cs" />
+    <Compile Include="src\1-20\CP19.cs" />
     <Compile Include="src\1-20\CP2.cs" />
+    <Compile Include="src\1-20\CP20.cs" />
     <Compile Include="src\1-20\CP3.cs" />
     <Compile Include="src\1-20\CP4.cs" />
+    <Compile Include="src\1-20\CP5.cs" />
+    <Compile Include="src\1-20\CP6.cs" />
+    <Compile Include="src\1-20\CP7.cs" />
     <Compile Include="src\1-20\CP8.cs" />
     <Compile Include="src\1-20\CP9.cs" />
+    <Compile Include="src\21-40\CP22.cs" />
+    <Compile Include="src\21-40\CP23.cs" />
+    <Compile Include="src\21-40\CP24.cs" />
+    <Compile Include="src\21-40\CP25.cs" />
+    <Compile Include="src\21-40\CP26.cs" />
+    <Compile Include="src\21-40\CP27.cs" />
+    <Compile Include="src\21-40\CP28.cs" />
+    <Compile Include="src\21-40\CP29.cs" />
+    <Compile Include="src\21-40\CP30.cs" />
+    <Compile Include="src\21-40\CP31.cs" />
+    <Compile Include="src\21-40\CP32.cs" />
+    <Compile Include="src\21-40\CP34.cs" />
+    <Compile Include="src\21-40\CP37.cs" />
+    <Compile Include="src\21-40\CP39.cs" />
+    <Compile Include="src\21-40\CP40.cs" />
+    <Compile Include="src\41-60\CP41.cs" />
+    <Compile Include="src\41-60\CP43.cs" />
+    <Compile Include="src\41-60\CP44.cs" />
+    <Compile Include="src\41-60\CP45.cs" />
     <Compile Include="src\CConsoleHelper.cs" />
     <Compile Include="src\CConsoleOutput.cs" />
+    <Compile Include="src\21-40\CP21.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
@@ -96,6 +129,13 @@
   <ItemGroup>
     <Folder Include="in\" />
     <Folder Include="out\" />
+    <Folder Include="src\101-120\" />
+    <Folder Include="src\121-140\" />
+    <Folder Include="src\141-160\" />
+    <Folder Include="src\161-180\" />
+    <Folder Include="src\181-200\" />
+    <Folder Include="src\61-80\" />
+    <Folder Include="src\81-100\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -7,7 +7,7 @@ using System.IO;
 namespace codeeval
 {
 #if _EDITOR
-	public class CP12 : CProblem
+	public class CP16 : CProblem
 	{
 #else
 	class Problem
@@ -15,19 +15,19 @@ namespace codeeval
 #endif
 
 #if _EDITOR
-		private const string mc_strName = "First Non-Repeated Character";
-		private const string mc_strURL = "https://www.codeeval.com/open_challenges/12/";
-		private const int mc_nNumber = 12;
+		private const string mc_strName = "Number of Ones";
+		private const string mc_strURL = "https://www.codeeval.com/open_challenges/16/";
+		private const int mc_nNumber = 16;
 		private const bool mc_fFinished = true;
 		private const EDifficulty mc_eDifficulty = EDifficulty.eDiff_Moderate;
 
-		public CP12() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
+		public CP16() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
 		{
 		}
 
 		public override void vRun()
 		{
-			StreamReader t_reader = File.OpenText("in/12_in.txt");
+			StreamReader t_reader = File.OpenText("in/16_in.txt");
 #else
 		static void Main(string[] args)
 		{
@@ -42,17 +42,17 @@ namespace codeeval
 					continue;
 				}
 
-				for (int t_i = 0; t_i < t_line.Length; ++t_i)
-				{
-					int t_c = t_line.Count(c => c == t_line[t_i]);
+				string t_strBits = Convert.ToString(Int32.Parse(t_line), 2);
 
-					if (t_c > 1)
+				int t_c = 0;
+				for (int t_i = 0; t_i < t_strBits.Length; ++t_i)
+				{
+					if (t_strBits[t_i] == '1')
 					{
-						t_line = t_line.Replace(t_line.Substring(t_i, 1), string.Empty);
+						t_c++;
 					}
 				}
-
-				Console.WriteLine(t_line[0]);
+				Console.WriteLine(t_c);
 			}
 		}
 	}

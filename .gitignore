@@ -12,3 +12,6 @@ c#/codeeval/obj
 c#/ConsoleHelper/obj
 c#/ConsoleHelper/bin/Debug
 c#/ConsoleHelper/bin/Release
+c#/TextReplace/bin/Debug
+c#/TextReplace/bin/Release
+c#/TextReplace/obj

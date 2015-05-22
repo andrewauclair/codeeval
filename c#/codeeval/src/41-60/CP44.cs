@@ -7,7 +7,7 @@ using System.IO;
 namespace codeeval
 {
 #if _EDITOR
-	public class CPPROBLEM_NUMBER : CProblem
+	public class CP44 : CProblem
 	{
 #else
 	class Problem
@@ -15,19 +15,19 @@ namespace codeeval
 #endif
 
 #if _EDITOR
-		private const string mc_strName = "PROBLEM_NAME";
-		private const string mc_strURL = "https://www.codeeval.com/open_challenges/PROBLEM_NUMBER/";
-		private const int mc_nNumber = PROBLEM_NUMBER;
+		private const string mc_strName = "Following Integer";
+		private const string mc_strURL = "https://www.codeeval.com/open_challenges/44/";
+		private const int mc_nNumber = 44;
 		private const bool mc_fFinished = false;
-		private const EDifficulty mc_eDifficulty = EDifficulty.PROBLEM_DIFFICULTY;
+		private const EDifficulty mc_eDifficulty = EDifficulty.eDiff_Hard;
 
-		public CPPROBLEM_NUMBER() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
+		public CP44() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
 		{
 		}
 
 		public override void vRun()
 		{
-			StreamReader t_reader = File.OpenText("in/PROBLEM_NUMBER_in.txt");
+			StreamReader t_reader = File.OpenText("in/44_in.txt");
 #else
 		static void Main(string[] args)
 		{
