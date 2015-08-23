@@ -11,9 +11,10 @@ public:
 	CP144();
 	virtual ~CP144();
 
-	virtual void vRun();
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
+
 };
 
 #endif

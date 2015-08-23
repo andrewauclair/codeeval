@@ -6,8 +6,10 @@
 #include "outcheck.h"
 #include "run.h"
 #include "finishcheck.h"
+#include "help.h"
+#include "clear.h"
 
-static const int gsc_cCommands = 5;
+static const int gsc_cCommands = 7;
 
 static CCommand * g_apCommands[gsc_cCommands] =
 {
@@ -16,6 +18,8 @@ static CCommand * g_apCommands[gsc_cCommands] =
 	new COutCheck(),
 	new CRun(),
 	new CFinishCheck(),
+	new CHelp(),
+	new CClear(),
 };
 
 #endif

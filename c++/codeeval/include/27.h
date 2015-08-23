@@ -11,7 +11,7 @@ public:
 	CP27();
 	virtual ~CP27();
 
-	virtual void vRun();
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
 

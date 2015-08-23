@@ -35,7 +35,7 @@ CP4::~CP4()
 {
 }
 
-void CP4::vRun()
+int CP4::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
@@ -56,4 +56,6 @@ int main(int argc, char* argv[])
 	}
 
 	cout << t_nTotal;
+
+	return 0;
 }

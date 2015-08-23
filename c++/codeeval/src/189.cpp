@@ -24,19 +24,13 @@ CP189::~CP189()
 {
 }
 
-void CP189::vRun()
+int CP189::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
+	fstream t_file(argv[1], ios::in);
 	string t_strInput;
-
-#if _EDITOR
-	t_file.open("in/189_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
 
 	while (!t_file.eof())
 	{
@@ -86,7 +80,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

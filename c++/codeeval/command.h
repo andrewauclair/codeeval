@@ -20,6 +20,8 @@ public:
 
 	string strCmd() const { return m_strCmd; };
 
+	string strHelp() const { return ""; };
+
 protected:
 	string m_strCmd;
 };

@@ -24,18 +24,12 @@ CP99::~CP99()
 {
 }
 
-void CP99::vRun()
+int CP99::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
-
-#if _EDITOR
-	t_file.open("in/99_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
+	fstream t_file(argv[1], ios::in);
 
 	string t_strInput;
 	string t_str;
@@ -66,7 +60,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

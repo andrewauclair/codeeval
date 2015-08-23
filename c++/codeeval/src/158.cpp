@@ -42,7 +42,7 @@ static const char * fsc_pChzName = "Interrupted Bubble Sort";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/158/";
 static const int fsc_nNumber = 158;
 static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Med;
+static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
 
 CP158::CP158()
 	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
@@ -53,19 +53,13 @@ CP158::~CP158()
 {
 }
 
-void CP158::vRun()
+int CP158::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
+	fstream t_file(argv[1], ios::in);
 	string t_strInput;
-
-#if _EDITOR
-	t_file.open("in/158_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
 
 	while (getline(t_file, t_strInput))
 	{
@@ -100,7 +94,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

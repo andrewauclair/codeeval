@@ -90,7 +90,7 @@ void vCreateConsoles()
 
 void vWriteConsoleStart()
 {
-	cout << "<code_eval> c++ solutions" << endl << endl;
+	cout << "<code_eval> c++ code_eval solutions - Andrew Auclair - Game Programmer" << endl << endl;
 
 	// clear the consoles
 	g_inputConsole->vClear();

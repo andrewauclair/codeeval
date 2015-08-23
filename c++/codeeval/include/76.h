@@ -11,7 +11,7 @@ public:
 	CP76();
 	virtual ~CP76();
 
-	virtual void vRun();
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
 

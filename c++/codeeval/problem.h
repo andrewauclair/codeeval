@@ -7,7 +7,7 @@ using namespace std;
 enum EDifficulty
 {
 	eDiff_Easy = 0,
-	eDiff_Med,
+	eDiff_Moderate,
 	eDiff_Hard
 };
 
@@ -36,7 +36,7 @@ public:
 
 	EDifficulty eDifficulty() const { return m_eDifficulty; };
 
-	virtual void vRun() = 0;
+	virtual int nRun(int argc, const char * argv[]) = 0;
 
 protected:
 

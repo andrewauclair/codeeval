@@ -22,7 +22,7 @@ CP23::~CP23()
 {
 }
 
-void CP23::vRun()
+int CP23::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
@@ -39,7 +39,5 @@ int main(int argc, char* argv[])
 		}
 	}
 
-#if !_EDITOR
 	return 0;
-#endif
 }

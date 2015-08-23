@@ -18,7 +18,7 @@ namespace codeeval
 		private const string mc_strName = "Trailing String";
 		private const string mc_strURL = "https://www.codeeval.com/open_challenges/32/";
 		private const int mc_nNumber = 32;
-		private const bool mc_fFinished = false;
+		private const bool mc_fFinished = true;
 		private const EDifficulty mc_eDifficulty = EDifficulty.eDiff_Moderate;
 
 		public CP32() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
@@ -40,6 +40,19 @@ namespace codeeval
 				if (t_line == null)
 				{
 					continue;
+				}
+
+				string[] t_aStrs = t_line.Split(',');
+				string t_strLine = t_aStrs[0];
+				string t_str = t_aStrs[1];
+
+				if (t_str.Length <= t_strLine.Length && t_strLine.Substring(t_strLine.Length - t_str.Length, t_str.Length) == t_str)
+				{
+					Console.WriteLine("1");
+				}
+				else
+				{
+					Console.WriteLine("0");
 				}
 			}
 		}

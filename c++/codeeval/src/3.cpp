@@ -61,7 +61,7 @@ CP3::~CP3()
 {
 }
 
-void CP3::vRun()
+int CP3::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
@@ -86,7 +86,5 @@ int main(int argc, char* argv[])
 		}
 	}
 
-#if !_EDITOR
 	return 0;
-#endif
 }

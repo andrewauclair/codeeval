@@ -35,8 +35,12 @@ void CFinishCheck::vRun(const vector<string> &p_aArgs)
 			stringstream t_ss;
 			t_ss << t_i + 1;
 
+			string t_strPath = "in/" + t_ss.str() + "_in.txt";
+
+			const char * t_argv[] = { "main", t_strPath.c_str() };
+
 			cout.rdbuf(t_output.rdbuf());
-			g_apProblems[t_i]->vRun();
+			int t_nResult = g_apProblems[t_i]->nRun(2, t_argv);
 			cout.rdbuf(t_coutStream);
 
 			cout.precision(t_precision);
@@ -58,7 +62,7 @@ void CFinishCheck::vRun(const vector<string> &p_aArgs)
 
 			string t_strOut = t_output.str();
 
-			if (!g_apProblems[t_i]->fFinished() && g_outputConsole->fCompare(t_strOut, t_strCompare))
+			if (!g_apProblems[t_i]->fFinished() && g_outputConsole->fCompare(t_strOut, t_strCompare) && t_nResult != -1)
 			{
 				cout << t_ss.str() << " is correct but hasn't been marked finished." << endl;
 			}

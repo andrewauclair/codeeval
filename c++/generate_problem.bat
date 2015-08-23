@@ -10,54 +10,57 @@ copy /y .\template.h .\codeeval\include\%problem%.h
 echo. 2>codeeval\in\%problem%_in.txt
 echo. 2>codeeval\out\%problem%_out.txt
 
-set "search=%%"
-set "replace=%problem%"
+call TextReplace .\codeeval\src\%problem%.cpp PROBLEM_NUMBER %problem% PROBLEM_NAME "%name%" PROBLEM_DIFFICULTY %difficulty%
+call TextReplace .\codeeval\include\%problem%.h PROBLEM_NUMBER %problem%
 
-set "textFile=codeeval\include\%problem%.h"
+REM set "search=%%"
+REM set "replace=%problem%"
 
-for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
-	set "line=%%i"
-	setlocal enabledelayedexpansion
-	set "line=!line:%search%=%replace%!"
-	>>"%textFile%" echo(!line!
-	endlocal
-)
+REM set "textFile=codeeval\include\%problem%.h"
 
-set "search=%%"
-set "replace=%problem%"
+REM for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
+	REM set "line=%%i"
+	REM setlocal enabledelayedexpansion
+	REM set "line=!line:%search%=%replace%!"
+	REM >>"%textFile%" echo(!line!
+	REM endlocal
+REM )
 
-set "textFile=codeeval\src\%problem%.cpp"
+REM set "search=%%"
+REM set "replace=%problem%"
 
-for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
-	set "line=%%i"
-	setlocal enabledelayedexpansion
-	set "line=!line:%search%=%replace%!"
-	>>"%textFile%" echo(!line!
-	endlocal
-)
+REM set "textFile=codeeval\src\%problem%.cpp"
 
-set "search=PROBLEM_NAME"
-set "replace=%name%"
+REM for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
+	REM set "line=%%i"
+	REM setlocal enabledelayedexpansion
+	REM set "line=!line:%search%=%replace%!"
+	REM >>"%textFile%" echo(!line!
+	REM endlocal
+REM )
 
-set "textFile=codeeval\src\%problem%.cpp"
+REM set "search=PROBLEM_NAME"
+REM set "replace=%name%"
 
-for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
-	set "line=%%i"
-	setlocal enabledelayedexpansion
-	set "line=!line:%search%=%replace%!"
-	>>"%textFile%" echo(!line!
-	endlocal
-)
+REM set "textFile=codeeval\src\%problem%.cpp"
 
-set "search=PROBLEM_DIFFICULTY"
-set "replace=%difficulty%"
+REM for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
+	REM set "line=%%i"
+	REM setlocal enabledelayedexpansion
+	REM set "line=!line:%search%=%replace%!"
+	REM >>"%textFile%" echo(!line!
+	REM endlocal
+REM )
 
-set "textFile=codeeval\src\%problem%.cpp"
+REM set "search=PROBLEM_DIFFICULTY"
+REM set "replace=%difficulty%"
 
-for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
-	set "line=%%i"
-	setlocal enabledelayedexpansion
-	set "line=!line:%search%=%replace%!"
-	>>"%textFile%" echo(!line!
-	endlocal
-)
+REM set "textFile=codeeval\src\%problem%.cpp"
+
+REM for /f "delims=" %%i in ('type "%textFile%" ^& break ^> "%textFile%" ') do (
+	REM set "line=%%i"
+	REM setlocal enabledelayedexpansion
+	REM set "line=!line:%search%=%replace%!"
+	REM >>"%textFile%" echo(!line!
+	REM endlocal
+REM )

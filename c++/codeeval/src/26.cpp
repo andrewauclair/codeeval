@@ -22,22 +22,16 @@ CP26::~CP26()
 {
 }
 
-void CP26::vRun()
+int CP26::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
 	struct stat filestatus;
 
-#if _EDITOR
-	stat("in/26_in.txt", &filestatus);
-#else
 	stat(argv[1], &filestatus);
-#endif
 
 	cout << filestatus.st_size;
 
-#if !_EDITOR
 	return 0;
-#endif
 }

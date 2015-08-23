@@ -43,6 +43,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./includes;./commands;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -50,8 +51,8 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>../;./include;./;./commands;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_EDITOR;_DEBUG;_CONSOLE;_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./include;./;../;./commands;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -72,19 +73,28 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_EDITOR;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./include;./;../;./commands;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ConsoleLogger.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>Copy /Y "$(SolutionDir)codeeval\in\*" "$(TargetDir)in"
+Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="commands\clear.cpp" />
     <ClCompile Include="commands\done.cpp" />
     <ClCompile Include="commands\filecheck.cpp" />
     <ClCompile Include="commands\finishcheck.cpp" />
+    <ClCompile Include="commands\help.cpp" />
     <ClCompile Include="commands\outcheck.cpp" />
     <ClCompile Include="commands\run.cpp" />
     <ClCompile Include="consoleInput.cpp" />
@@ -160,8 +170,14 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClCompile Include="src\192.cpp" />
     <ClCompile Include="src\193.cpp" />
     <ClCompile Include="src\196.cpp" />
+    <ClCompile Include="src\197.cpp" />
+    <ClCompile Include="src\199.cpp" />
     <ClCompile Include="src\2.cpp" />
     <ClCompile Include="src\20.cpp" />
+    <ClCompile Include="src\202.cpp" />
+    <ClCompile Include="src\203.cpp" />
+    <ClCompile Include="src\205.cpp" />
+    <ClCompile Include="src\208.cpp" />
     <ClCompile Include="src\21.cpp" />
     <ClCompile Include="src\22.cpp" />
     <ClCompile Include="src\23.cpp" />
@@ -225,9 +241,11 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
   <ItemGroup>
     <ClInclude Include="command.h" />
     <ClInclude Include="commands.h" />
+    <ClInclude Include="commands\clear.h" />
     <ClInclude Include="commands\done.h" />
     <ClInclude Include="commands\filecheck.h" />
     <ClInclude Include="commands\finishcheck.h" />
+    <ClInclude Include="commands\help.h" />
     <ClInclude Include="commands\outcheck.h" />
     <ClInclude Include="commands\run.h" />
     <ClInclude Include="consoleInput.h" />
@@ -254,6 +272,7 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClInclude Include="include\116.h" />
     <ClInclude Include="include\119.h" />
     <ClInclude Include="include\12.h" />
+    <ClInclude Include="include\121.h" />
     <ClInclude Include="include\122.h" />
     <ClInclude Include="include\124.h" />
     <ClInclude Include="include\128.h" />
@@ -302,8 +321,14 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClInclude Include="include\192.h" />
     <ClInclude Include="include\193.h" />
     <ClInclude Include="include\196.h" />
+    <ClInclude Include="include\197.h" />
+    <ClInclude Include="include\199.h" />
     <ClInclude Include="include\2.h" />
     <ClInclude Include="include\20.h" />
+    <ClInclude Include="include\202.h" />
+    <ClInclude Include="include\203.h" />
+    <ClInclude Include="include\205.h" />
+    <ClInclude Include="include\208.h" />
     <ClInclude Include="include\21.h" />
     <ClInclude Include="include\22.h" />
     <ClInclude Include="include\23.h" />
@@ -329,6 +354,7 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClInclude Include="include\46.h" />
     <ClInclude Include="include\47.h" />
     <ClInclude Include="include\5.h" />
+    <ClInclude Include="include\50.h" />
     <ClInclude Include="include\52.h" />
     <ClInclude Include="include\54.h" />
     <ClInclude Include="include\57.h" />
@@ -430,8 +456,14 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <None Include="in\192_in.txt" />
     <None Include="in\193_in.txt" />
     <None Include="in\196_in.txt" />
+    <None Include="in\197_in.txt" />
+    <None Include="in\199_in.txt" />
     <None Include="in\19_in.txt" />
     <None Include="in\1_in.txt" />
+    <None Include="in\202_in.txt" />
+    <None Include="in\203_in.txt" />
+    <None Include="in\205_in.txt" />
+    <None Include="in\208_in.txt" />
     <None Include="in\20_in.txt" />
     <None Include="in\21_in.txt" />
     <None Include="in\22_in.txt" />
@@ -555,8 +587,14 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <None Include="out\192_out.txt" />
     <None Include="out\193_out.txt" />
     <None Include="out\196_out.txt" />
+    <None Include="out\197_out.txt" />
+    <None Include="out\199_out.txt" />
     <None Include="out\19_out.txt" />
     <None Include="out\1_out.txt" />
+    <None Include="out\202_out.txt" />
+    <None Include="out\203_out.txt" />
+    <None Include="out\205_out.txt" />
+    <None Include="out\208_out.txt" />
     <None Include="out\20_out.txt" />
     <None Include="out\21_out.txt" />
     <None Include="out\22_out.txt" />

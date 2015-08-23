@@ -10,9 +10,11 @@ class CP3 : public CProblem
 public:
 	CP3();
 	virtual ~CP3();
-	virtual void vRun();
+
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
+
 	bool isPrime(long int p_nNum);
 	bool isPalindrome(string p_str);
 };

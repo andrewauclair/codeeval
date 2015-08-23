@@ -85,6 +85,12 @@
     <Filter Include="Header Files\commands">
       <UniqueIdentifier>{e3be192b-8dd4-4a08-ad51-98cb487d5de6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\201-220">
+      <UniqueIdentifier>{c4d03a65-20f6-4b8d-8d76-682b0fe8d9b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\201-220">
+      <UniqueIdentifier>{f378ec9a-8796-411e-8c50-a2274eabce45}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -503,6 +509,30 @@
     </ClCompile>
     <ClCompile Include="src\196.cpp">
       <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\197.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\199.cpp">
+      <Filter>Source Files\181-200</Filter>
+    </ClCompile>
+    <ClCompile Include="src\202.cpp">
+      <Filter>Source Files\201-220</Filter>
+    </ClCompile>
+    <ClCompile Include="src\203.cpp">
+      <Filter>Source Files\201-220</Filter>
+    </ClCompile>
+    <ClCompile Include="src\205.cpp">
+      <Filter>Source Files\201-220</Filter>
+    </ClCompile>
+    <ClCompile Include="src\208.cpp">
+      <Filter>Source Files\201-220</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\help.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\clear.cpp">
+      <Filter>Source Files\commands</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -928,6 +958,36 @@
     </ClInclude>
     <ClInclude Include="include\196.h">
       <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\197.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\199.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\121.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\50.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\202.h">
+      <Filter>Header Files\201-220</Filter>
+    </ClInclude>
+    <ClInclude Include="include\203.h">
+      <Filter>Header Files\201-220</Filter>
+    </ClInclude>
+    <ClInclude Include="include\205.h">
+      <Filter>Header Files\201-220</Filter>
+    </ClInclude>
+    <ClInclude Include="include\208.h">
+      <Filter>Header Files\201-220</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\help.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\clear.h">
+      <Filter>Header Files\commands</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1677,6 +1737,42 @@
     </None>
     <None Include="out\196_out.txt">
       <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\197_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\197_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\199_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\199_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\202_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\203_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\205_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\208_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\202_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\203_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\205_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\208_in.txt">
+      <Filter>Resource Files\in</Filter>
     </None>
   </ItemGroup>
 </Project>

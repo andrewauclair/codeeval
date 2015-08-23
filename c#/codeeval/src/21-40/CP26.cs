@@ -18,7 +18,7 @@ namespace codeeval
 		private const string mc_strName = "File Size";
 		private const string mc_strURL = "https://www.codeeval.com/open_challenges/26/";
 		private const int mc_nNumber = 26;
-		private const bool mc_fFinished = false;
+		private const bool mc_fFinished = true;
 		private const EDifficulty mc_eDifficulty = EDifficulty.eDiff_Easy;
 
 		public CP26() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
@@ -27,21 +27,13 @@ namespace codeeval
 
 		public override void vRun()
 		{
-			StreamReader t_reader = File.OpenText("in/26_in.txt");
+			FileInfo t_info = new FileInfo("in/26_in.txt");
 #else
 		static void Main(string[] args)
 		{
-			StreamReader t_reader = File.OpenText(args[0]);
+			FileInfo t_info = new FileInfo(args[0]);
 #endif
-				
-			while (!t_reader.EndOfStream)
-			{
-				string t_line = t_reader.ReadLine();
-				if (t_line == null)
-				{
-					continue;
-				}
-			}
+			Console.WriteLine(t_info.Length);
 		}
 	}
 }

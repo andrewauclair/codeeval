@@ -13,9 +13,13 @@ class CP44 : public CProblem
 public:
 	CP44();
 	virtual ~CP44();
-	virtual void vRun();
+
+	virtual int nRun(int argc, const char * argv[]);
+
 protected:
+
 	void vBubbleSort(vector<string> &p_vector);
 	vector<string> aryGetPermutations(string p_strNum);
 };
+
 #endif

@@ -52,19 +52,13 @@ CP39::~CP39()
 {
 }
 
-void CP39::vRun()
+int CP39::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
+	fstream t_file(argv[1], ios::in);
 	string t_strInput;
-
-#if _EDITOR
-	t_file.open("in/in/39_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
 
 	int t_nNumber = 0;
 	string t_str = "";
@@ -122,7 +116,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

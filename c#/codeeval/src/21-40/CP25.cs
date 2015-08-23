@@ -18,7 +18,7 @@ namespace codeeval
 		private const string mc_strName = "Odd Numbers";
 		private const string mc_strURL = "https://www.codeeval.com/open_challenges/25/";
 		private const int mc_nNumber = 25;
-		private const bool mc_fFinished = false;
+		private const bool mc_fFinished = true;
 		private const EDifficulty mc_eDifficulty = EDifficulty.eDiff_Easy;
 
 		public CP25() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
@@ -27,20 +27,13 @@ namespace codeeval
 
 		public override void vRun()
 		{
-			StreamReader t_reader = File.OpenText("in/25_in.txt");
 #else
 		static void Main(string[] args)
 		{
-			StreamReader t_reader = File.OpenText(args[0]);
 #endif
-				
-			while (!t_reader.EndOfStream)
+			for (int t_i = 1; t_i < 100; t_i += 2)
 			{
-				string t_line = t_reader.ReadLine();
-				if (t_line == null)
-				{
-					continue;
-				}
+				Console.WriteLine(t_i);
 			}
 		}
 	}

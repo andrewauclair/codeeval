@@ -13,9 +13,10 @@ public:
 	CP2();
 	virtual ~CP2();
 
-	virtual void vRun();
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
+
 	void vSortAndPrint(vector<string> p_aryStrLines, int p_c);
 };
 

@@ -1,6 +1,8 @@
 #ifndef _CP46_H_
 #define _CP46_H_
+
 #include "problem.h"
+
 class CP46 : public CProblem
 {
 	typedef CProblem super;
@@ -8,8 +10,12 @@ class CP46 : public CProblem
 public:
 	CP46();
 	virtual ~CP46();
-	virtual void vRun();
+
+	virtual int nRun(int argc, const char * argv[]);
+
 protected:
+
 	bool isPrime(long int p_nNum);
 };
+
 #endif

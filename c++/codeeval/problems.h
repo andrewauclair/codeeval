@@ -165,10 +165,20 @@
 #include "193.h"
 
 #include "196.h"
+#include "197.h"
 
-static const int fsc_cEasyProblems = 65;
-static const int fsc_cModerateProblems = 66;
-static const int fsc_cHardProblems = 65;
+#include "199.h"
+
+#include "202.h"
+#include "203.h"
+
+#include "205.h"
+
+#include "208.h"
+
+static const int fsc_cEasyProblems = 70;
+static const int fsc_cModerateProblems = 69;
+static const int fsc_cHardProblems = 69;
 static const int fsc_cProblems = fsc_cEasyProblems + fsc_cModerateProblems + fsc_cHardProblems;
 
 static CProblem* g_apProblems[fsc_cProblems] =
@@ -369,6 +379,18 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 194
 	NULL, // 195
 	new CP196(), // 196
+	new CP197(), // 197
+	NULL, // 198
+	new CP199(), // 199
+	NULL, // 200
+	NULL, // 201
+	new CP202(), // 202
+	new CP203(), // 203
+	NULL, // 204
+	new CP205(), // 205
+	NULL, // 206
+	NULL, // 207
+	new CP208(), // 208
 };
 
 #endif

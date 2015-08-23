@@ -18,7 +18,7 @@ namespace codeeval
 		private const string mc_strName = "Sum of Integers From File";
 		private const string mc_strURL = "https://www.codeeval.com/open_challenges/24/";
 		private const int mc_nNumber = 24;
-		private const bool mc_fFinished = false;
+		private const bool mc_fFinished = true;
 		private const EDifficulty mc_eDifficulty = EDifficulty.eDiff_Easy;
 
 		public CP24() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
@@ -33,7 +33,8 @@ namespace codeeval
 		{
 			StreamReader t_reader = File.OpenText(args[0]);
 #endif
-				
+			int t_nTotal = 0;
+
 			while (!t_reader.EndOfStream)
 			{
 				string t_line = t_reader.ReadLine();
@@ -41,7 +42,11 @@ namespace codeeval
 				{
 					continue;
 				}
+
+				t_nTotal += Int32.Parse(t_line);
 			}
+
+			Console.WriteLine(t_nTotal);
 		}
 	}
 }

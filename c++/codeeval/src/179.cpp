@@ -13,7 +13,7 @@ static const char * fsc_pChzName = "Broken LCD";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/179/";
 static const int fsc_nNumber = 179;
 static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Med;
+static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
 
 CP179::CP179()
 	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
@@ -24,19 +24,13 @@ CP179::~CP179()
 {
 }
 
-void CP179::vRun()
+int CP179::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
+	fstream t_file(argv[1], ios::in);
 	string t_strInput;
-
-#if _EDITOR
-	t_file.open("in/179_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
 
 	uint8_t t_anNumbers[10] = 
 	{ 
@@ -150,7 +144,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

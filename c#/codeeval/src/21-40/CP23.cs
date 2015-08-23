@@ -18,7 +18,7 @@ namespace codeeval
 		private const string mc_strName = "Multiplication Tables";
 		private const string mc_strURL = "https://www.codeeval.com/open_challenges/23/";
 		private const int mc_nNumber = 23;
-		private const bool mc_fFinished = false;
+		private const bool mc_fFinished = true;
 		private const EDifficulty mc_eDifficulty = EDifficulty.eDiff_Easy;
 
 		public CP23() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)
@@ -27,21 +27,21 @@ namespace codeeval
 
 		public override void vRun()
 		{
-			StreamReader t_reader = File.OpenText("in/23_in.txt");
 #else
 		static void Main(string[] args)
 		{
-			StreamReader t_reader = File.OpenText(args[0]);
 #endif
-				
-			while (!t_reader.EndOfStream)
+			for (int t_i = 1; t_i <= 12; ++t_i)
 			{
-				string t_line = t_reader.ReadLine();
-				if (t_line == null)
+				Console.Write(t_i);
+
+				for (int t_j = 2; t_j <= 12; ++t_j)
 				{
-					continue;
+					Console.Write(String.Format("{0,4}", t_i * t_j));
 				}
+				Console.WriteLine();
 			}
+			
 		}
 	}
 }

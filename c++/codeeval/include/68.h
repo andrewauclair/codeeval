@@ -1,6 +1,8 @@
 #ifndef _CP68_H_
 #define _CP68_H_
+
 #include "problem.h"
+
 class CP68 : public CProblem
 {
 	typedef CProblem super;
@@ -8,7 +10,11 @@ class CP68 : public CProblem
 public:
 	CP68();
 	virtual ~CP68();
-	virtual void vRun();
+
+	virtual int nRun(int argc, const char * argv[]);
+
 protected:
+
 };
+
 #endif

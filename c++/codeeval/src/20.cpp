@@ -23,18 +23,12 @@ CP20::~CP20()
 {
 }
 
-void CP20::vRun()
+int CP20::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
-
-#if _EDITOR
-	t_file.open("in/20_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
+	fstream t_file(argv[1], ios::in);
 
 	string t_strLine;
 	locale t_loc;
@@ -53,7 +47,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

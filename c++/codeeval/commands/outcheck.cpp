@@ -31,8 +31,12 @@ void COutCheck::vRun(const vector<string> &p_aArgs)
 			stringstream t_ss;
 			t_ss << t_i + 1;
 
+			string t_strPath = "in/" + t_ss.str() + "_in.txt";
+
+			const char * t_argv[] = { "main", t_strPath.c_str() };
+
 			cout.rdbuf(t_output.rdbuf());
-			g_apProblems[t_i]->vRun();
+			g_apProblems[t_i]->nRun(2, t_argv);
 			cout.rdbuf(t_coutStream);
 
 			ifstream t_file("out/" + t_ss.str() + "_out.txt");

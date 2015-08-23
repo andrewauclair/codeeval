@@ -22,28 +22,15 @@ CP83::~CP83()
 {
 }
 
-void CP83::vRun()
+int CP83::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
-
-#if _EDITOR
-	t_file.open("in/83_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
+	fstream t_file(argv[1], ios::in);
 
 	string t_strInput;
 	string t_str;
-
-	
-	/*int a = 24;
-	int b = 25;
-	int c = 26;
-	
-	cout << a + b + b + c + c + c << endl;*/
 
 	while (getline(t_file, t_strInput))
 	{
@@ -104,7 +91,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

@@ -12,9 +12,12 @@ class CP116 : public CProblem
 public:
 	CP116();
 	virtual ~CP116();
-	virtual void vRun();
+
+	virtual int nRun(int argc, const char * argv[]);
+
 protected:
 
 	void vMorse(string p_str);
 };
+
 #endif

@@ -14,7 +14,7 @@ static const char * fsc_pChzName = "Cash Register";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/54/";
 static const int fsc_nNumber = 54;
 static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Med;
+static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
 
 CP54::CP54()
 	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
@@ -25,19 +25,13 @@ CP54::~CP54()
 {
 }
 
-void CP54::vRun()
+int CP54::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
+	fstream t_file(argv[1], ios::in);
 	string t_strInput;
-
-#if _EDITOR
-	t_file.open("in/54_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
 
 	string t_aStrNames[12] = { "PENNY", "NICKEL", "DIME", "QUARTER", "HALF DOLLAR", "ONE", "TWO", "FIVE", "TEN", "TWENTY", "FIFTY", "ONE HUNDRED" };
 	int t_anValues[12] = { 1, 5, 10, 25, 50, 100, 200, 500, 1000, 2000, 5000, 10000 };
@@ -112,7 +106,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

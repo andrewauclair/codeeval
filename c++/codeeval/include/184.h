@@ -12,10 +12,13 @@ class CP184 : public CProblem
 public:
 	CP184();
 	virtual ~CP184();
-	virtual void vRun();
+
+	virtual int nRun(int argc, const char * argv[]);
+
 protected:
+
 	void vBubbleSort(vector<string> &p_vector);
 	string strDecodeBWT(string p_str);
-
 };
+
 #endif

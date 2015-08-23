@@ -1,6 +1,8 @@
 #ifndef _CP10_H_
 #define _CP10_H_
+
 #include "problem.h"
+
 class CP10 : public CProblem
 {
 	typedef CProblem super;
@@ -8,7 +10,11 @@ class CP10 : public CProblem
 public:
 	CP10();
 	virtual ~CP10();
-	virtual void vRun();
+
+	virtual int nRun(int argc, const char * argv[]);
+
 protected:
+
 };
+
 #endif

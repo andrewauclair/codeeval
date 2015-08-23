@@ -15,3 +15,15 @@ c#/ConsoleHelper/bin/Release
 c#/TextReplace/bin/Debug
 c#/TextReplace/bin/Release
 c#/TextReplace/obj
+c++/ConsoleLoggerHelper/Debug
+c++/ConsoleLoggerHelper/Release
+c/codeeval/Debug
+c/codeeval/Release
+c/codeeval/obj
+c/ConsoleLoggerHelper/Debug
+c/ConsoleLoggerHelper/Release
+c/ConsoleLogger_DEMO/Debug
+c/ConsoleLogger_DEMO/Release
+c/Debug
+c/Release
+c/ipch

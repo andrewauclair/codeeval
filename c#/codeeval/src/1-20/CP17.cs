@@ -18,7 +18,7 @@ namespace codeeval
 		private const string mc_strName = "Sum of Integers";
 		private const string mc_strURL = "https://www.codeeval.com/open_challenges/17/";
 		private const int mc_nNumber = 17;
-		private const bool mc_fFinished = false;
+		private const bool mc_fFinished = true;
 		private const EDifficulty mc_eDifficulty = EDifficulty.eDiff_Moderate;
 
 		public CP17() : base(mc_strName, mc_strURL, mc_nNumber, mc_fFinished, mc_eDifficulty)

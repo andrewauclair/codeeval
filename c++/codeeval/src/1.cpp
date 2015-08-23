@@ -25,18 +25,12 @@ CP1::~CP1()
 {
 }
 
-void CP1::vRun()
+int CP1::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
-
-#if _EDITOR
-	t_file.open("in/1_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
+	fstream t_file(argv[1], ios::in);
 
 	int t_nFizz = 0;
 	int t_nBuzz = 0;
@@ -73,7 +67,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

@@ -12,9 +12,12 @@ class CP158 : public CProblem
 public:
 	CP158();
 	virtual ~CP158();
-	virtual void vRun();
+
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
+
 	void vBubbleSort(vector<int> &p_vector, int p_cLoops);
 };
+
 #endif

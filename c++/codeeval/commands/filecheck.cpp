@@ -44,10 +44,12 @@ void CFileCheck::vRun(const vector<string> &p_aArgs)
 				cout << t_ss.str() << " : in( " << t_fIn << " ) : out ( " << t_fOut << " )" << endl;
 			}
 
+			string t_strPath = "in/" + t_ss.str() + "_in.txt";
+
+			const char * t_argv[] = { "main", t_strPath.c_str() };
+
 			cout.rdbuf(t_output.rdbuf());
-
-			g_apProblems[t_i]->vRun();
-
+			g_apProblems[t_i]->nRun(2, t_argv);
 			cout.rdbuf(t_coutStream);
 		}
 	}

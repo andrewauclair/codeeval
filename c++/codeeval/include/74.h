@@ -11,7 +11,7 @@ public:
 	CP74();
 	virtual ~CP74();
 
-	virtual void vRun();
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
 

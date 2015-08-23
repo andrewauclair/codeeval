@@ -12,7 +12,7 @@ static const char * fsc_pChzName = "Pascals Triangle";
 static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/66/";
 static const int fsc_nNumber = 66;
 static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Med;
+static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
 
 CP66::CP66()
 	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
@@ -23,19 +23,13 @@ CP66::~CP66()
 {
 }
 
-void CP66::vRun()
+int CP66::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
+	fstream t_file(argv[1], ios::in);
 	string t_strInput;
-
-#if _EDITOR
-	t_file.open("in/66_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
 
 	vector<vector<int>> t_aaTriangle = vector<vector<int>>();
 	vector<int> t_aryLevels = vector<int>();
@@ -89,7 +83,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

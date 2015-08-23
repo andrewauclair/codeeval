@@ -22,21 +22,61 @@ void CDone::vRun(const vector<string> &p_aArgs)
 	int t_cMed = 0;
 	int t_cHard = 0;
 
-	// call run on all non-NULL problems
-	for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
+	g_outputConsole->vClear();
+	g_outputConsole->cout("Problem Progress\n\n");
+
+	for (int t_i = 0; t_i <= eDiff_Hard; ++t_i)
 	{
-		if (g_apProblems[t_i] != NULL)
+		EDifficulty t_eDiff = (EDifficulty)t_i;
+
+		switch (t_eDiff)
 		{
-			if (g_apProblems[t_i]->fFinished())
+		case eDiff_Easy:
 			{
-				switch (g_apProblems[t_i]->eDifficulty())
+				g_outputConsole->cout("\n\nEasy Problems\n\n");
+			}break;
+
+		case eDiff_Moderate:
+			{
+				g_outputConsole->cout("\n\nModerate Problems\n\n");
+			}break;
+
+		case eDiff_Hard:
+			{
+				g_outputConsole->cout("\n\nHard Problems\n\n");
+			}break;
+		}
+
+		for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
+		{
+			if (g_apProblems[t_j] == NULL || g_apProblems[t_j]->eDifficulty() != t_eDiff) continue;
+
+			if (t_j + 1 < 10)
+			{
+				g_outputConsole->cout("  ");
+			}
+			else if (t_j + 1 < 100)
+			{
+				g_outputConsole->cout(" ");
+			}
+
+			stringstream t_ss;
+			t_ss << t_j + 1;
+			g_outputConsole->cout(t_ss.str());
+			g_outputConsole->cout(":[");
+
+			if (g_apProblems[t_j]->fFinished())
+			{
+				g_outputConsole->cout("X");
+
+				switch (g_apProblems[t_j]->eDifficulty())
 				{
 				case eDiff_Easy:
 					{
 						t_cEasy++;
 					}break;
 
-				case eDiff_Med:
+				case eDiff_Moderate:
 					{
 						t_cMed++;
 					}break;
@@ -47,10 +87,89 @@ void CDone::vRun(const vector<string> &p_aArgs)
 					}break;
 				}
 			}
+			else
+			{
+				g_outputConsole->cout(" ");
+			}
+
+			g_outputConsole->cout("] ");
 		}
 	}
 
-	cout << "Easy: " << t_cEasy << "/" << fsc_cEasyProblems << endl;
-	cout << "Med:  " << t_cMed << "/" << fsc_cModerateProblems << endl;
-	cout << "Hard: " << t_cHard << "/" << fsc_cHardProblems << endl;
+	g_outputConsole->cout("\n\nProblems Not Started\n\n");
+
+	for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
+	{
+		if (g_apProblems[t_j] != NULL) continue;
+
+		if (t_j + 1 < 10)
+		{
+			g_outputConsole->cout("  ");
+		}
+		else if (t_j + 1 < 100)
+		{
+			g_outputConsole->cout(" ");
+		}
+
+		stringstream t_ss;
+		t_ss << t_j + 1;
+		g_outputConsole->cout(t_ss.str());
+		g_outputConsole->cout(":[!] ");
+	}
+	/*for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
+	{
+		if (t_i + 1 < 10)
+		{
+			g_outputConsole->cout("  ");
+		}
+		else if (t_i + 1 < 100)
+		{
+			g_outputConsole->cout(" ");
+		}
+
+		stringstream t_ss;
+		t_ss << t_i + 1;
+		g_outputConsole->cout(t_ss.str());
+		g_outputConsole->cout(":[");
+
+		if (g_apProblems[t_i] != NULL)
+		{
+			if (g_apProblems[t_i]->fFinished())
+			{
+				g_outputConsole->cout("X");
+
+				switch (g_apProblems[t_i]->eDifficulty())
+				{
+				case eDiff_Easy:
+					{
+						t_cEasy++;
+					}break;
+
+				case eDiff_Moderate:
+					{
+						t_cMed++;
+					}break;
+
+				case eDiff_Hard:
+					{
+						t_cHard++;
+					}break;
+				}
+			}
+			else
+			{
+				g_outputConsole->cout(" ");
+			}
+		}
+		else
+		{
+			g_outputConsole->cout(" ");
+		}
+
+		g_outputConsole->cout("] ");
+	}*/
+
+	cout << "Easy: " << t_cEasy << " / " << fsc_cEasyProblems << endl;
+	cout << "Med:  " << t_cMed << " / " << fsc_cModerateProblems << endl;
+	cout << "Hard: " << t_cHard << " / " << fsc_cHardProblems << endl;
 }

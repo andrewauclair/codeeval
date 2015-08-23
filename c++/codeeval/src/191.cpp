@@ -166,22 +166,16 @@ CP191::~CP191()
 {
 }
 
-void CP191::vRun()
+int CP191::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
 {
-	fstream t_file;
-
-#if _EDITOR
-	t_file.open("in/191_in.txt", ios::in);
-#else
-	t_file.open(argv[1], ios::in);
-#endif
+	fstream t_file(argv[1], ios::in);
 
 	// for now we'll get input of a grid layout and dump out some data for it
 	// .OO|OOO|OOO
-	return;
+	return 0;
 	string t_strInput = "";
 
 	do
@@ -271,7 +265,5 @@ int main(int argc, char* argv[])
 
 	t_file.close();
 
-#if !_EDITOR
 	return 0;
-#endif
 }

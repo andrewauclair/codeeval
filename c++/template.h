@@ -1,17 +1,17 @@
-#ifndef _CP%_H_
-#define _CP%_H_
+#ifndef _CPPROBLEM_NUMBER_H_
+#define _CPPROBLEM_NUMBER_H_
 
 #include "problem.h"
 
-class CP% : public CProblem
+class CPPROBLEM_NUMBER : public CProblem
 {
 	typedef CProblem super;
 	
 public:
-	CP%();
-	virtual ~CP%();
+	CPPROBLEM_NUMBER();
+	virtual ~CPPROBLEM_NUMBER();
 
-	virtual void vRun();
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
 

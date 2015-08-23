@@ -19,7 +19,7 @@ CP25::~CP25()
 {
 }
 
-void CP25::vRun()
+int CP25::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
@@ -29,8 +29,6 @@ int main(int argc, char* argv[])
 	{
 		std::cout << t_i << std::endl;
 	}
-
-#if !_EDITOR
+	
 	return 0;
-#endif
 }

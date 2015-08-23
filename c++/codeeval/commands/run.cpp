@@ -34,13 +34,17 @@ void CRun::vRun(const vector<string> &p_aArgs)
 		{
 			vWriteProblemInput(t_nProblem);
 
-			cout.rdbuf(t_output.rdbuf());
-			g_apProblems[t_nProblem - 1]->vRun();
-			cout.rdbuf(t_coutStream);
-			
 			stringstream t_ss;
 			t_ss << t_nProblem;
-		
+
+			string t_strPath = "in/" + t_ss.str() + "_in.txt";
+
+			const char * t_argv[] = { "main", t_strPath.c_str() };
+
+			cout.rdbuf(t_output.rdbuf());
+			g_apProblems[t_nProblem - 1]->nRun(2, t_argv);
+			cout.rdbuf(t_coutStream);
+			
 			ifstream t_file("out/" + t_ss.str() + "_out.txt");
 			string t_strCompare = "";
 			

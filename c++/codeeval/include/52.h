@@ -11,7 +11,7 @@ public:
 	CP52();
 	virtual ~CP52();
 
-	virtual void vRun();
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
 	void vPrintNumber(int p_nNum);

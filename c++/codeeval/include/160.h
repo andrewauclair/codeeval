@@ -11,7 +11,7 @@ public:
 	CP160();
 	virtual ~CP160();
 
-	virtual void vRun();
+	virtual int nRun(int argc, const char * argv[]);
 
 protected:
 
