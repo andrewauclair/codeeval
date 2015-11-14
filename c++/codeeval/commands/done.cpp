@@ -73,17 +73,17 @@ void CDone::vRun(const vector<string> &p_aArgs)
 				{
 				case eDiff_Easy:
 					{
-						t_cEasy++;
+						++t_cEasy;
 					}break;
 
 				case eDiff_Moderate:
 					{
-						t_cMed++;
+						++t_cMed;
 					}break;
 
 				case eDiff_Hard:
 					{
-						t_cHard++;
+						++t_cHard;
 					}break;
 				}
 			}
@@ -116,58 +116,6 @@ void CDone::vRun(const vector<string> &p_aArgs)
 		g_outputConsole->cout(t_ss.str());
 		g_outputConsole->cout(":[!] ");
 	}
-	/*for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
-	{
-		if (t_i + 1 < 10)
-		{
-			g_outputConsole->cout("  ");
-		}
-		else if (t_i + 1 < 100)
-		{
-			g_outputConsole->cout(" ");
-		}
-
-		stringstream t_ss;
-		t_ss << t_i + 1;
-		g_outputConsole->cout(t_ss.str());
-		g_outputConsole->cout(":[");
-
-		if (g_apProblems[t_i] != NULL)
-		{
-			if (g_apProblems[t_i]->fFinished())
-			{
-				g_outputConsole->cout("X");
-
-				switch (g_apProblems[t_i]->eDifficulty())
-				{
-				case eDiff_Easy:
-					{
-						t_cEasy++;
-					}break;
-
-				case eDiff_Moderate:
-					{
-						t_cMed++;
-					}break;
-
-				case eDiff_Hard:
-					{
-						t_cHard++;
-					}break;
-				}
-			}
-			else
-			{
-				g_outputConsole->cout(" ");
-			}
-		}
-		else
-		{
-			g_outputConsole->cout(" ");
-		}
-
-		g_outputConsole->cout("] ");
-	}*/
 
 	cout << "Easy: " << t_cEasy << " / " << fsc_cEasyProblems << endl;
 	cout << "Med:  " << t_cMed << " / " << fsc_cModerateProblems << endl;

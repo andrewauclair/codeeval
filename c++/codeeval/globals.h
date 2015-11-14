@@ -8,7 +8,7 @@
 #include <Windows.h>
 
 extern HWND g_winHandle;
-extern CConsoleInput * g_inputConsole;
+extern CConsole * g_inputConsole;
 extern CConsoleOutput * g_outputConsole;
 extern streambuf* g_origCoutStream;
 

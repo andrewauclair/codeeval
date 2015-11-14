@@ -32,15 +32,18 @@ void CRun::vRun(const vector<string> &p_aArgs)
 
 		if (t_nProblem >= 1 && t_nProblem < fsc_cProblems + 1 && g_apProblems[t_nProblem - 1] != NULL)
 		{
-			vWriteProblemInput(t_nProblem);
-
 			stringstream t_ss;
 			t_ss << t_nProblem;
 
+			// figure out the input file path and create an argv array
 			string t_strPath = "in/" + t_ss.str() + "_in.txt";
+
+			// display the input for this problem in the input console
+			vWriteFileToConsole(t_strPath, g_inputConsole);
 
 			const char * t_argv[] = { "main", t_strPath.c_str() };
 
+			// redirect cout so we can print it later and run the problem code
 			cout.rdbuf(t_output.rdbuf());
 			g_apProblems[t_nProblem - 1]->nRun(2, t_argv);
 			cout.rdbuf(t_coutStream);
@@ -72,24 +75,19 @@ void CRun::vRun(const vector<string> &p_aArgs)
 	}
 }
 
-void CRun::vWriteProblemInput(int p_nProblem)
+void CRun::vWriteFileToConsole(string p_strFile, CConsole* p_console)
 {
 	// read in the input file for this problem and send it to the input console window
 	fstream t_file;
-	stringstream t_ss;
-	t_ss << p_nProblem;
-
-	string t_strFile = "in/" + t_ss.str() + "_in.txt";
-			
-	t_file.open(t_strFile.c_str(), ios::in);
-
 	string t_str;
+
+	t_file.open(p_strFile.c_str(), ios::in);
 
 	if (t_file.is_open())
 	{
 		while (getline(t_file, t_str))
 		{
-			g_inputConsole->cout(t_str + "\n");
+			p_console->cout(t_str + "\n");
 		}
 	}
 	else
@@ -97,6 +95,5 @@ void CRun::vWriteProblemInput(int p_nProblem)
 		g_inputConsole->cout("This problem has no input.");
 	}
 
-	t_ss.str("");
 	t_file.close();
 }

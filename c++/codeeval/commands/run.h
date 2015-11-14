@@ -2,6 +2,7 @@
 #define _RUN_COMMAND_H_
 
 #include "command.h"
+#include "console.h"
 
 class CRun : public CCommand
 {
@@ -16,7 +17,7 @@ public:
 
 protected:
 
-	void vWriteProblemInput(int p_nProblem);
+	void vWriteFileToConsole(string p_strFile, CConsole* p_console);
 };
 
 #endif

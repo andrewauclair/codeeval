@@ -176,9 +176,11 @@
 
 #include "208.h"
 
-static const int fsc_cEasyProblems = 70;
-static const int fsc_cModerateProblems = 69;
-static const int fsc_cHardProblems = 69;
+#include "211.h"
+
+static const int fsc_cEasyProblems = 71;
+static const int fsc_cModerateProblems = 70;
+static const int fsc_cHardProblems = 70;
 static const int fsc_cProblems = fsc_cEasyProblems + fsc_cModerateProblems + fsc_cHardProblems;
 
 static CProblem* g_apProblems[fsc_cProblems] =
@@ -391,6 +393,9 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 206
 	NULL, // 207
 	new CP208(), // 208
+	NULL, // 209
+	NULL, // 210
+	new CP211(), // 211
 };
 
 #endif

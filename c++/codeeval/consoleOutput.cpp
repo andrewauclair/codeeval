@@ -4,13 +4,8 @@
 using namespace std;
 
 CConsoleOutput::CConsoleOutput()
+	: super("Output")
 {
-	console.Create("Output");
-}
-
-void CConsoleOutput::cout(string p_str)
-{
-	console.cprintf(p_str.c_str());
 }
 
 bool CConsoleOutput::fCompare(string p_strOutput, string p_strExpected)
@@ -54,21 +49,6 @@ bool CConsoleOutput::fCompare(string p_strOutput, string p_strExpected)
 	}
 
 	return t_fSame;
-}
-
-void CConsoleOutput::vSetPos(int p_x, int p_y)
-{
-	console.movexy(p_x, p_y);
-}
-
-void CConsoleOutput::vSetSize(int p_width, int p_height)
-{
-	console.setsize(p_width, p_height);
-}
-
-void CConsoleOutput::vClear()
-{
-	console.cls();
 }
 
 void CConsoleOutput::vSetIncorrectOut()

@@ -14,8 +14,41 @@ using namespace std;
 void vCreateConsoles();
 void vWriteConsoleStart();
 
+void vSwapCases(char * p_aString)
+{
+	for (int t_i = 0; t_i < strlen(p_aString); ++t_i)
+	{
+
+	}
+}
 int main()
 {
+	char * t_aString = "Andrew Auclair";
+
+	vSwapCases(t_aString);
+
+	cout << t_aString << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	vCreateConsoles();
 
 	vWriteConsoleStart();
@@ -63,10 +96,11 @@ void vCreateConsoles()
 	GetWindowRect(g_winHandle, &t_rect);
 
 	// create the consoles
-	g_inputConsole = new CConsoleInput();
+	g_inputConsole = new CConsole("Input");
 	g_outputConsole = new CConsoleOutput();
 	//g_perfConsole = new CConsolePerformance();
 	
+	// set up the window sizes we want
 	int t_nScreenWidth = GetSystemMetrics(SM_CXSCREEN);
 	int t_nScreenHeight = GetSystemMetrics(SM_CYSCREEN);
 
