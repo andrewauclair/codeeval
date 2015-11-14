@@ -534,6 +534,12 @@
     <ClCompile Include="commands\clear.cpp">
       <Filter>Source Files\commands</Filter>
     </ClCompile>
+    <ClCompile Include="src\211.cpp">
+      <Filter>Source Files\201-220</Filter>
+    </ClCompile>
+    <ClCompile Include="console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem.h">
@@ -988,6 +994,12 @@
     </ClInclude>
     <ClInclude Include="commands\clear.h">
       <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\211.h">
+      <Filter>Header Files\201-220</Filter>
+    </ClInclude>
+    <ClInclude Include="console.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

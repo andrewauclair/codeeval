@@ -97,6 +97,7 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClCompile Include="commands\help.cpp" />
     <ClCompile Include="commands\outcheck.cpp" />
     <ClCompile Include="commands\run.cpp" />
+    <ClCompile Include="console.cpp" />
     <ClCompile Include="consoleInput.cpp" />
     <ClCompile Include="consoleOutput.cpp" />
     <ClCompile Include="consolePerformance.cpp" />
@@ -179,6 +180,7 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClCompile Include="src\205.cpp" />
     <ClCompile Include="src\208.cpp" />
     <ClCompile Include="src\21.cpp" />
+    <ClCompile Include="src\211.cpp" />
     <ClCompile Include="src\22.cpp" />
     <ClCompile Include="src\23.cpp" />
     <ClCompile Include="src\24.cpp" />
@@ -248,6 +250,7 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClInclude Include="commands\help.h" />
     <ClInclude Include="commands\outcheck.h" />
     <ClInclude Include="commands\run.h" />
+    <ClInclude Include="console.h" />
     <ClInclude Include="consoleInput.h" />
     <ClInclude Include="consoleOutput.h" />
     <ClInclude Include="consolePerformance.h" />
@@ -330,6 +333,7 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClInclude Include="include\205.h" />
     <ClInclude Include="include\208.h" />
     <ClInclude Include="include\21.h" />
+    <ClInclude Include="include\211.h" />
     <ClInclude Include="include\22.h" />
     <ClInclude Include="include\23.h" />
     <ClInclude Include="include\24.h" />
