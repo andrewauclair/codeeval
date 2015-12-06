@@ -91,6 +91,12 @@
     <Filter Include="Source Files\201-220">
       <UniqueIdentifier>{f378ec9a-8796-411e-8c50-a2274eabce45}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\221-240">
+      <UniqueIdentifier>{af7caa42-8915-4079-a782-b51d98a941da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\221-240">
+      <UniqueIdentifier>{b439c69b-2d01-4ee5-a96c-4d15f46e893f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -539,6 +545,21 @@
     </ClCompile>
     <ClCompile Include="console.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\214.cpp">
+      <Filter>Source Files\201-220</Filter>
+    </ClCompile>
+    <ClCompile Include="src\217.cpp">
+      <Filter>Source Files\201-220</Filter>
+    </ClCompile>
+    <ClCompile Include="src\220.cpp">
+      <Filter>Source Files\201-220</Filter>
+    </ClCompile>
+    <ClCompile Include="src\222.cpp">
+      <Filter>Source Files\221-240</Filter>
+    </ClCompile>
+    <ClCompile Include="src\225.cpp">
+      <Filter>Source Files\221-240</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1000,6 +1021,21 @@
     </ClInclude>
     <ClInclude Include="console.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\222.h">
+      <Filter>Header Files\221-240</Filter>
+    </ClInclude>
+    <ClInclude Include="include\214.h">
+      <Filter>Header Files\201-220</Filter>
+    </ClInclude>
+    <ClInclude Include="include\217.h">
+      <Filter>Header Files\201-220</Filter>
+    </ClInclude>
+    <ClInclude Include="include\220.h">
+      <Filter>Header Files\201-220</Filter>
+    </ClInclude>
+    <ClInclude Include="include\225.h">
+      <Filter>Header Files\221-240</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -1785,6 +1821,12 @@
     </None>
     <None Include="in\208_in.txt">
       <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\225_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\225_out.txt">
+      <Filter>Resource Files\out</Filter>
     </None>
   </ItemGroup>
 </Project>

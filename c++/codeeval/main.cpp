@@ -14,41 +14,8 @@ using namespace std;
 void vCreateConsoles();
 void vWriteConsoleStart();
 
-void vSwapCases(char * p_aString)
-{
-	for (int t_i = 0; t_i < strlen(p_aString); ++t_i)
-	{
-
-	}
-}
 int main()
 {
-	char * t_aString = "Andrew Auclair";
-
-	vSwapCases(t_aString);
-
-	cout << t_aString << endl;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	vCreateConsoles();
 
 	vWriteConsoleStart();

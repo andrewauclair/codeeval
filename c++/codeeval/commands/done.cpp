@@ -96,7 +96,7 @@ void CDone::vRun(const vector<string> &p_aArgs)
 		}
 	}
 
-	g_outputConsole->cout("\n\nProblems Not Started\n\n");
+	g_outputConsole->cout("\n\nProblems With No Source Code\n\n");
 
 	for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
 	{

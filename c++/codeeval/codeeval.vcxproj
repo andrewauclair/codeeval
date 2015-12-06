@@ -181,7 +181,12 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClCompile Include="src\208.cpp" />
     <ClCompile Include="src\21.cpp" />
     <ClCompile Include="src\211.cpp" />
+    <ClCompile Include="src\214.cpp" />
+    <ClCompile Include="src\217.cpp" />
     <ClCompile Include="src\22.cpp" />
+    <ClCompile Include="src\220.cpp" />
+    <ClCompile Include="src\222.cpp" />
+    <ClCompile Include="src\225.cpp" />
     <ClCompile Include="src\23.cpp" />
     <ClCompile Include="src\24.cpp" />
     <ClCompile Include="src\25.cpp" />
@@ -334,7 +339,12 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClInclude Include="include\208.h" />
     <ClInclude Include="include\21.h" />
     <ClInclude Include="include\211.h" />
+    <ClInclude Include="include\214.h" />
+    <ClInclude Include="include\217.h" />
     <ClInclude Include="include\22.h" />
+    <ClInclude Include="include\220.h" />
+    <ClInclude Include="include\222.h" />
+    <ClInclude Include="include\225.h" />
     <ClInclude Include="include\23.h" />
     <ClInclude Include="include\24.h" />
     <ClInclude Include="include\25.h" />
@@ -470,6 +480,7 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <None Include="in\208_in.txt" />
     <None Include="in\20_in.txt" />
     <None Include="in\21_in.txt" />
+    <None Include="in\225_in.txt" />
     <None Include="in\22_in.txt" />
     <None Include="in\24_in.txt" />
     <None Include="in\26_in.txt" />
@@ -601,6 +612,7 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <None Include="out\208_out.txt" />
     <None Include="out\20_out.txt" />
     <None Include="out\21_out.txt" />
+    <None Include="out\225_out.txt" />
     <None Include="out\22_out.txt" />
     <None Include="out\23_out.txt" />
     <None Include="out\24_out.txt" />
