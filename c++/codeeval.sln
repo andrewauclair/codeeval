@@ -1,9 +1,18 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "codeeval", "codeeval\codeeval.vcxproj", "{9909FCF1-474E-4142-8695-116E0F7A71F7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C53012F-0C02-460D-5CA8-7E32DEBDB87A} = {5C53012F-0C02-460D-5CA8-7E32DEBDB87A}
+		{89735DC7-EA6D-F09B-166C-E02C86FE906C} = {89735DC7-EA6D-F09B-166C-E02C86FE906C}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleLoggerHelper", "ConsoleLoggerHelper\ConsoleLoggerHelper.vcxproj", "{5C53012F-0C02-460D-5CA8-7E32DEBDB87A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{89735DC7-EA6D-F09B-166C-E02C86FE906C} = {89735DC7-EA6D-F09B-166C-E02C86FE906C}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleLoggerLib", "ConsoleLoggerLib.vcxproj", "{89735DC7-EA6D-F09B-166C-E02C86FE906C}"
 EndProject

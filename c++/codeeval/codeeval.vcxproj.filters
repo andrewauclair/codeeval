@@ -561,6 +561,15 @@
     <ClCompile Include="src\225.cpp">
       <Filter>Source Files\221-240</Filter>
     </ClCompile>
+    <ClCompile Include="src\227.cpp">
+      <Filter>Source Files\221-240</Filter>
+    </ClCompile>
+    <ClCompile Include="src\230.cpp">
+      <Filter>Source Files\221-240</Filter>
+    </ClCompile>
+    <ClCompile Include="src\232.cpp">
+      <Filter>Source Files\221-240</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="problem.h">
@@ -1035,6 +1044,15 @@
       <Filter>Header Files\201-220</Filter>
     </ClInclude>
     <ClInclude Include="include\225.h">
+      <Filter>Header Files\221-240</Filter>
+    </ClInclude>
+    <ClInclude Include="include\227.h">
+      <Filter>Header Files\221-240</Filter>
+    </ClInclude>
+    <ClInclude Include="include\230.h">
+      <Filter>Header Files\221-240</Filter>
+    </ClInclude>
+    <ClInclude Include="include\232.h">
       <Filter>Header Files\221-240</Filter>
     </ClInclude>
   </ItemGroup>
@@ -1828,5 +1846,25 @@
     <None Include="out\225_out.txt">
       <Filter>Resource Files\out</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="in\227_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </Text>
+    <Text Include="in\230_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </Text>
+    <Text Include="in\232_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </Text>
+    <Text Include="out\227_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </Text>
+    <Text Include="out\230_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </Text>
+    <Text Include="out\232_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </Text>
   </ItemGroup>
 </Project>

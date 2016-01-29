@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -20,12 +20,14 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -57,11 +59,14 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>ConsoleLogger.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>../Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ConsoleLoggerLib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>Copy /Y "$(SolutionDir)codeeval\in\*" "$(TargetDir)in"
+      <Command>MKDIR $(TargetDir)in
+MKDIR $(TargetDir)out
+
+Copy /Y "$(SolutionDir)codeeval\in\*" "$(TargetDir)in"
 Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -81,11 +86,14 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>../Release</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ConsoleLogger.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ConsoleLoggerLib.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>Copy /Y "$(SolutionDir)codeeval\in\*" "$(TargetDir)in"
+      <Command>MKDIR $(TargetDir)in
+MKDIR $(TargetDir)out
+
+Copy /Y "$(SolutionDir)codeeval\in\*" "$(TargetDir)in"
 Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -187,7 +195,10 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClCompile Include="src\220.cpp" />
     <ClCompile Include="src\222.cpp" />
     <ClCompile Include="src\225.cpp" />
+    <ClCompile Include="src\227.cpp" />
     <ClCompile Include="src\23.cpp" />
+    <ClCompile Include="src\230.cpp" />
+    <ClCompile Include="src\232.cpp" />
     <ClCompile Include="src\24.cpp" />
     <ClCompile Include="src\25.cpp" />
     <ClCompile Include="src\26.cpp" />
@@ -345,7 +356,10 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <ClInclude Include="include\220.h" />
     <ClInclude Include="include\222.h" />
     <ClInclude Include="include\225.h" />
+    <ClInclude Include="include\227.h" />
     <ClInclude Include="include\23.h" />
+    <ClInclude Include="include\230.h" />
+    <ClInclude Include="include\232.h" />
     <ClInclude Include="include\24.h" />
     <ClInclude Include="include\25.h" />
     <ClInclude Include="include\26.h" />
@@ -671,6 +685,14 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <None Include="out\98_out.txt" />
     <None Include="out\99_out.txt" />
     <None Include="out\9_out.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="in\227_in.txt" />
+    <Text Include="in\230_in.txt" />
+    <Text Include="in\232_in.txt" />
+    <Text Include="out\227_out.txt" />
+    <Text Include="out\230_out.txt" />
+    <Text Include="out\232_out.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

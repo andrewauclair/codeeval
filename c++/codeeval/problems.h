@@ -188,9 +188,15 @@
 
 #include "225.h"
 
-static const int fsc_cEasyProblems = 76;
-static const int fsc_cModerateProblems = 75;
-static const int fsc_cHardProblems = 74;
+#include "227.h"
+
+#include "230.h"
+
+#include "232.h"
+
+static const int fsc_cEasyProblems = 79;
+static const int fsc_cModerateProblems = 78;
+static const int fsc_cHardProblems = 75;
 static const int fsc_cProblems = fsc_cEasyProblems + fsc_cModerateProblems + fsc_cHardProblems;
 
 static CProblem* g_apProblems[fsc_cProblems] =
@@ -420,6 +426,13 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	NULL, // 223
 	NULL, // 224
 	new CP225(), // 225
+	NULL, // 226
+	new CP227(), // 227
+	NULL, // 228
+	NULL, // 229
+	new CP230(), // 230
+	NULL, // 231
+	new CP232(), // 232
 };
 
 #endif

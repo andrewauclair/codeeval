@@ -27,3 +27,4 @@ c/ConsoleLogger_DEMO/Release
 c/Debug
 c/Release
 c/ipch
+*.opendb

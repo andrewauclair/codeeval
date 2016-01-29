@@ -17,8 +17,6 @@ public:
 private:
 	void vSetIncorrectOut();
 	void vSetCorrectOut();
-
-	CConsoleLoggerEx console;
 };
 
 #endif

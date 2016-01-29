@@ -4,6 +4,7 @@
 #include <sstream>
 #include <string>
 #include <Windows.h>
+#include <iomanip>
 
 #include "problems.h"
 #include "commands.h"
@@ -59,6 +60,9 @@ int main()
 void vCreateConsoles()
 {
 	g_winHandle = GetConsoleWindow();
+
+	//ShowWindow(g_winHandle, SW_HIDE);
+
 	RECT t_rect;
 	GetWindowRect(g_winHandle, &t_rect);
 
@@ -91,7 +95,8 @@ void vCreateConsoles()
 
 void vWriteConsoleStart()
 {
-	cout << "<code_eval> c++ code_eval solutions - Andrew Auclair - Game Programmer" << endl << endl;
+	cout << "                      <code_eval> c++ code_eval solutions                      " << endl;
+	cout << " Andrew Auclair - Associate Software Engineer - Tactical Communications Group  " << endl << endl;
 
 	// clear the consoles
 	g_inputConsole->vClear();

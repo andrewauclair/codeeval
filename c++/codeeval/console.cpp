@@ -16,7 +16,7 @@ CConsole::~CConsole()
 
 void CConsole::cout(string p_str)
 {
-	m_console.cprintf(p_str.c_str());
+	m_console.cprintf("%s", p_str.c_str());
 }
 
 void CConsole::vSetPos(int p_x, int p_y)
@@ -32,4 +32,9 @@ void CConsole::vSetSize(int p_width, int p_height)
 void CConsole::vClear()
 {
 	m_console.cls();
+}
+
+void CConsole::vSetCurrentColor(DWORD p_color)
+{
+	m_console.SetCurrentColor(p_color);
 }

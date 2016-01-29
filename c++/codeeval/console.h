@@ -20,6 +20,8 @@ public:
 
 	void vClear();
 
+	void vSetCurrentColor(DWORD p_color);
+
 private:
 	CConsoleLoggerEx m_console;
 };

@@ -105,6 +105,10 @@ long ConsoleExLoop(void)
 		COMMAND_COLORED_CLEAR_EOL
 	};
 
+#if _DEBUG
+	// test commands
+#endif
+
 	DWORD cbRead,cbWritten;
 	char chBuf[1024];
 	BOOL bSuccess;
@@ -408,9 +412,13 @@ int main(int argc, char* argv[])
 
 
 	if (g_bExtendedConsole)
+	{
 		ConsoleExLoop();
+	}
 	else
+	{
 		ConsoleLoop();
+	}
 
 	CloseHandle(g_hPipe);
 
