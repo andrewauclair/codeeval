@@ -32,6 +32,7 @@ void CConsole::vSetSize(int p_width, int p_height)
 void CConsole::vClear()
 {
 	m_console.cls();
+	m_console.show();
 }
 
 void CConsole::vSetCurrentColor(DWORD p_color)

@@ -18,4 +18,5 @@ void CConsoleInput::vSetPos(int p_x, int p_y)
 void CConsoleInput::vClear()
 {
 	console.cls();
+	console.show();
 }

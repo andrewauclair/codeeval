@@ -91,6 +91,9 @@ long CConsoleLogger::Create(const char	*lpszWindowTitle/*=NULL*/,
 	PROCESS_INFORMATION pi;
 	GetStartupInfo(&si);
 	
+	//si.dwFlags = STARTF_USESHOWWINDOW;
+	//si.wShowWindow = SW_HIDE;
+
 	char cmdline[MAX_PATH];;
 	if (!helper_executable)
 		helper_executable=DEFAULT_HELPER_EXE;
@@ -277,7 +280,6 @@ int CConsoleLogger::ResetDefaultOutput(void)
 	return setvbuf( stdout, NULL, _IONBF, 0 );
 }
 
-
 //////////////////////////////////////////////////////////////////////////
 // _print: print helper
 // we use the thread-safe funtion "SafeWriteFile()" to output the data
@@ -437,6 +439,30 @@ void CConsoleLoggerEx::setsize(int width, int height)
 	LeaveCriticalSection();
 }
 
+// Bring to Front command for windows handle
+// Command to hide console from task bar?
+// Command to show and hide console?
+// Command to hide console on creation?
+
+void CConsoleLoggerEx::show()
+{
+	DWORD dwWritten = (DWORD)-1;
+
+	DWORD command = COMMAND_SHOW << 24;
+	EnterCriticalSection();
+	WriteFile(m_hPipe, &command, sizeof(DWORD), &dwWritten, NULL);
+	LeaveCriticalSection();
+}
+
+void CConsoleLoggerEx::hide()
+{
+	DWORD dwWritten = (DWORD)-1;
+
+	DWORD command = COMMAND_HIDE << 24;
+	EnterCriticalSection();
+	WriteFile(m_hPipe, &command, sizeof(DWORD), &dwWritten, NULL);
+	LeaveCriticalSection();
+}
 //////////////////////////////////////////////////////////////////////////
 // cprintf(attr,str,...) : prints a formatted string with the "attributes" color
 //////////////////////////////////////////////////////////////////////////
@@ -526,4 +552,3 @@ int CConsoleLoggerEx::_cprint(int attributes,const char *lpszText,int iSize)
 	LeaveCriticalSection();
 	return iRet;
 }
-

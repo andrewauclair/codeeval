@@ -152,7 +152,9 @@ class CConsoleLoggerEx : public CConsoleLogger
 		COMMAND_MOVEXY,
 		COMMAND_SETSIZE,
 		COMMAND_CLEAR_EOL,
-		COMMAND_COLORED_CLEAR_EOL
+		COMMAND_COLORED_CLEAR_EOL,
+		COMMAND_SHOW,
+		COMMAND_HIDE
 	};
 public:
 	CConsoleLoggerEx();
@@ -213,6 +215,8 @@ public:
 	void	SetCurrentColor(DWORD dwColor)
 	{ m_dwCurrentAttributes=dwColor; }
 	
+	void show();
+	void hide();
 
 protected:
 	virtual long	AddHeaders(void)

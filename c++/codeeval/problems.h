@@ -195,8 +195,8 @@
 #include "232.h"
 
 static const int fsc_cEasyProblems = 79;
-static const int fsc_cModerateProblems = 78;
-static const int fsc_cHardProblems = 75;
+static const int fsc_cModerateProblems = 79;
+static const int fsc_cHardProblems = 76;
 static const int fsc_cProblems = fsc_cEasyProblems + fsc_cModerateProblems + fsc_cHardProblems;
 
 static CProblem* g_apProblems[fsc_cProblems] =

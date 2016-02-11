@@ -29,21 +29,61 @@ void CDone::vRun(const vector<string> &p_aArgs)
 	{
 		EDifficulty t_eDiff = (EDifficulty)t_i;
 
+		for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
+		{
+			if (g_apProblems[t_j] == NULL || g_apProblems[t_j]->eDifficulty() != t_eDiff) continue;
+
+			if (g_apProblems[t_j]->fFinished())
+			{
+				switch (g_apProblems[t_j]->eDifficulty())
+				{
+				case eDiff_Easy:
+				{
+					++t_cEasy;
+				}break;
+
+				case eDiff_Moderate:
+				{
+					++t_cMed;
+				}break;
+
+				case eDiff_Hard:
+				{
+					++t_cHard;
+				}break;
+				}
+			}
+		}
+	}
+
+	for (int t_i = 0; t_i <= eDiff_Hard; ++t_i)
+	{
+		EDifficulty t_eDiff = (EDifficulty)t_i;
+
 		switch (t_eDiff)
 		{
 		case eDiff_Easy:
 			{
-				g_outputConsole->cout("\n\nEasy Problems\n\n");
+				stringstream ss;
+				ss << t_cEasy << " / " << fsc_cEasyProblems;
+				g_outputConsole->cout("\n\nEasy Problems [ " + ss.str());
+				g_outputConsole->cout(" ]\n\n");
 			}break;
 
 		case eDiff_Moderate:
 			{
-				g_outputConsole->cout("\n\nModerate Problems\n\n");
+				stringstream ss;
+				ss << t_cMed << " / " << fsc_cModerateProblems;
+				g_outputConsole->cout("\n\nModerate Problems [ " + ss.str());
+				g_outputConsole->cout(" ]\n\n");
 			}break;
 
 		case eDiff_Hard:
 			{
-				g_outputConsole->cout("\n\nHard Problems\n\n");
+				stringstream ss;
+				ss << t_cHard << " / " << fsc_cHardProblems;
+				g_outputConsole->cout("\n\nHard Problems [ " + ss.str());
+				g_outputConsole->cout(" ]\n\n");
 			}break;
 		}
 
@@ -68,24 +108,6 @@ void CDone::vRun(const vector<string> &p_aArgs)
 			if (g_apProblems[t_j]->fFinished())
 			{
 				g_outputConsole->cout("X");
-
-				switch (g_apProblems[t_j]->eDifficulty())
-				{
-				case eDiff_Easy:
-					{
-						++t_cEasy;
-					}break;
-
-				case eDiff_Moderate:
-					{
-						++t_cMed;
-					}break;
-
-				case eDiff_Hard:
-					{
-						++t_cHard;
-					}break;
-				}
 			}
 			else
 			{
@@ -116,8 +138,4 @@ void CDone::vRun(const vector<string> &p_aArgs)
 		g_outputConsole->cout(t_ss.str());
 		g_outputConsole->cout(":[!] ");
 	}
-
-	cout << "Easy: " << t_cEasy << " / " << fsc_cEasyProblems << endl;
-	cout << "Med:  " << t_cMed << " / " << fsc_cModerateProblems << endl;
-	cout << "Hard: " << t_cHard << " / " << fsc_cHardProblems << endl;
 }

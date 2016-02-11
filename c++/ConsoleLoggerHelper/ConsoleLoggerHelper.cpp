@@ -26,7 +26,8 @@ void setsize(int width, int height);
 int getxy(int *x,int *y);
 int getx(void);
 int gety(void);
-
+void show(void);
+void hide(void);
 
 template <class T>
 T ReadPipe(T &v)
@@ -102,7 +103,9 @@ long ConsoleExLoop(void)
 		COMMAND_MOVEXY,
 		COMMAND_SETSIZE,
 		COMMAND_CLEAR_EOL,
-		COMMAND_COLORED_CLEAR_EOL
+		COMMAND_COLORED_CLEAR_EOL,
+		COMMAND_SHOW,
+		COMMAND_HIDE
 	};
 
 #if _DEBUG
@@ -236,7 +239,16 @@ long ConsoleExLoop(void)
 				}
 				break;
 
-
+			case COMMAND_SHOW:
+				{
+					show();
+				}
+				break;
+			case COMMAND_HIDE:
+				{
+					hide();
+				}
+				break;
 		}
 		
 
@@ -408,7 +420,7 @@ int main(int argc, char* argv[])
 	g_dwConsoleSize = g_ConsoleBufferInfo.dwSize.X * g_ConsoleBufferInfo.dwSize.Y;
 
 
-
+	show();
 
 
 	if (g_bExtendedConsole)
@@ -480,8 +492,7 @@ void gotoxy(int x,int y)
 
 void movexy(int x, int y)
 {
-	SetWindowPos(g_hWindow, 0, x, y, 0, 0, SWP_NOZORDER | SWP_NOSIZE);
-	//MoveWindow(g_hWindow, x, y, width, height, true);
+	SetWindowPos(g_hWindow, 0, x, y, 0, 0, SWP_FRAMECHANGED | /*SWP_NOMOVE |*/ SWP_NOSIZE | SWP_NOZORDER | SWP_NOOWNERZORDER);
 }
 
 void setsize(int width, int height)
@@ -555,4 +566,23 @@ void clear_eol(WORD color)
 								size_to_fill,xy,&dummy);
 }
 
+void show(void)
+{
+	//hide();
 
+	long style = GetWindowLong(g_hWindow, GWL_STYLE);
+	//style |= WS_EX_TOOLWINDOW;
+	//style |= WS_EX_NOACTIVATE;
+	//style &= ~WS_EX_APPWINDOW;
+	style &= ~(WS_MINIMIZEBOX | WS_SYSMENU);
+
+	SetWindowLong(g_hWindow, GWL_STYLE, style);
+	
+	//ShowWindow(g_hWindow, SW_SHOW);
+
+}
+
+void hide(void)
+{
+	//ShowWindow(g_hWindow, SW_HIDE);
+}
