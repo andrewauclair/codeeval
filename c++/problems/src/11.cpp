@@ -78,7 +78,7 @@ int main(int argc, char* argv[])
 
 		SNum t_num1, t_num2;
 
-		for (int t_i = 0; t_i < t_aTopNums.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_aTopNums.size(); ++t_i)
 		{
 			if (t_aTopNums[t_i].m_n == t_n1)
 			{

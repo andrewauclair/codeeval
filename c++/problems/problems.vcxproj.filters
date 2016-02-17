@@ -525,6 +525,9 @@
     <ClInclude Include="problem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\235.h">
+      <Filter>Header Files\221-240</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\1.cpp">
@@ -960,6 +963,9 @@
       <Filter>Source Files\221-240</Filter>
     </ClCompile>
     <ClCompile Include="src\232.cpp">
+      <Filter>Source Files\221-240</Filter>
+    </ClCompile>
+    <ClCompile Include="src\235.cpp">
       <Filter>Source Files\221-240</Filter>
     </ClCompile>
   </ItemGroup>

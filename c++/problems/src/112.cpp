@@ -72,7 +72,7 @@ int main(int argc, char* argv[])
 			t_arynValues[t_nIndex1] = t_arynValues[t_nIndex2];
 			t_arynValues[t_nIndex2] = t_nTemp;
 		}
-		for (int t_i = 0; t_i < t_arynValues.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_arynValues.size(); ++t_i)
 		{
 			cout << t_arynValues[t_i];
 

@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
 			t_nL++;
 
 			bool t_fFound = false;
-			for (int t_i = 0; t_i < t_aryStrValues.size(); ++t_i)
+			for (unsigned int t_i = 0; t_i < t_aryStrValues.size(); ++t_i)
 			{
 				if (t_aryStrValues[t_i] == t_str)
 				{
@@ -69,7 +69,7 @@ int main(int argc, char* argv[])
 		int t_nIndex = -1;
 		bool t_fMultiple = false;
 
-		for (int t_i = 0; t_i < t_arynCounts.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_arynCounts.size(); ++t_i)
 		{
 			if (t_arynCounts[t_i] > t_nMost)
 			{

@@ -142,12 +142,12 @@ int main(int argc, char* argv[])
 		}
 
 		// we've read in all the spans, now crunch the data
-		for (int t_i = 1; t_i < t_aSpans.size(); ++t_i)
+		for (unsigned int t_i = 1; t_i < t_aSpans.size(); ++t_i)
 		{
 			// compare this to the last range
 			SSpan* t_spanCur = &t_aSpans[t_i];
 
-			for (int t_j = t_i - 1; t_j >= 0; --t_j)
+			for (unsigned int t_j = t_i - 1; t_j >= 0; --t_j)
 			{
 				if (t_j == t_i)
 				{
@@ -199,7 +199,7 @@ int main(int argc, char* argv[])
 		int t_cTotal = 0;
 
 		// total up the work months
-		for (int t_i = 0; t_i < t_aSpans.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_aSpans.size(); ++t_i)
 		{
 			int t_c = (t_aSpans[t_i].m_end.m_cRaw + 1) - t_aSpans[t_i].m_start.m_cRaw;
 			t_cTotal += t_c;

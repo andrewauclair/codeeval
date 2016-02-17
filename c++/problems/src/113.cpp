@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
 			t_aryValues.push_back(atoi(t_str.c_str()));	
 		}
 		//cout << endl;
-		for (int t_i = 0; t_i < t_aryValues.size() / 2; ++t_i)
+		for (unsigned int t_i = 0; t_i < t_aryValues.size() / 2; ++t_i)
 		{
 			cout << t_aryValues[t_i] * t_aryValues[(t_aryValues.size() / 2) + 1 + t_i];
 

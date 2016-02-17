@@ -65,10 +65,10 @@ int main(int argc, char* argv[])
 			getline(line, t_str, ',');
 			double t_rK = atof(t_str.c_str());
 
-			int t_nC = t_rC * 100;
-			int t_nM = t_rM * 100;
-			int t_nY = t_rY * 100;
-			int t_nK = t_rK * 100;
+			int t_nC = (int)floor(t_rC * 100);
+			int t_nM = (int)floor(t_rM * 100);
+			int t_nY = (int)floor(t_rY * 100);
+			int t_nK = (int)floor(t_rK * 100);
 			
 			int t_r = (int)floor(255 * ((100 - t_nC) / 100.0f) * ((100 - t_nK) / 100.0f) + 0.5);
 			int t_g = (int)floor(255 * ((100 - t_nM) / 100.0f) * ((100 - t_nK) / 100.0f) + 0.5);

@@ -29,7 +29,7 @@ float rEval(vector<string>::iterator &p_it)
 	}
 	else
 	{
-		return atoi((*p_it).c_str());
+		return (float)atof((*p_it).c_str());
 	}
 }
 

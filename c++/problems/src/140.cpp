@@ -63,11 +63,11 @@ int main(int argc, char* argv[])
 			t_arynOrder.push_back(atoi(t_str.c_str()));
 		}
 
-		for (int t_i = 0; t_i < t_aryStrWords.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_aryStrWords.size(); ++t_i)
 		{
 			bool t_fFound = false;
 
-			for (int t_j = 0; t_j < t_arynOrder.size(); ++t_j)
+			for (unsigned int t_j = 0; t_j < t_arynOrder.size(); ++t_j)
 			{
 				if (t_arynOrder[t_j] == t_i + 1)
 				{
@@ -87,7 +87,7 @@ int main(int argc, char* argv[])
 		while (t_fSwapped)
 		{
 			t_fSwapped = false;
-			for (int t_i = 0; t_i < t_arynOrder.size() - 1; ++t_i)
+			for (unsigned int t_i = 0; t_i < t_arynOrder.size() - 1; ++t_i)
 			{
 				if (t_arynOrder[t_i] > t_arynOrder[t_i + 1])
 				{
@@ -104,7 +104,7 @@ int main(int argc, char* argv[])
 			}
 		}
 
-		for (int t_i = 0; t_i < t_aryStrWords.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_aryStrWords.size(); ++t_i)
 		{
 			cout << t_aryStrWords[t_i];
 

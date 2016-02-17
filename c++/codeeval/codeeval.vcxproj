@@ -403,9 +403,11 @@ Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
     <Text Include="in\227_in.txt" />
     <Text Include="in\230_in.txt" />
     <Text Include="in\232_in.txt" />
+    <Text Include="in\235_in.txt" />
     <Text Include="out\227_out.txt" />
     <Text Include="out\230_out.txt" />
     <Text Include="out\232_out.txt" />
+    <Text Include="out\235_out.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

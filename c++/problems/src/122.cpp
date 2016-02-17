@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
 	while (getline(t_file, t_strInput))
 	{
 		bool t_fFound = false;
-		for (int t_i = 0; t_i < t_strInput.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_strInput.size(); ++t_i)
 		{
 			if ((int)t_strInput[t_i] >= 97 && (int)t_strInput[t_i] <= 106)
 			{

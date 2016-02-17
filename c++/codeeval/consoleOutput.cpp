@@ -30,7 +30,7 @@ bool CConsoleOutput::fCompare(string p_strOutput, string p_strExpected)
 			t_fExpect = true;
 		}
 
-		for (int t_i = 0; t_i < t_strOut.length(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_strOut.length(); ++t_i)
 		{
 			if (t_i > t_strExpected.length() - 1 || !t_fExpect)
 			{

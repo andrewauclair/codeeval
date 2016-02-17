@@ -47,7 +47,7 @@ int main(int argc, char* argv[])
 
 	while (getline(t_file, t_strInput))
 	{
-		int t_i = 0;
+		unsigned int t_i = 0;
 
 		while (t_i < t_strInput.length())
 		{

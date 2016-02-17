@@ -43,7 +43,7 @@ int main(int argc, char* argv[])
 
 			t_nLength++;
 
-			for (int t_i = 0; t_i < t_strInput.length() - t_nLength; t_i += t_nLength)
+			for (unsigned int t_i = 0; t_i < t_strInput.length() - t_nLength; t_i += t_nLength)
 			{
 				if (t_strInput.substr(t_i, t_nLength) != t_strInput.substr(t_i + t_nLength, t_nLength))
 				{

@@ -49,7 +49,7 @@ int main(int argc, char* argv[])
 
 		t_aPattern.push_back(t_a);
 
-		int t_i = 0;
+		unsigned int t_i = 0;
 
 		do
 		{
@@ -74,7 +74,7 @@ int main(int argc, char* argv[])
 		{
 			t_ac[t_aPattern[t_i]] += t_cpattern;
 
-			if (t_i < t_cmod)
+			if (t_i < (unsigned)t_cmod)
 			{
 				t_ac[t_aPattern[t_i]]++;
 			}

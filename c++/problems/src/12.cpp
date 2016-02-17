@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 
 	while (getline(t_file, t_strInput))
 	{
-		for (int t_i = 0; t_i < t_strInput.length(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_strInput.length(); ++t_i)
 		{
 			size_t t_c = count(t_strInput.begin(), t_strInput.end(), t_strInput[t_i]);
 

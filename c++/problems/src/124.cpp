@@ -20,7 +20,7 @@ void vBubbleSort(vector<int> &p_vector)
 	{
 		t_fSwapped = false;
 
-		for (int t_i = 1; t_i < p_vector.size(); ++t_i)
+		for (unsigned int t_i = 1; t_i < p_vector.size(); ++t_i)
 		{
 			if (p_vector[t_i] < p_vector[t_i - 1])
 			{
@@ -85,7 +85,7 @@ int main(int argc, char* argv[])
 		while (t_arynValues.size() > 0)
 		{
 			int t_nIndex = 0;
-			for (int t_i = 0; t_i < t_arynValues.size(); ++t_i)
+			for (unsigned int t_i = 0; t_i < t_arynValues.size(); ++t_i)
 			{
 				if (t_arynValues[t_i] < t_nClosest)
 				{

@@ -20,7 +20,7 @@ void vBubbleSort(vector<string> &p_vector)
 	{
 		t_fSwapped = false;
 
-		for (int t_i = 1; t_i < p_vector.size(); ++t_i)
+		for (unsigned int t_i = 1; t_i < p_vector.size(); ++t_i)
 		{
 			if (p_vector[t_i].compare(p_vector[t_i - 1]) < 0)
 			{
@@ -65,14 +65,14 @@ vector<string> aryGetPermutations(string p_strNum)
 		int t_l = t_aryStrPerms.size();
 		for (int t_j = t_x; t_j < t_l; ++t_j)
 		{
-			for (int t_k = 0; t_k < t_aStrParts.size(); ++t_k)
+			for (unsigned int t_k = 0; t_k < t_aStrParts.size(); ++t_k)
 			{
 				t_aryStrPerms.push_back(t_aryStrPerms[t_j] + t_aStrParts[t_k]);
 			}
 		}
 	}
 
-	for (int t_i = 0; t_i < t_aryStrPerms.size(); ++t_i)
+	for (unsigned int t_i = 0; t_i < t_aryStrPerms.size(); ++t_i)
 	{
 		if (t_aryStrPerms[t_i].length() < p_strNum.length())
 		{
@@ -91,7 +91,7 @@ vector<string> aryGetPermutations(string p_strNum)
 			}
 		}
 
-		for (int t_j = 0; t_j < t_anCounts.size(); ++t_j)
+		for (unsigned int t_j = 0; t_j < t_anCounts.size(); ++t_j)
 		{
 			if (count(t_aryStrPerms[t_i].begin(), t_aryStrPerms[t_i].end(), t_aStrParts[t_j][0]) != t_anCounts[t_j])
 			{
@@ -136,7 +136,7 @@ int main(int argc, char* argv[])
 	{
 		vector<string> t_aPerms = aryGetPermutations(t_strInput);
 
-		for (int t_i = 0; t_i < t_aPerms.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_aPerms.size(); ++t_i)
 		{
 			cout << t_aPerms[t_i];
 

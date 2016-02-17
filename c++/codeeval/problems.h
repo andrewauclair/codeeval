@@ -54,6 +54,8 @@
 
 #include "54.h"
 
+#include "57.h"
+
 #include "59.h"
 
 #include "62.h"
@@ -194,7 +196,9 @@
 
 #include "232.h"
 
-static const int fsc_cEasyProblems = 79;
+#include "235.h"
+
+static const int fsc_cEasyProblems = 80;
 static const int fsc_cModerateProblems = 79;
 static const int fsc_cHardProblems = 76;
 static const int fsc_cProblems = fsc_cEasyProblems + fsc_cModerateProblems + fsc_cHardProblems;
@@ -257,7 +261,7 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP54(), // 54
 	NULL, // 55
 	NULL, // 56
-	NULL, // 57
+	new CP57(), // 57
 	NULL, // 58
 	new CP59(), // 59
 	NULL, // 60
@@ -433,6 +437,9 @@ static CProblem* g_apProblems[fsc_cProblems] =
 	new CP230(), // 230
 	NULL, // 231
 	new CP232(), // 232
+	NULL, // 233
+	NULL, // 234
+	new CP235(), // 235
 };
 
 #endif

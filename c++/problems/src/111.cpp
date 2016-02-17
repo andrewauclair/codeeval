@@ -32,15 +32,13 @@ int main(int argc, char* argv[])
 	string t_strInput;
 
 	string t_str;
-	float t_rPP;
-	float t_rCH;
 	int t_nChange = 0;
 
 	while (getline(t_file, t_strInput))
 	{
 		istringstream line(t_strInput);
 
-		int t_nLongest = 0;
+		unsigned int t_nLongest = 0;
 		string t_strLongest;
 
 		while (getline(line, t_str, ' '))

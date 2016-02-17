@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
 			ss.str("");
 		}
 
-		for (int t_i = 0; t_i < t_aryStrs.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_aryStrs.size(); ++t_i)
 		{
 			cout << t_aryStrs[t_i];
 
@@ -77,7 +77,7 @@ int main(int argc, char* argv[])
 			cout << "|";
 		}
 
-		for (int t_i = 0; t_i < t_aryValues.size(); ++t_i)
+		for (unsigned int t_i = 0; t_i < t_aryValues.size(); ++t_i)
 		{
 			cout << t_aryValues[t_i];
 
