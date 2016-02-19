@@ -22,6 +22,23 @@ public:
 
 	string strHelp() const { return ""; };
 
+	string strSysCmd(string p_strLanguage)
+	{
+		// setup the different system call for each language, some will be the same
+		if (p_strLanguage.compare("c") == 0)
+		{
+			return "codeeval_c.exe";
+		}
+		else if (p_strLanguage.compare("cs") == 0)
+		{
+			return "codeeval_cs.exe";
+		}
+		else if (p_strLanguage.compare("cpp") == 0)
+		{
+			return "codeeval_cpp.exe";
+		}
+	}
+	
 protected:
 	string m_strCmd;
 };

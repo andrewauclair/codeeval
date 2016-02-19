@@ -1,5 +1,5 @@
 #include "run.h"
-#include "problems.h"
+#include "problems_c.h"
 #include "globals.h"
 #include <string>
 #include <sstream>
@@ -30,7 +30,7 @@ void CRun::vRun(const vector<string> &p_aArgs)
 		g_inputConsole->vClear();
 		g_outputConsole->vClear();
 
-		if (t_nProblem >= 1 && t_nProblem < fsc_cProblems + 1 && g_apProblems[t_nProblem - 1] != NULL)
+		//if (t_nProblem >= 1 && t_nProblem < fsc_cProblems + 1 && g_apProblems_c[t_nProblem - 1] != NULL)
 		{
 			vWriteProblemInput(t_nProblem);
 
@@ -43,7 +43,7 @@ void CRun::vRun(const vector<string> &p_aArgs)
 
 			const char * t_argv[] = { "main", t_strPath.c_str() };
 
-			(*g_apProblems[t_nProblem - 1]) (2, t_argv);
+			(*g_apProblems_c[t_nProblem - 1]) (2, t_argv);
 
 			cout.rdbuf(t_coutStream);
 			
@@ -64,11 +64,11 @@ void CRun::vRun(const vector<string> &p_aArgs)
 			g_outputConsole->fCompare(t_output.str(), t_strCompare);
 			t_output.str("");
 		}
-		else if (t_nProblem <= 0 || t_nProblem > fsc_cProblems)
+		//else if (t_nProblem <= 0 || t_nProblem > fsc_cProblems)
 		{
-			cout << "The input was out of range, problem range is 1 to " << fsc_cProblems << endl;
+			//cout << "The input was out of range, problem range is 1 to " << fsc_cProblems << endl;
 		}
-		else if (g_apProblems[t_nProblem - 1] == NULL)
+		//else if (g_apProblems_c[t_nProblem - 1] == NULL)
 		{
 			cout << "This problem hasn't been added yet." << endl;
 		}

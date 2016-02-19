@@ -6,7 +6,6 @@
 #include <Windows.h>
 #include <iomanip>
 
-#include "problems.h"
 #include "commands.h"
 #include "globals.h"
 

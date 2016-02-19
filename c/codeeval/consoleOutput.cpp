@@ -28,7 +28,7 @@ bool CConsoleOutput::fCompare(string p_strOutput, string p_strExpected)
 		size_t t_nLast = t_strOut.find_last_not_of(' ');
 		t_strOut = t_strOut.substr(0, t_nLast + 1);
 
-		bool t_fExpect = getline(expected, t_strExpected, '\n');
+		bool t_fExpect;// = getline(expected, t_strExpected, '\n');
 
 		for (int t_i = 0; t_i < t_strOut.length(); ++t_i)
 		{

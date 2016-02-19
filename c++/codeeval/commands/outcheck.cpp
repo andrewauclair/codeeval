@@ -1,5 +1,4 @@
 #include "outcheck.h"
-#include "problems.h"
 #include "globals.h"
 #include <string>
 #include <sstream>
@@ -20,11 +19,11 @@ void COutCheck::vRun(const vector<string> &p_aArgs)
 {
 	streambuf* t_coutStream = cout.rdbuf();
 	ostringstream t_output;
-
+	int t_i = 0;
 	// call run on all non-NULL problems
-	for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
+	//for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
 	{
-		if (g_apProblems[t_i] != NULL)
+		//if (g_apProblems[t_i] != NULL)
 		{
 			int t_nInput = 0;
 
@@ -36,7 +35,7 @@ void COutCheck::vRun(const vector<string> &p_aArgs)
 			const char * t_argv[] = { "main", t_strPath.c_str() };
 
 			cout.rdbuf(t_output.rdbuf());
-			g_apProblems[t_i]->nRun(2, t_argv);
+			//g_apProblems[t_i]->nRun(2, t_argv);
 			cout.rdbuf(t_coutStream);
 
 			ifstream t_file("out/" + t_ss.str() + "_out.txt");
@@ -54,7 +53,7 @@ void COutCheck::vRun(const vector<string> &p_aArgs)
 
 			string t_strOut = t_output.str();
 
-			if (g_apProblems[t_i]->fFinished() && !g_outputConsole->fCompare(t_strOut, t_strCompare))
+			//if (g_apProblems[t_i]->fFinished() && !g_outputConsole->fCompare(t_strOut, t_strCompare))
 			{
 				cout << t_ss.str() << " is incorrect but claimed finished." << endl;
 			}

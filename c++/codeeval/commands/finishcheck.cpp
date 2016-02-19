@@ -1,5 +1,4 @@
 #include "finishcheck.h"
-#include "problems.h"
 #include "globals.h"
 #include <string>
 #include <sstream>
@@ -26,7 +25,7 @@ void CFinishCheck::vRun(const vector<string> &p_aArgs)
 	streamsize t_width = cout.width();
 
 	// call run on all non-NULL problems
-	for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
+	/*for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
 	{
 		if (g_apProblems[t_i] != NULL)
 		{
@@ -69,5 +68,5 @@ void CFinishCheck::vRun(const vector<string> &p_aArgs)
 
 			t_output.str("");
 		}
-	}
+	}*/
 }

@@ -1,5 +1,4 @@
 #include "done.h"
-#include "problems.h"
 #include "globals.h"
 #include <string>
 #include <sstream>
@@ -24,16 +23,16 @@ void CDone::vRun(const vector<string> &p_aArgs)
 
 	g_outputConsole->vClear();
 	g_outputConsole->cout("Problem Progress\n\n");
-
-	for (int t_i = 0; t_i <= eDiff_Hard; ++t_i)
+	int t_i = 0;
+	//for (int t_i = 0; t_i <= eDiff_Hard; ++t_i)
 	{
-		EDifficulty t_eDiff = (EDifficulty)t_i;
+		//EDifficulty t_eDiff = (EDifficulty)t_i;
 
-		for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
+		//for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
 		{
-			if (g_apProblems[t_j] == NULL || g_apProblems[t_j]->eDifficulty() != t_eDiff) continue;
+			//if (g_apProblems[t_j] == NULL || g_apProblems[t_j]->eDifficulty() != t_eDiff) continue;
 
-			if (g_apProblems[t_j]->fFinished())
+			/*if (g_apProblems[t_j]->fFinished())
 			{
 				switch (g_apProblems[t_j]->eDifficulty())
 				{
@@ -52,11 +51,11 @@ void CDone::vRun(const vector<string> &p_aArgs)
 					++t_cHard;
 				}break;
 				}
-			}
+			}*/
 		}
 	}
 
-	for (int t_i = 0; t_i <= eDiff_Hard; ++t_i)
+	/*for (int t_i = 0; t_i <= eDiff_Hard; ++t_i)
 	{
 		EDifficulty t_eDiff = (EDifficulty)t_i;
 
@@ -137,5 +136,5 @@ void CDone::vRun(const vector<string> &p_aArgs)
 		t_ss << t_j + 1;
 		g_outputConsole->cout(t_ss.str());
 		g_outputConsole->cout(":[!] ");
-	}
+	}*/
 }

@@ -68,12 +68,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="problem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="problems.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="helpers\cpucycles.h">
       <Filter>Header Files</Filter>
     </ClInclude>

@@ -48,39 +48,46 @@ namespace codeeval
 
 		static void Main(string[] args)
 		{
-			vCreateConsoles();
+			int t_nProblem = Int32.Parse(args[0]);
+			string t_strFile = args[1];
 
-			Console.WriteLine("<code_eval> c# solutions");
+			Type t_type = Type.GetType("codeeval.CP" + t_nProblem);
+			CProblem t_problem = (CProblem)Activator.CreateInstance(t_type);
+			t_problem.vRun();
+			//return;
+			//vCreateConsoles();
 
-			int t_nInput = 0;
-			TextWriter t_origOut = Console.Out;
+			//Console.WriteLine("<code_eval> c# solutions");
 
-			while (t_nInput != -1)
-			{
-				string t_strInput;
+			//int t_nInput = 0;
+			//TextWriter t_origOut = Console.Out;
 
-				Console.Write("Problem: ");
+			//while (t_nInput != -1)
+			//{
+			//    string t_strInput;
 
-				t_strInput = Console.ReadLine();
+			//    Console.Write("Problem: ");
 
-				Console.WriteLine();
+			//    t_strInput = Console.ReadLine();
 
-				t_nInput = Int32.Parse(t_strInput);
+			//    Console.WriteLine();
 
-				// output
-				string t_strExpected = File.ReadAllText("out/" + t_nInput + "_out.txt");
+			//    t_nInput = Int32.Parse(t_strInput);
 
-				Type t_type = Type.GetType("codeeval.CP" + t_nInput);
+			//    // output
+			//    string t_strExpected = File.ReadAllText("out/" + t_nInput + "_out.txt");
 
-				CProblem t_problem = (CProblem)Activator.CreateInstance(t_type);
+			//    Type t_type = Type.GetType("codeeval.CP" + t_nInput);
 
-				StringWriter t_writer = new StringWriter();
-				Console.SetOut(t_writer);
-				t_problem.vRun();
-				t_writer.Flush();
-				Console.SetOut(t_origOut);
-				m_consoleOutput.fCompare(t_writer.GetStringBuilder().ToString(), t_strExpected);
-			}
+			//    CProblem t_problem = (CProblem)Activator.CreateInstance(t_type);
+
+			//    StringWriter t_writer = new StringWriter();
+			//    Console.SetOut(t_writer);
+			//    t_problem.vRun();
+			//    t_writer.Flush();
+			//    Console.SetOut(t_origOut);
+			//    m_consoleOutput.fCompare(t_writer.GetStringBuilder().ToString(), t_strExpected);
+			//}
 		}
 
 		static void vCreateConsoles()

@@ -1,0 +1,1316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\1-20">
+      <UniqueIdentifier>{4811a23b-8b8d-47c8-a6a9-506748594fb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\21-40">
+      <UniqueIdentifier>{c973cf57-e418-4602-9802-fc62881d4a26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\61-80">
+      <UniqueIdentifier>{ef85594f-5854-4b3b-afcf-87802a0974b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\81-100">
+      <UniqueIdentifier>{93059ed2-f126-4168-842e-6a261797ba41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\101-120">
+      <UniqueIdentifier>{b604fd9c-f6d9-4113-abcd-218b8994d980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\121-140">
+      <UniqueIdentifier>{68f1b0d1-c75d-4d65-a17c-4e6e47eae445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\141-160">
+      <UniqueIdentifier>{b5d2654a-d26a-4080-b525-c6c865ab38ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\161-180">
+      <UniqueIdentifier>{2b0e905a-a1b7-4c99-85a3-66823eb4fbf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\181-200">
+      <UniqueIdentifier>{07983518-7f6f-4936-851f-0b4d452d83aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\1-20">
+      <UniqueIdentifier>{f02d1aef-f695-40c7-9c98-90fa528f04e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\21-40">
+      <UniqueIdentifier>{ed16ca08-7eb1-4d84-9f0b-22f4307878b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\41-60">
+      <UniqueIdentifier>{89e7e0ba-bc68-4d39-be86-4728b19feacf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\61-80">
+      <UniqueIdentifier>{e40ed56a-eb01-43d7-a1c5-a99d80c47ac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\81-100">
+      <UniqueIdentifier>{48459b66-42db-444d-bd0e-3f28b66bb71d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\101-120">
+      <UniqueIdentifier>{653413f8-ba55-443b-9810-b9776709e13d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\121-140">
+      <UniqueIdentifier>{53f1557b-9531-440a-af18-7a8d7e6d3934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\141-160">
+      <UniqueIdentifier>{f406c9ce-cbab-4652-948a-d7293cd0d4bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\161-180">
+      <UniqueIdentifier>{d18030f2-9903-4018-93ea-4d5fe3532c95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\181-200">
+      <UniqueIdentifier>{ad94bb22-79dd-49fd-a856-39a12b9e4e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\41-60">
+      <UniqueIdentifier>{476473f7-3053-41ea-ad6b-12459ded0ea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\in">
+      <UniqueIdentifier>{726ec58a-410f-4893-9393-15a8c15df2fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\out">
+      <UniqueIdentifier>{4ea25f63-5f3a-4e86-9024-e9d09fc31550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\commands">
+      <UniqueIdentifier>{b784edc1-42c5-4a9d-b2f0-92c0a5da969d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\commands">
+      <UniqueIdentifier>{e3be192b-8dd4-4a08-ad51-98cb487d5de6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consoleInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consoleOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="consolePerformance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\filecheck.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\done.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\outcheck.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\run.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="commands\finishcheck.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="src\1_c.c">
+      <Filter>Source Files\1-20</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="problem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\cpucycles.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consolePerformance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consoleOutput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="consoleInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\101.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\139.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\144.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\146.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\147.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\148.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\149.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\150.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\152.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\153.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\156.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\158.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\160.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\163.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\166.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\167.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\172.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\173.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\174.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\177.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\178.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\179.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\180.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\181.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\183.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\184.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\186.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\189.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\191.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\192.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\21.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\22.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\23.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\24.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\25.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\26.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\27.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\29.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\30.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\31.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\32.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\37.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\39.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\40.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\41.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\44.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\46.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\52.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\57.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\62.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\63.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\66.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\67.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\68.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\70.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\71.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\74.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\75.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\76.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\78.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\79.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\81.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\82.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\83.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\87.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\91.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\92.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\93.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\94.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\96.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\97.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\98.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\99.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="include\100.h">
+      <Filter>Header Files\81-100</Filter>
+    </ClInclude>
+    <ClInclude Include="command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\filecheck.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\done.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\outcheck.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\run.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="commands\finishcheck.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="include\102.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\103.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\104.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\106.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\107.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\111.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\112.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\113.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\115.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\116.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\122.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\124.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\128.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\131.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\132.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\136.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\140.h">
+      <Filter>Header Files\121-140</Filter>
+    </ClInclude>
+    <ClInclude Include="include\193.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\73.h">
+      <Filter>Header Files\61-80</Filter>
+    </ClInclude>
+    <ClInclude Include="include\34.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\54.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\43.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\170.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\59.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\108.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\45.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\161.h">
+      <Filter>Header Files\161-180</Filter>
+    </ClInclude>
+    <ClInclude Include="include\119.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\110.h">
+      <Filter>Header Files\101-120</Filter>
+    </ClInclude>
+    <ClInclude Include="include\28.h">
+      <Filter>Header Files\21-40</Filter>
+    </ClInclude>
+    <ClInclude Include="include\47.h">
+      <Filter>Header Files\41-60</Filter>
+    </ClInclude>
+    <ClInclude Include="include\157.h">
+      <Filter>Header Files\141-160</Filter>
+    </ClInclude>
+    <ClInclude Include="include\196.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\197.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="include\199.h">
+      <Filter>Header Files\181-200</Filter>
+    </ClInclude>
+    <ClInclude Include="problems_c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\1_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\2_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\4_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\5_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\6_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\7_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\8_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\9_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\10_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\11_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\12_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\13_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\14_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\15_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\16_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\17_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\18_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\19_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\20_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="in\2_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\5_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\6_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\12_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\13_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\14_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\16_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\17_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\27_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\31_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\37_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\41_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\44_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\52_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\66_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\70_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\71_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\74_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\75_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\76_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\78_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\81_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\94_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\98_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\101_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\139_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\144_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\146_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\147_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\148_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\149_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\150_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\152_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\153_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\156_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\158_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\160_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\163_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\166_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\167_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\172_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\173_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\174_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\177_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\178_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\179_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\180_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\181_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\183_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\184_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\186_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\189_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\192_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\5_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\6_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\12_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\14_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\17_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\25_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\37_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\41_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\66_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\70_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\71_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\75_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\76_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\78_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\81_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\94_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\139_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\146_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\148_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\149_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\150_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\158_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\166_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\172_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\173_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\174_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\177_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\179_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\180_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\181_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\183_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\186_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\189_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\192_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\101_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\39_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\39_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\1_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\18_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\19_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\20_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\21_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\22_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\24_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\29_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\30_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\32_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\40_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\46_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\62_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\63_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\67_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\68_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\79_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\82_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\83_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\87_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\91_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\92_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\93_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\96_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\97_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\99_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\100_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\102_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\103_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\104_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\106_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\107_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\111_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\112_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\113_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\115_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\116_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\191_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\1_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\2_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\3_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\4_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\13_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\15_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\16_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\18_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\19_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\20_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\21_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\22_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\23_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\24_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\27_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\29_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\30_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\31_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\32_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\40_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\44_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\46_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\52_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\62_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\63_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\67_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\68_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\74_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\79_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\82_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\83_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\87_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\91_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\92_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\93_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\96_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\97_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\98_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\99_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\100_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\102_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\103_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\104_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\106_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\107_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\111_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\112_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\113_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\115_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\116_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\144_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\147_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\152_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\153_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\156_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\160_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\163_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\167_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\178_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\184_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\191_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\8_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\26_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\122_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\124_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\128_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\131_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\132_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\136_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\140_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\8_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\26_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\122_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\124_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\128_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\131_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\132_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\136_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\140_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\121_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\121_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\193_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\193_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\73_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\73_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\9_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\9_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\34_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\34_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\54_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\54_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\43_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\43_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\170_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\170_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\59_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\59_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\50_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\50_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\7_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\7_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\108_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\108_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="out\45_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\45_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\161_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\161_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\119_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\119_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\11_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\11_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\110_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\110_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\28_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\28_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\47_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\47_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\157_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\157_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="in\196_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\196_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\197_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\197_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+    <None Include="in\199_in.txt">
+      <Filter>Resource Files\in</Filter>
+    </None>
+    <None Include="out\199_out.txt">
+      <Filter>Resource Files\out</Filter>
+    </None>
+  </ItemGroup>
+</Project>

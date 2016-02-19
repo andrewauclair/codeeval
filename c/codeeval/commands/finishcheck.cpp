@@ -1,5 +1,5 @@
 #include "finishcheck.h"
-#include "problems.h"
+#include "problems_c.h"
 #include "globals.h"
 #include <string>
 #include <sstream>

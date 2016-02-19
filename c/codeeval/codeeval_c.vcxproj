@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8181BF17-0A45-422F-82E8-DD35778E6EF9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>codeeval_c</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./include;./commands;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>./include;./commands;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_EDITOR;_DEBUG;_CONSOLE;_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./include;./;../;./commands;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ConsoleLogger.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>Copy /Y "$(SolutionDir)codeeval\in\*" "$(TargetDir)in"
+Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_EDITOR;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./include;./;../;./commands;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../Release</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ConsoleLogger.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>Copy /Y "$(SolutionDir)codeeval\in\*" "$(TargetDir)in"
+Copy /Y "$(SolutionDir)codeeval\out\*" "$(TargetDir)out"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="commands\done.cpp" />
+    <ClCompile Include="commands\filecheck.cpp" />
+    <ClCompile Include="commands\finishcheck.cpp" />
+    <ClCompile Include="commands\outcheck.cpp" />
+    <ClCompile Include="commands\run.cpp" />
+    <ClCompile Include="consoleInput.cpp" />
+    <ClCompile Include="consoleOutput.cpp" />
+    <ClCompile Include="consolePerformance.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\1_c.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="command.h" />
+    <ClInclude Include="commands.h" />
+    <ClInclude Include="commands\done.h" />
+    <ClInclude Include="commands\filecheck.h" />
+    <ClInclude Include="commands\finishcheck.h" />
+    <ClInclude Include="commands\outcheck.h" />
+    <ClInclude Include="commands\run.h" />
+    <ClInclude Include="consoleInput.h" />
+    <ClInclude Include="consoleOutput.h" />
+    <ClInclude Include="consolePerformance.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="helpers\cpucycles.h" />
+    <ClInclude Include="include\1_c.h" />
+    <ClInclude Include="include\10_c.h" />
+    <ClInclude Include="include\100.h" />
+    <ClInclude Include="include\101.h" />
+    <ClInclude Include="include\102.h" />
+    <ClInclude Include="include\103.h" />
+    <ClInclude Include="include\104.h" />
+    <ClInclude Include="include\106.h" />
+    <ClInclude Include="include\107.h" />
+    <ClInclude Include="include\108.h" />
+    <ClInclude Include="include\11_c.h" />
+    <ClInclude Include="include\110.h" />
+    <ClInclude Include="include\111.h" />
+    <ClInclude Include="include\112.h" />
+    <ClInclude Include="include\113.h" />
+    <ClInclude Include="include\115.h" />
+    <ClInclude Include="include\116.h" />
+    <ClInclude Include="include\119.h" />
+    <ClInclude Include="include\12_c.h" />
+    <ClInclude Include="include\122.h" />
+    <ClInclude Include="include\124.h" />
+    <ClInclude Include="include\128.h" />
+    <ClInclude Include="include\13_c.h" />
+    <ClInclude Include="include\131.h" />
+    <ClInclude Include="include\132.h" />
+    <ClInclude Include="include\136.h" />
+    <ClInclude Include="include\139.h" />
+    <ClInclude Include="include\14_c.h" />
+    <ClInclude Include="include\140.h" />
+    <ClInclude Include="include\144.h" />
+    <ClInclude Include="include\146.h" />
+    <ClInclude Include="include\147.h" />
+    <ClInclude Include="include\148.h" />
+    <ClInclude Include="include\149.h" />
+    <ClInclude Include="include\15_c.h" />
+    <ClInclude Include="include\150.h" />
+    <ClInclude Include="include\152.h" />
+    <ClInclude Include="include\153.h" />
+    <ClInclude Include="include\156.h" />
+    <ClInclude Include="include\157.h" />
+    <ClInclude Include="include\158.h" />
+    <ClInclude Include="include\16_c.h" />
+    <ClInclude Include="include\160.h" />
+    <ClInclude Include="include\161.h" />
+    <ClInclude Include="include\163.h" />
+    <ClInclude Include="include\166.h" />
+    <ClInclude Include="include\167.h" />
+    <ClInclude Include="include\17_c.h" />
+    <ClInclude Include="include\170.h" />
+    <ClInclude Include="include\172.h" />
+    <ClInclude Include="include\173.h" />
+    <ClInclude Include="include\174.h" />
+    <ClInclude Include="include\177.h" />
+    <ClInclude Include="include\178.h" />
+    <ClInclude Include="include\179.h" />
+    <ClInclude Include="include\18_c.h" />
+    <ClInclude Include="include\180.h" />
+    <ClInclude Include="include\181.h" />
+    <ClInclude Include="include\183.h" />
+    <ClInclude Include="include\184.h" />
+    <ClInclude Include="include\186.h" />
+    <ClInclude Include="include\189.h" />
+    <ClInclude Include="include\19_c.h" />
+    <ClInclude Include="include\191.h" />
+    <ClInclude Include="include\192.h" />
+    <ClInclude Include="include\193.h" />
+    <ClInclude Include="include\196.h" />
+    <ClInclude Include="include\197.h" />
+    <ClInclude Include="include\199.h" />
+    <ClInclude Include="include\2_c.h" />
+    <ClInclude Include="include\20_c.h" />
+    <ClInclude Include="include\21.h" />
+    <ClInclude Include="include\22.h" />
+    <ClInclude Include="include\23.h" />
+    <ClInclude Include="include\24.h" />
+    <ClInclude Include="include\25.h" />
+    <ClInclude Include="include\26.h" />
+    <ClInclude Include="include\27.h" />
+    <ClInclude Include="include\28.h" />
+    <ClInclude Include="include\29.h" />
+    <ClInclude Include="include\3_c.h" />
+    <ClInclude Include="include\30.h" />
+    <ClInclude Include="include\31.h" />
+    <ClInclude Include="include\32.h" />
+    <ClInclude Include="include\34.h" />
+    <ClInclude Include="include\37.h" />
+    <ClInclude Include="include\39.h" />
+    <ClInclude Include="include\4_c.h" />
+    <ClInclude Include="include\40.h" />
+    <ClInclude Include="include\41.h" />
+    <ClInclude Include="include\43.h" />
+    <ClInclude Include="include\44.h" />
+    <ClInclude Include="include\45.h" />
+    <ClInclude Include="include\46.h" />
+    <ClInclude Include="include\47.h" />
+    <ClInclude Include="include\5_c.h" />
+    <ClInclude Include="include\52.h" />
+    <ClInclude Include="include\54.h" />
+    <ClInclude Include="include\57.h" />
+    <ClInclude Include="include\59.h" />
+    <ClInclude Include="include\6_c.h" />
+    <ClInclude Include="include\62.h" />
+    <ClInclude Include="include\63.h" />
+    <ClInclude Include="include\66.h" />
+    <ClInclude Include="include\67.h" />
+    <ClInclude Include="include\68.h" />
+    <ClInclude Include="include\7_c.h" />
+    <ClInclude Include="include\70.h" />
+    <ClInclude Include="include\71.h" />
+    <ClInclude Include="include\73.h" />
+    <ClInclude Include="include\74.h" />
+    <ClInclude Include="include\75.h" />
+    <ClInclude Include="include\76.h" />
+    <ClInclude Include="include\78.h" />
+    <ClInclude Include="include\79.h" />
+    <ClInclude Include="include\8_c.h" />
+    <ClInclude Include="include\81.h" />
+    <ClInclude Include="include\82.h" />
+    <ClInclude Include="include\83.h" />
+    <ClInclude Include="include\87.h" />
+    <ClInclude Include="include\9_c.h" />
+    <ClInclude Include="include\91.h" />
+    <ClInclude Include="include\92.h" />
+    <ClInclude Include="include\93.h" />
+    <ClInclude Include="include\94.h" />
+    <ClInclude Include="include\96.h" />
+    <ClInclude Include="include\97.h" />
+    <ClInclude Include="include\98.h" />
+    <ClInclude Include="include\99.h" />
+    <ClInclude Include="problem.h" />
+    <ClInclude Include="problems_c.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="in\100_in.txt" />
+    <None Include="in\101_in.txt" />
+    <None Include="in\102_in.txt" />
+    <None Include="in\103_in.txt" />
+    <None Include="in\104_in.txt" />
+    <None Include="in\106_in.txt" />
+    <None Include="in\107_in.txt" />
+    <None Include="in\108_in.txt" />
+    <None Include="in\110_in.txt" />
+    <None Include="in\111_in.txt" />
+    <None Include="in\112_in.txt" />
+    <None Include="in\113_in.txt" />
+    <None Include="in\115_in.txt" />
+    <None Include="in\116_in.txt" />
+    <None Include="in\119_in.txt" />
+    <None Include="in\11_in.txt" />
+    <None Include="in\121_in.txt" />
+    <None Include="in\122_in.txt" />
+    <None Include="in\124_in.txt" />
+    <None Include="in\128_in.txt" />
+    <None Include="in\12_in.txt" />
+    <None Include="in\131_in.txt" />
+    <None Include="in\132_in.txt" />
+    <None Include="in\136_in.txt" />
+    <None Include="in\139_in.txt" />
+    <None Include="in\13_in.txt" />
+    <None Include="in\140_in.txt" />
+    <None Include="in\144_in.txt" />
+    <None Include="in\146_in.txt" />
+    <None Include="in\147_in.txt" />
+    <None Include="in\148_in.txt" />
+    <None Include="in\149_in.txt" />
+    <None Include="in\14_in.txt" />
+    <None Include="in\150_in.txt" />
+    <None Include="in\152_in.txt" />
+    <None Include="in\153_in.txt" />
+    <None Include="in\156_in.txt" />
+    <None Include="in\157_in.txt" />
+    <None Include="in\158_in.txt" />
+    <None Include="in\160_in.txt" />
+    <None Include="in\161_in.txt" />
+    <None Include="in\163_in.txt" />
+    <None Include="in\166_in.txt" />
+    <None Include="in\167_in.txt" />
+    <None Include="in\16_in.txt" />
+    <None Include="in\170_in.txt" />
+    <None Include="in\172_in.txt" />
+    <None Include="in\173_in.txt" />
+    <None Include="in\174_in.txt" />
+    <None Include="in\177_in.txt" />
+    <None Include="in\178_in.txt" />
+    <None Include="in\179_in.txt" />
+    <None Include="in\17_in.txt" />
+    <None Include="in\180_in.txt" />
+    <None Include="in\181_in.txt" />
+    <None Include="in\183_in.txt" />
+    <None Include="in\184_in.txt" />
+    <None Include="in\186_in.txt" />
+    <None Include="in\189_in.txt" />
+    <None Include="in\18_in.txt" />
+    <None Include="in\191_in.txt" />
+    <None Include="in\192_in.txt" />
+    <None Include="in\193_in.txt" />
+    <None Include="in\196_in.txt" />
+    <None Include="in\197_in.txt" />
+    <None Include="in\199_in.txt" />
+    <None Include="in\19_in.txt" />
+    <None Include="in\1_in.txt" />
+    <None Include="in\20_in.txt" />
+    <None Include="in\21_in.txt" />
+    <None Include="in\22_in.txt" />
+    <None Include="in\24_in.txt" />
+    <None Include="in\26_in.txt" />
+    <None Include="in\27_in.txt" />
+    <None Include="in\28_in.txt" />
+    <None Include="in\29_in.txt" />
+    <None Include="in\2_in.txt" />
+    <None Include="in\30_in.txt" />
+    <None Include="in\31_in.txt" />
+    <None Include="in\32_in.txt" />
+    <None Include="in\34_in.txt" />
+    <None Include="in\37_in.txt" />
+    <None Include="in\39_in.txt" />
+    <None Include="in\40_in.txt" />
+    <None Include="in\41_in.txt" />
+    <None Include="in\43_in.txt" />
+    <None Include="in\44_in.txt" />
+    <None Include="in\45_in.txt" />
+    <None Include="in\46_in.txt" />
+    <None Include="in\47_in.txt" />
+    <None Include="in\50_in.txt" />
+    <None Include="in\52_in.txt" />
+    <None Include="in\54_in.txt" />
+    <None Include="in\59_in.txt" />
+    <None Include="in\5_in.txt" />
+    <None Include="in\62_in.txt" />
+    <None Include="in\63_in.txt" />
+    <None Include="in\66_in.txt" />
+    <None Include="in\67_in.txt" />
+    <None Include="in\68_in.txt" />
+    <None Include="in\6_in.txt" />
+    <None Include="in\70_in.txt" />
+    <None Include="in\71_in.txt" />
+    <None Include="in\73_in.txt" />
+    <None Include="in\74_in.txt" />
+    <None Include="in\75_in.txt" />
+    <None Include="in\76_in.txt" />
+    <None Include="in\78_in.txt" />
+    <None Include="in\79_in.txt" />
+    <None Include="in\7_in.txt" />
+    <None Include="in\81_in.txt" />
+    <None Include="in\82_in.txt" />
+    <None Include="in\83_in.txt" />
+    <None Include="in\87_in.txt" />
+    <None Include="in\8_in.txt" />
+    <None Include="in\91_in.txt" />
+    <None Include="in\92_in.txt" />
+    <None Include="in\93_in.txt" />
+    <None Include="in\94_in.txt" />
+    <None Include="in\96_in.txt" />
+    <None Include="in\97_in.txt" />
+    <None Include="in\98_in.txt" />
+    <None Include="in\99_in.txt" />
+    <None Include="in\9_in.txt" />
+    <None Include="out\100_out.txt" />
+    <None Include="out\101_out.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="out\102_out.txt" />
+    <None Include="out\103_out.txt" />
+    <None Include="out\104_out.txt" />
+    <None Include="out\106_out.txt" />
+    <None Include="out\107_out.txt" />
+    <None Include="out\108_out.txt" />
+    <None Include="out\110_out.txt" />
+    <None Include="out\111_out.txt" />
+    <None Include="out\112_out.txt" />
+    <None Include="out\113_out.txt" />
+    <None Include="out\115_out.txt" />
+    <None Include="out\116_out.txt" />
+    <None Include="out\119_out.txt" />
+    <None Include="out\11_out.txt" />
+    <None Include="out\121_out.txt" />
+    <None Include="out\122_out.txt" />
+    <None Include="out\124_out.txt" />
+    <None Include="out\128_out.txt" />
+    <None Include="out\12_out.txt" />
+    <None Include="out\131_out.txt" />
+    <None Include="out\132_out.txt" />
+    <None Include="out\136_out.txt" />
+    <None Include="out\139_out.txt" />
+    <None Include="out\13_out.txt" />
+    <None Include="out\140_out.txt" />
+    <None Include="out\144_out.txt" />
+    <None Include="out\146_out.txt" />
+    <None Include="out\147_out.txt" />
+    <None Include="out\148_out.txt" />
+    <None Include="out\149_out.txt" />
+    <None Include="out\14_out.txt" />
+    <None Include="out\150_out.txt" />
+    <None Include="out\152_out.txt" />
+    <None Include="out\153_out.txt" />
+    <None Include="out\156_out.txt" />
+    <None Include="out\157_out.txt" />
+    <None Include="out\158_out.txt" />
+    <None Include="out\15_out.txt" />
+    <None Include="out\160_out.txt" />
+    <None Include="out\161_out.txt" />
+    <None Include="out\163_out.txt" />
+    <None Include="out\166_out.txt" />
+    <None Include="out\167_out.txt" />
+    <None Include="out\16_out.txt" />
+    <None Include="out\170_out.txt" />
+    <None Include="out\172_out.txt" />
+    <None Include="out\173_out.txt" />
+    <None Include="out\174_out.txt" />
+    <None Include="out\177_out.txt" />
+    <None Include="out\178_out.txt" />
+    <None Include="out\179_out.txt" />
+    <None Include="out\17_out.txt" />
+    <None Include="out\180_out.txt" />
+    <None Include="out\181_out.txt" />
+    <None Include="out\183_out.txt" />
+    <None Include="out\184_out.txt" />
+    <None Include="out\186_out.txt" />
+    <None Include="out\189_out.txt" />
+    <None Include="out\18_out.txt" />
+    <None Include="out\191_out.txt" />
+    <None Include="out\192_out.txt" />
+    <None Include="out\193_out.txt" />
+    <None Include="out\196_out.txt" />
+    <None Include="out\197_out.txt" />
+    <None Include="out\199_out.txt" />
+    <None Include="out\19_out.txt" />
+    <None Include="out\1_out.txt" />
+    <None Include="out\20_out.txt" />
+    <None Include="out\21_out.txt" />
+    <None Include="out\22_out.txt" />
+    <None Include="out\23_out.txt" />
+    <None Include="out\24_out.txt" />
+    <None Include="out\25_out.txt" />
+    <None Include="out\26_out.txt" />
+    <None Include="out\27_out.txt" />
+    <None Include="out\28_out.txt" />
+    <None Include="out\29_out.txt" />
+    <None Include="out\2_out.txt" />
+    <None Include="out\30_out.txt" />
+    <None Include="out\31_out.txt" />
+    <None Include="out\32_out.txt" />
+    <None Include="out\34_out.txt" />
+    <None Include="out\37_out.txt" />
+    <None Include="out\39_out.txt" />
+    <None Include="out\3_out.txt" />
+    <None Include="out\40_out.txt" />
+    <None Include="out\41_out.txt" />
+    <None Include="out\43_out.txt" />
+    <None Include="out\44_out.txt" />
+    <None Include="out\45_out.txt" />
+    <None Include="out\46_out.txt" />
+    <None Include="out\47_out.txt" />
+    <None Include="out\4_out.txt" />
+    <None Include="out\50_out.txt" />
+    <None Include="out\52_out.txt" />
+    <None Include="out\54_out.txt" />
+    <None Include="out\59_out.txt" />
+    <None Include="out\5_out.txt" />
+    <None Include="out\62_out.txt" />
+    <None Include="out\63_out.txt" />
+    <None Include="out\66_out.txt" />
+    <None Include="out\67_out.txt" />
+    <None Include="out\68_out.txt" />
+    <None Include="out\6_out.txt" />
+    <None Include="out\70_out.txt" />
+    <None Include="out\71_out.txt" />
+    <None Include="out\73_out.txt" />
+    <None Include="out\74_out.txt" />
+    <None Include="out\75_out.txt" />
+    <None Include="out\76_out.txt" />
+    <None Include="out\78_out.txt" />
+    <None Include="out\79_out.txt" />
+    <None Include="out\7_out.txt" />
+    <None Include="out\81_out.txt" />
+    <None Include="out\82_out.txt" />
+    <None Include="out\83_out.txt" />
+    <None Include="out\87_out.txt" />
+    <None Include="out\8_out.txt" />
+    <None Include="out\91_out.txt" />
+    <None Include="out\92_out.txt" />
+    <None Include="out\93_out.txt" />
+    <None Include="out\94_out.txt" />
+    <None Include="out\96_out.txt" />
+    <None Include="out\97_out.txt" />
+    <None Include="out\98_out.txt" />
+    <None Include="out\99_out.txt" />
+    <None Include="out\9_out.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

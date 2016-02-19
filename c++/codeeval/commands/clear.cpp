@@ -1,5 +1,4 @@
 #include "clear.h"
-#include "problems.h"
 #include "globals.h"
 #include <string>
 #include <sstream>

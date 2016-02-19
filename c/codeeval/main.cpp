@@ -5,7 +5,7 @@
 #include <string>
 #include <Windows.h>
 
-#include "problems.h"
+#include "problems_c.h"
 #include "commands.h"
 #include "globals.h"
 

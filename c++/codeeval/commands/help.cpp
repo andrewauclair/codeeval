@@ -1,5 +1,4 @@
 #include "help.h"
-#include "problems.h"
 #include "globals.h"
 #include "commands.h"
 #include <string>
