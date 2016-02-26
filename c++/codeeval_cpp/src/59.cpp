@@ -6,7 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "59.h"
+#include "59cpp.h"
 
 
 void CP59::vBubbleSort(vector<string> &p_vector)
@@ -34,21 +34,6 @@ void vBubbleSort(vector<string> &p_vector)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Telephone Words";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/59/";
-static const int fsc_nNumber = 59;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP59::CP59()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP59::~CP59()
-{
-}
 
 int CP59::nRun(int argc, const char * argv[])
 #else

@@ -17,23 +17,7 @@ bool fPrime(int p_nNum)
 
 #if _EDITOR
 
-#include "4.h"
-
-static const char * fsc_pChzName = "Sum of Primes";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/4/";
-static const int fsc_nNumber = 4;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP4::CP4()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-	m_fInputRequired = false;
-}
-
-CP4::~CP4()
-{
-}
+#include "4cpp.h"
 
 int CP4::nRun(int argc, const char * argv[])
 #else

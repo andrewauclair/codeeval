@@ -5,22 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "174.h"
-
-static const char * fsc_pChzName = "Slang Flavor";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/174/";
-static const int fsc_nNumber = 174;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP174::CP174()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP174::~CP174()
-{
-}
+#include "174cpp.h"
 
 int CP174::nRun(int argc, const char * argv[])
 #else

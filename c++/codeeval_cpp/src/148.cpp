@@ -7,7 +7,8 @@
 using namespace std;
 
 #if _EDITOR
-#include "148.h"
+
+#include "148cpp.h"
 
 float CP148::hue2rgb(float p, float q, float t)
 #else
@@ -23,21 +24,6 @@ float hue2rgb(float p, float q, float t)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Color Code Converter";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/148/";
-static const int fsc_nNumber = 148;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP148::CP148()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP148::~CP148()
-{
-}
 
 int CP148::nRun(int argc, const char * argv[])
 #else

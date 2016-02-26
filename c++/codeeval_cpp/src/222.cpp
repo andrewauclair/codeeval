@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "222.h"
-
-static const char * fsc_pChzName = "Black Card";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/222/";
-static const int fsc_nNumber = 222;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP222::CP222()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP222::~CP222()
-{
-}
+#include "222cpp.h"
 
 int CP222::nRun(int argc, const char * argv[])
 #else

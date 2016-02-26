@@ -92,22 +92,7 @@ static const char* fsc_aChzNumbers[10][6] =
 
 #if _EDITOR
 
-#include "163.h"
-
-static const char * fsc_pChzName = "Big Digits";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/163/";
-static const int fsc_nNumber = 163;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP163::CP163()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP163::~CP163()
-{
-}
+#include "163cpp.h"
 
 int CP163::nRun(int argc, const char * argv[])
 #else

@@ -3,8 +3,10 @@
 #include <vector>
 #include <string>
 using namespace std;
+
 #if _EDITOR
-#include "146.h"
+
+#include "146cpp.h"
 
 void CP146::vBubbleSort(vector<int> &p_vector)
 #else
@@ -31,21 +33,6 @@ void vBubbleSort(vector<int> &p_vector)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Bats Challenge";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/146/";
-static const int fsc_nNumber = 146;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP146::CP146()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP146::~CP146()
-{
-}
 
 int CP146::nRun(int argc, const char * argv[])
 #else

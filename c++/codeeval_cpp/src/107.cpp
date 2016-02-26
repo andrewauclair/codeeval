@@ -5,22 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "107.h"
-
-static const char * fsc_pChzName = "Shortest Repetition";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/107/";
-static const int fsc_nNumber = 107;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP107::CP107()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP107::~CP107()
-{
-}
+#include "107cpp.h"
 
 int CP107::nRun(int argc, const char * argv[])
 #else

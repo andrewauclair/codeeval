@@ -9,22 +9,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "101.h"
-
-static const char * fsc_pChzName = "Find a Square";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/101/";
-static const int fsc_nNumber = 101;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP101::CP101()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP101::~CP101()
-{
-}
+#include "101cpp.h"
 
 int CP101::nRun(int argc, const char * argv[])
 #else

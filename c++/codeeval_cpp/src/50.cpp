@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "50.h"
-
-static const char * fsc_pChzName = "String Substitution";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/50/";
-static const int fsc_nNumber = 50;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP50::CP50()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP50::~CP50()
-{
-}
+#include "50cpp.h"
 
 int CP50::nRun(int argc, const char * argv[])
 #else

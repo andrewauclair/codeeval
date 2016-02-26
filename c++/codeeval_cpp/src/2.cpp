@@ -8,7 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "2.h"
+#include "2cpp.h"
 
 void CP2::vSortAndPrint(vector<string> p_aryStrLines, int p_c)
 #else
@@ -43,21 +43,6 @@ void vSortAndPrint(vector<string> p_aryStrLines, int p_c)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Longest Lines";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/2/";
-static const int fsc_nNumber = 2;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP2::CP2()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP2::~CP2()
-{
-}
 
 int CP2::nRun(int argc, const char * argv[])
 #else

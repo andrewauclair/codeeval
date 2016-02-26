@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "8.h"
-
-static const char * fsc_pChzName = "Reverse Words";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/8/";
-static const int fsc_nNumber = 8;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP8::CP8()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP8::~CP8()
-{
-}
+#include "8cpp.h"
 
 int CP8::nRun(int argc, const char * argv[])
 #else

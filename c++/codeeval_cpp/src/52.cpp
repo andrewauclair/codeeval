@@ -8,7 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "52.h"
+#include "52cpp.h"
 
 void CP52::vPrintNumber(int p_nNum)
 #else
@@ -189,23 +189,6 @@ void vPrintNumber(int p_nNum)
 }
 
 #if _EDITOR
-
-#include "52.h"
-
-static const char * fsc_pChzName = "Text Dollar";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/52/";
-static const int fsc_nNumber = 52;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP52::CP52()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP52::~CP52()
-{
-}
 
 int CP52::nRun(int argc, const char * argv[])
 #else

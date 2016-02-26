@@ -8,7 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "230.h"
+#include "230cpp.h"
 
 void CP230::vBubbleSort(vector<int> &p_vector)
 #else
@@ -65,21 +65,6 @@ void vSortTeams(vector<vector<int>> &p_aCountries, vector<int> &p_aTeams)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Football";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/230/";
-static const int fsc_nNumber = 230;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP230::CP230()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP230::~CP230()
-{
-}
 
 int CP230::nRun(int argc, const char * argv[])
 #else

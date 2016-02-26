@@ -5,22 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "136.h"
-
-static const char * fsc_pChzName = "Racing Chars";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/136/";
-static const int fsc_nNumber = 136;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP136::CP136()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP136::~CP136()
-{
-}
+#include "136cpp.h"
 
 int CP136::nRun(int argc, const char * argv[])
 #else

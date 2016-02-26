@@ -8,23 +8,8 @@ using namespace std;
 
 #if _EDITOR
 
-#include "13.h"
+#include "13cpp.h"
 //#include "helpers/cpucycles.h"
-
-static const char * fsc_pChzName = "Remove Characters";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/13/";
-static const int fsc_nNumber = 13;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP13::CP13()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP13::~CP13()
-{
-}
 
 int CP13::nRun(int argc, const char * argv[])
 #else

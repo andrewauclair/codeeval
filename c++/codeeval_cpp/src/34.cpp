@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "34.h"
-
-static const char * fsc_pChzName = "Number Pairs";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/34/";
-static const int fsc_nNumber = 34;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP34::CP34()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP34::~CP34()
-{
-}
+#include "34cpp.h"
 
 int CP34::nRun(int argc, const char * argv[])
 #else

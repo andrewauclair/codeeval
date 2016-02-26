@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "170.h"
-
-static const char * fsc_pChzName = "Guess the Number";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/170/";
-static const int fsc_nNumber = 170;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP170::CP170()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP170::~CP170()
-{
-}
+#include "170cpp.h"
 
 int CP170::nRun(int argc, const char * argv[])
 #else

@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "172.h"
-
-static const char * fsc_pChzName = "Card Number Validation";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/172/";
-static const int fsc_nNumber = 172;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP172::CP172()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP172::~CP172()
-{
-}
+#include "172cpp.h"
 
 int CP172::nRun(int argc, const char * argv[])
 #else

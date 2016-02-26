@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "20.h"
-
-static const char * fsc_pChzName = "Lowercase";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/20/";
-static const int fsc_nNumber = 20;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP20::CP20()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP20::~CP20()
-{
-}
+#include "20cpp.h"
 
 int CP20::nRun(int argc, const char * argv[])
 #else

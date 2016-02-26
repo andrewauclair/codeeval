@@ -4,22 +4,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "18.h"
-
-static const char * fsc_pChzName = "Multiples of a Number";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/18/";
-static const int fsc_nNumber = 18;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP18::CP18()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP18::~CP18()
-{
-}
+#include "18cpp.h"
 
 int CP18::nRun(int argc, const char * argv[])
 #else

@@ -5,7 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "46.h"
+#include "46cpp.h"
 
 bool CP46::isPrime(long int p_nNum)
 #else
@@ -24,21 +24,6 @@ bool isPrime(long int p_nNum)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Prime Numbers";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/46/";
-static const int fsc_nNumber = 46;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP46::CP46()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP46::~CP46()
-{
-}
 
 int CP46::nRun(int argc, const char * argv[])
 #else

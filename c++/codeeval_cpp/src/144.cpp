@@ -8,22 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "144.h"
-
-static const char * fsc_pChzName = "Digit Statistics";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/144/";
-static const int fsc_nNumber = 144;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP144::CP144()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP144::~CP144()
-{
-}
+#include "144cpp.h"
 
 int CP144::nRun(int argc, const char * argv[])
 #else

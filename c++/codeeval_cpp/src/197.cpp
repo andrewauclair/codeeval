@@ -5,22 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "197.h"
-
-static const char * fsc_pChzName = "Column Names";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/197/";
-static const int fsc_nNumber = 197;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP197::CP197()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP197::~CP197()
-{
-}
+#include "197cpp.h"
 
 int CP197::nRun(int argc, const char * argv[])
 #else

@@ -4,22 +4,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "62.h"
-
-static const char * fsc_pChzName = "N Mod M";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/62/";
-static const int fsc_nNumber = 62;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP62::CP62()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP62::~CP62()
-{
-}
+#include "62cpp.h"
 
 int CP62::nRun(int argc, const char * argv[])
 #else

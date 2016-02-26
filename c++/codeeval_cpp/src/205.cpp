@@ -5,22 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "205.h"
-
-static const char * fsc_pChzName = "Clean Up the Words";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/205/";
-static const int fsc_nNumber = 205;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP205::CP205()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP205::~CP205()
-{
-}
+#include "205cpp.h"
 
 int CP205::nRun(int argc, const char * argv[])
 #else

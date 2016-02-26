@@ -15,7 +15,7 @@ struct SNode
 
 #if _EDITOR
 
-#include "157.h"
+#include "157cpp.h"
 
 SNode * CP157::nodeSmallest(vector<SNode> &p_list)
 #else
@@ -193,21 +193,6 @@ SNode * shortestPath(vector<vector<int>> &p_graph, int * p_pStart, int * p_pEnd)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "The Labyrinth";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/157/";
-static const int fsc_nNumber = 157;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP157::CP157()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP157::~CP157()
-{
-}
 
 int CP157::nRun(int argc, const char * argv[])
 #else

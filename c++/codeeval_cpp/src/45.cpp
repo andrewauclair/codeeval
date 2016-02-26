@@ -7,7 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "45.h"
+#include "45cpp.h"
 
 bool CP45::isPalindrome(string p_str)
 #else
@@ -26,21 +26,6 @@ bool isPalindrome(string p_str)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Reverse and Add";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/45/";
-static const int fsc_nNumber = 45;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP45::CP45()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP45::~CP45()
-{
-}
 
 int CP45::nRun(int argc, const char * argv[])
 #else

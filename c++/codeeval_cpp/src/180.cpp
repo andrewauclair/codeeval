@@ -6,7 +6,8 @@ using namespace std;
 
 #if _EDITOR
 
-#include "180.h"
+#include "180cpp.h"
+
 void CP180::vBubbleSort(vector<char> &p_v1, vector<int> &p_v2)
 #else
 void vBubbleSort(vector<char> &p_v1, vector<int> &p_v2)
@@ -37,21 +38,6 @@ void vBubbleSort(vector<char> &p_v1, vector<int> &p_v2)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Knight Moves";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/180/";
-static const int fsc_nNumber = 180;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP180::CP180()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP180::~CP180()
-{
-}
 
 int CP180::nRun(int argc, const char * argv[])
 #else

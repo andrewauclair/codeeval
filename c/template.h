@@ -1,14 +1,11 @@
-#ifndef _CPPROBLEM_NUMBER_H_
-#define _CPPROBLEM_NUMBER_H_
+#pragma once
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-void vRunPROBLEM_NUMBER(void);
+void vRunPROBLEM_NUMBER(int argc, const char* argv[]);
 
 #ifdef __cplusplus
 }
-#endif
-
 #endif

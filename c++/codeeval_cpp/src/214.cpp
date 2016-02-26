@@ -7,7 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "214.h"
+#include "214cpp.h"
 
 void CP214::vBubbleSort(vector<string> &p_vector)
 #else
@@ -34,21 +34,6 @@ void vBubbleSort(vector<string> &p_vector)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Time to Eat";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/214/";
-static const int fsc_nNumber = 214;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP214::CP214()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP214::~CP214()
-{
-}
 
 int CP214::nRun(int argc, const char * argv[])
 #else

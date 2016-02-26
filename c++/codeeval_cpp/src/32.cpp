@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "32.h"
-
-static const char * fsc_pChzName = "Trailing String";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/32/";
-static const int fsc_nNumber = 32;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP32::CP32()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP32::~CP32()
-{
-}
+#include "32cpp.h"
 
 int CP32::nRun(int argc, const char * argv[])
 #else

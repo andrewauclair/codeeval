@@ -5,22 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "173.h"
-
-static const char * fsc_pChzName = "Without Repetitions";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/173/";
-static const int fsc_nNumber = 173;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP173::CP173()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP173::~CP173()
-{
-}
+#include "173cpp.h"
 
 int CP173::nRun(int argc, const char * argv[])
 #else

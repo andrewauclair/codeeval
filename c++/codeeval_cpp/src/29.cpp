@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "29.h"
-
-static const char * fsc_pChzName = "Unique Elements";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/29/";
-static const int fsc_nNumber = 29;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP29::CP29()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP29::~CP29()
-{
-}
+#include "29cpp.h"
 
 int CP29::nRun(int argc, const char * argv[])
 #else

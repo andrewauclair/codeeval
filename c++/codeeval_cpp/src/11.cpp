@@ -12,22 +12,7 @@ struct SNum
 
 #if _EDITOR
 
-#include "11.h"
-
-static const char * fsc_pChzName = "Lowest Common Ancestor";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/11/";
-static const int fsc_nNumber = 11;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP11::CP11()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP11::~CP11()
-{
-}
+#include "11cpp.h"
 
 int CP11::nRun(int argc, const char * argv[])
 #else

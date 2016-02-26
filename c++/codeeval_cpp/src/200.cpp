@@ -5,22 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "200.h"
-
-static const char * fsc_pChzName = "Sort Matrix Columns";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/200/";
-static const int fsc_nNumber = 200;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP200::CP200()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP200::~CP200()
-{
-}
+#include "200cpp.h"
 
 int CP200::nRun(int argc, const char * argv[])
 #else

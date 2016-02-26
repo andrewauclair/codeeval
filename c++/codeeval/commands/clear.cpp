@@ -20,7 +20,8 @@ void CClear::vRun(const vector<string> &p_aArgs)
 {
 	system("cls");
 
-	cout << "<code_eval> c++ code_eval solutions - Andrew Auclair - Game Programmer" << endl << endl;
+	cout << "                      <code_eval> code_eval solutions                      " << endl;
+	cout << " Andrew Auclair - Associate Software Engineer - Tactical Communications Group  " << endl << endl;
 
 	g_inputConsole->vClear();
 	g_outputConsole->vClear();

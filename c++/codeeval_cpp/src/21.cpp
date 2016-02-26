@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "21.h"
-
-static const char * fsc_pChzName = "Sum of Digits";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/21/";
-static const int fsc_nNumber = 21;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP21::CP21()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP21::~CP21()
-{
-}
+#include "21cpp.h"
 
 int CP21::nRun(int argc, const char * argv[])
 #else

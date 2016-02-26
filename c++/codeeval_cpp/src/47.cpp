@@ -7,7 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "47.h"
+#include "47cpp.h"
 
 bool CP47::isPalindrome(string p_str)
 #else
@@ -26,21 +26,6 @@ bool isPalindrome(string p_str)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Palindromic Ranges";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/47/";
-static const int fsc_nNumber = 47;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP47::CP47()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP47::~CP47()
-{
-}
 
 int CP47::nRun(int argc, const char * argv[])
 #else

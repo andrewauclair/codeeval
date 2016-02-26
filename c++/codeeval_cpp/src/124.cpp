@@ -7,7 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "124.h"
+#include "124cpp.h"
 
 void CP124::vBubbleSort(vector<int> &p_vector)
 #else
@@ -34,21 +34,6 @@ void vBubbleSort(vector<int> &p_vector)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Road Trip";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/124/";
-static const int fsc_nNumber = 124;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP124::CP124()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP124::~CP124()
-{
-}
 
 int CP124::nRun(int argc, const char * argv[])
 #else

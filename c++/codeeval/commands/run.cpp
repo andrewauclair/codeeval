@@ -7,6 +7,9 @@
 #include <fstream>
 #include <iostream>
 #include <assert.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
 using namespace std;
 
 CRun::CRun()
@@ -23,6 +26,7 @@ void CRun::vRun(const vector<string> &p_aArgs)
 {
 	streambuf* t_coutStream = cout.rdbuf();
 	ostringstream t_output;
+	FILE * stream;
 
 	if (p_aArgs.size() >= 2)
 	{
@@ -35,23 +39,19 @@ void CRun::vRun(const vector<string> &p_aArgs)
 		string t_strRun;
 		string t_strLanguage = "cpp";
 
-		// Default to c++ right now if they don't specify a language
-		if (p_aArgs.size() < 3)
-		{
-			//t_strRun = strSysCmd("cpp");
-		}
-		else
+		if (p_aArgs.size() >= 3)
 		{
 			t_strLanguage = p_aArgs[2];
-			t_strRun = strSysCmd(p_aArgs[2]);
+			t_strRun = strSysCmd(p_aArgs);
 		}
 		
 		string t_strPath = "in/" + p_aArgs[1] + "_in.txt";
 
-		t_strRun += " " + p_aArgs[1];
+		//t_strRun += " " + p_aArgs[1];
 		t_strRun += " " + t_strPath;
 
 		cout.rdbuf(t_output.rdbuf());
+		stream = freopen("stdout.txt", "w", stdout);
 
 		if (t_strLanguage.compare("cpp") == 0)
 		{
@@ -65,14 +65,38 @@ void CRun::vRun(const vector<string> &p_aArgs)
 
 			(*g_apProblems_c[atoi(p_aArgs[1].c_str()) - 1])(2, t_argv);
 		}
-		else if (t_strLanguage.compare("cs") == 0)
+		else// if (t_strLanguage.compare("cs") == 0)
 		{
 			// swap this for a popen setup
-			system(t_strRun.c_str());
+			//system(t_strRun.c_str());
+			FILE* in;
+			char buff[512];
+
+			if (!(in = _popen(t_strRun.c_str(), "r")))
+			{
+			}
+
+			while (fgets(buff, sizeof(buff), in) != NULL)
+			{
+				cout << buff;
+			}
+			_pclose(in);
 		}
 
+		stream = freopen("CON", "w", stdout);
 		//system(t_strRun.c_str()); // apparently we should just use popen instead here and read from the pipe it gives us
 		cout.rdbuf(t_coutStream);
+
+		fstream t_file("stdout.txt", ios::in);
+		string t_strInput;
+
+		while (getline(t_file, t_strInput))
+		{
+			t_output << t_strInput << endl;
+		}
+
+		t_file.close();
+		std::remove("stdout.txt");
 
 		//if (t_nProblem >= 1 && t_nProblem < fsc_cProblems + 1 && g_apProblems[t_nProblem - 1] != NULL)
 		{

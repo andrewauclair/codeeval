@@ -17,6 +17,15 @@ CDone::~CDone()
 
 void CDone::vRun(const vector<string> &p_aArgs)
 {
+	// done will have 2 modes now
+	// mode 1 shows done with a single language
+	// mode 2 shows counts of how many languages a problem has been solved in
+
+	// for c and c++ we can just use g_afProblemsSolved_c and g_afProblemsSolved
+	// but for other languages we have to call out to an exe or script
+	// so for these other languages we will send them a list of the problems we want and they'll
+	// print out a list of the true or false and we'll read those here like we do in run
+
 	int t_cEasy = 0;
 	int t_cMed = 0;
 	int t_cHard = 0;

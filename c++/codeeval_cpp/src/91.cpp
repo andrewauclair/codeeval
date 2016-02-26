@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "91.h"
-
-static const char * fsc_pChzName = "Simple Sorting";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/91/";
-static const int fsc_nNumber = 91;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP91::CP91()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP91::~CP91()
-{
-}
+#include "91cpp.h"
 
 int CP91::nRun(int argc, const char * argv[])
 #else

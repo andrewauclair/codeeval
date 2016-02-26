@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "183.h"
-
-static const char * fsc_pChzName = "Details";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/183/";
-static const int fsc_nNumber = 183;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP183::CP183()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP183::~CP183()
-{
-}
+#include "183cpp.h"
 
 int CP183::nRun(int argc, const char * argv[])
 #else

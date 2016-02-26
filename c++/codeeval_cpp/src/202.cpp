@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "202.h"
-
-static const char * fsc_pChzName = "Stepwise Word";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/202/";
-static const int fsc_nNumber = 202;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP202::CP202()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP202::~CP202()
-{
-}
+#include "202cpp.h"
 
 int CP202::nRun(int argc, const char * argv[])
 #else

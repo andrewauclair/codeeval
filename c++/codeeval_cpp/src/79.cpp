@@ -6,7 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "79.h"
+#include "79cpp.h"
 
 void CP79::vPrintPos(int p_nPos)
 #else
@@ -100,21 +100,6 @@ void vPrintPos(int p_nPos)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Minesweeper";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/79/";
-static const int fsc_nNumber = 79;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP79::CP79()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP79::~CP79()
-{
-}
 
 int CP79::nRun(int argc, const char * argv[])
 #else

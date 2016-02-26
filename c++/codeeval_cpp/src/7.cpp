@@ -8,7 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "7.h"
+#include "7cpp.h"
 
 float CP7::rEval(vector<string>::iterator &p_it)
 #else
@@ -34,21 +34,6 @@ float rEval(vector<string>::iterator &p_it)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Prefix Expressions";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/7/";
-static const int fsc_nNumber = 7;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP7::CP7()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP7::~CP7()
-{
-}
 
 int CP7::nRun(int argc, const char * argv[])
 #else

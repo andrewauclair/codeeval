@@ -10,7 +10,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "44.h"
+#include "44cpp.h"
 
 void CP44::vBubbleSort(vector<string> &p_vector)
 #else
@@ -101,21 +101,6 @@ vector<string> aryGetPermutations(string p_strNum)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Following Integer";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/44/";
-static const int fsc_nNumber = 44;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP44::CP44()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP44::~CP44()
-{
-}
 
 int CP44::nRun(int argc, const char * argv[])
 #else

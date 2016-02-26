@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "108.h"
-
-static const char * fsc_pChzName = "Computer Terminal";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/108/";
-static const int fsc_nNumber = 108;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP108::CP108()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP108::~CP108()
-{
-}
+#include "108cpp.h"
 
 int CP108::nRun(int argc, const char * argv[])
 #else

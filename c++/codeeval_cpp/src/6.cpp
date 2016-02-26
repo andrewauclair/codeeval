@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "6.h"
-
-static const char * fsc_pChzName = "Longest Common Subsequence";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/6/";
-static const int fsc_nNumber = 6;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP6::CP6()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP6::~CP6()
-{
-}
+#include "6cpp.h"
 
 int CP6::nRun(int argc, const char * argv[])
 #else

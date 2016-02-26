@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "208.h"
-
-static const char * fsc_pChzName = "Find the Highest Score";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/208/";
-static const int fsc_nNumber = 208;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP208::CP208()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP208::~CP208()
-{
-}
+#include "208cpp.h"
 
 int CP208::nRun(int argc, const char * argv[])
 #else

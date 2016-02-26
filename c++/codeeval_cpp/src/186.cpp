@@ -8,22 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "186.h"
-
-static const char * fsc_pChzName = "Max Range Sum";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/186/";
-static const int fsc_nNumber = 186;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP186::CP186()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP186::~CP186()
-{
-}
+#include "186cpp.h"
 
 int CP186::nRun(int argc, const char * argv[])
 #else

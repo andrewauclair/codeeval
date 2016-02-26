@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "104.h"
-
-static const char * fsc_pChzName = "Word to Digit";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/104/";
-static const int fsc_nNumber = 104;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP104::CP104()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP104::~CP104()
-{
-}
+#include "104cpp.h"
 
 int CP104::nRun(int argc, const char * argv[])
 #else

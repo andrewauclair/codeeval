@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "30.h"
-
-static const char * fsc_pChzName = "Set Intersection";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/30/";
-static const int fsc_nNumber = 30;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP30::CP30()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP30::~CP30()
-{
-}
+#include "30cpp.h"
 
 int CP30::nRun(int argc, const char * argv[])
 #else

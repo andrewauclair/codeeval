@@ -6,7 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "184.h"
+#include "184cpp.h"
 
 void CP184::vBubbleSort(vector<string> &p_vector)
 #else
@@ -71,21 +71,6 @@ string strDecodeBWT(string p_str)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Burrows-Wheeler Transform";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/184/";
-static const int fsc_nNumber = 184;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP184::CP184()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP184::~CP184()
-{
-}
 
 int CP184::nRun(int argc, const char * argv[])
 #else

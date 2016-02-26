@@ -7,7 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "81.h"
+#include "81cpp.h"
 
 int CP81::nFactorial(int p_nNum)
 #else
@@ -25,21 +25,6 @@ int nFactorial(int p_nNum)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Sum to Zero";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/81/";
-static const int fsc_nNumber = 81;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP81::CP81()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP81::~CP81()
-{
-}
 
 int CP81::nRun(int argc, const char * argv[])
 #else

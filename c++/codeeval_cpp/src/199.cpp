@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "199.h"
-
-static const char * fsc_pChzName = "String Mask";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/199/";
-static const int fsc_nNumber = 199;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP199::CP199()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP199::~CP199()
-{
-}
+#include "199cpp.h"
 
 int CP199::nRun(int argc, const char * argv[])
 #else

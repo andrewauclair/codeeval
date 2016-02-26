@@ -22,20 +22,26 @@ public:
 
 	string strHelp() const { return ""; };
 
-	string strSysCmd(string p_strLanguage)
+	string strSysCmd(const vector<string> &p_aArgs)
 	{
+		string p_strLanguage = p_aArgs[2];
+
 		// setup the different system call for each language, some will be the same
 		if (p_strLanguage.compare("c") == 0)
 		{
-			return "codeeval_c.exe";
+			return "codeeval_c.exe " + p_aArgs[1];
 		}
 		else if (p_strLanguage.compare("cs") == 0)
 		{
-			return "codeeval_cs.exe";
+			return "codeeval_cs.exe " + p_aArgs[1];
 		}
 		else if (p_strLanguage.compare("cpp") == 0)
 		{
-			return "codeeval_cpp.exe";
+			return "codeeval_cpp.exe " + p_aArgs[1];
+		}
+		else if (p_strLanguage.compare("py2") == 0 || p_strLanguage.compare("py3") == 0)
+		{
+			return "python py2/" + p_aArgs[1] + ".py";
 		}
 	}
 	

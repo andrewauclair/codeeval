@@ -7,20 +7,17 @@ using namespace std;
 
 #if _EDITOR
 
-#include "158.h"
+#include "158cpp.h"
 
 void CP158::vBubbleSort(vector<int> &p_vector, int p_cLoops)
 #else
 void vBubbleSort(vector<int> &p_vector, int p_cLoops)
 #endif
 {
-	//bool t_fSwapped = false;
 	int t_cLoops = 0;
 
 	do
 	{
-		//t_fSwapped = false;
-
 		for (unsigned int t_i = 1; t_i < p_vector.size(); ++t_i)
 		{
 			if (p_vector[t_i] < p_vector[t_i - 1])
@@ -28,7 +25,6 @@ void vBubbleSort(vector<int> &p_vector, int p_cLoops)
 				int t_n = p_vector[t_i];
 				p_vector[t_i] = p_vector[t_i - 1];
 				p_vector[t_i - 1] = t_n;
-				//t_fSwapped = true;
 			}
 		}
 
@@ -37,21 +33,6 @@ void vBubbleSort(vector<int> &p_vector, int p_cLoops)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Interrupted Bubble Sort";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/158/";
-static const int fsc_nNumber = 158;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP158::CP158()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP158::~CP158()
-{
-}
 
 int CP158::nRun(int argc, const char * argv[])
 #else

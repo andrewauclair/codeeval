@@ -7,7 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "39.h"
+#include "39cpp.h"
 
 int CP39::nNext(int p_nNum)
 #else
@@ -36,21 +36,6 @@ int nNext(int p_nNum)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Happy Numbers";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/39/";
-static const int fsc_nNumber = 39;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP39::CP39()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP39::~CP39()
-{
-}
 
 int CP39::nRun(int argc, const char * argv[])
 #else

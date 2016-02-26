@@ -4,22 +4,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "67.h"
-
-static const char * fsc_pChzName = "Hex to Decimal";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/67/";
-static const int fsc_nNumber = 67;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP67::CP67()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP67::~CP67()
-{
-}
+#include "67cpp.h"
 
 int CP67::nRun(int argc, const char * argv[])
 #else

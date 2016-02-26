@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "98.h"
-
-static const char * fsc_pChzName = "Point In Circle";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/98/";
-static const int fsc_nNumber = 98;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP98::CP98()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP98::~CP98()
-{
-}
+#include "98cpp.h"
 
 int CP98::nRun(int argc, const char * argv[])
 #else

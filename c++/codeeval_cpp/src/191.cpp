@@ -149,22 +149,7 @@ int cLightsOffAdj(int p_x, int p_y)
 
 #if _EDITOR
 
-#include "191.h"
-
-static const char * fsc_pChzName = "Lights Out";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/191/";
-static const int fsc_nNumber = 191;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP191::CP191()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP191::~CP191()
-{
-}
+#include "191cpp.h"
 
 int CP191::nRun(int argc, const char * argv[])
 #else

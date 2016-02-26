@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "28.h"
-
-static const char * fsc_pChzName = "String Searching";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/28/";
-static const int fsc_nNumber = 28;
-static const bool fsc_fFinished = false;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP28::CP28()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP28::~CP28()
-{
-}
+#include "28cpp.h"
 
 int CP28::nRun(int argc, const char * argv[])
 #else

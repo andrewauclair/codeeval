@@ -4,7 +4,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "22.h"
+#include "22cpp.h"
 
 int CP22::fib(int p_nNum)
 #else
@@ -20,21 +20,6 @@ int fib(int p_nNum)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Fibonacci Series";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/22/";
-static const int fsc_nNumber = 22;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP22::CP22()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP22::~CP22()
-{
-}
 
 int CP22::nRun(int argc, const char * argv[])
 #else

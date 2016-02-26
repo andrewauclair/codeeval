@@ -94,7 +94,7 @@ void vCreateConsoles()
 
 void vWriteConsoleStart()
 {
-	cout << "                      <code_eval> c++ code_eval solutions                      " << endl;
+	cout << "                      <code_eval> code_eval solutions                      " << endl;
 	cout << " Andrew Auclair - Associate Software Engineer - Tactical Communications Group  " << endl << endl;
 
 	// clear the consoles

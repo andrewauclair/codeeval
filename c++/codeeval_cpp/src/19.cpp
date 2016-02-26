@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "19.h"
-
-static const char * fsc_pChzName = "Bit Positions";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/19/";
-static const int fsc_nNumber = 19;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP19::CP19()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP19::~CP19()
-{
-}
+#include "19cpp.h"
 
 int CP19::nRun(int argc, const char * argv[])
 #else

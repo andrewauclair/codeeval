@@ -8,7 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "193.h"
+#include "193cpp.h"
 
 bool CP193::fMagicNumber(int p_nNum)
 #else
@@ -66,21 +66,6 @@ bool fMagicNumber(int p_nNum)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Magic Numbers";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/193/";
-static const int fsc_nNumber = 193;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP193::CP193()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP193::~CP193()
-{
-}
 
 int CP193::nRun(int argc, const char * argv[])
 #else

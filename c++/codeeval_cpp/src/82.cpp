@@ -6,7 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "82.h"
+#include "82cpp.h"
 
 int CP82::power(int p_x, int p_y)
 #else
@@ -24,21 +24,6 @@ int power(int p_x, int p_y)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Armstrong Numbers";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/82/";
-static const int fsc_nNumber = 82;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP82::CP82()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP82::~CP82()
-{
-}
 
 int CP82::nRun(int argc, const char * argv[])
 #else

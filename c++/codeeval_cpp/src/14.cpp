@@ -7,7 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "14.h"
+#include "14cpp.h"
 
 void CP14::vBubbleSort(vector<string> &p_vector)
 #else
@@ -108,21 +108,6 @@ vector<string> aryGetPermutations(string p_strNum)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "String Permutations";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/14/";
-static const int fsc_nNumber = 14;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP14::CP14()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP14::~CP14()
-{
-}
 
 int CP14::nRun(int argc, const char * argv[])
 #else

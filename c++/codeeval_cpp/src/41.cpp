@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "41.h"
-
-static const char * fsc_pChzName = "Array Absurdity";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/41/";
-static const int fsc_nNumber = 41;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP41::CP41()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP41::~CP41()
-{
-}
+#include "41cpp.h"
 
 int CP41::nRun(int argc, const char * argv[])
 #else

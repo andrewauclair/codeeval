@@ -1,0 +1,21 @@
+#pragma once
+
+#include "problem.h"
+#include <vector>
+using namespace std;
+
+class CP14 : public CProblem
+{
+	typedef CProblem super;
+	
+public:
+	CP14() {};
+	virtual ~CP14() {};
+
+	virtual int nRun(int argc, const char * argv[]);
+
+protected:
+
+	void vBubbleSort(vector<string> &p_vector);
+	vector<string> aryGetPermutations(string p_strNum);
+};

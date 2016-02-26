@@ -8,7 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "3.h"
+#include "3cpp.h"
 
 bool CP3::isPrime(long int p_nNum)
 #else
@@ -44,22 +44,6 @@ bool isPalindrome(string p_str)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Prime Palindrome";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/3/";
-static const int fsc_nNumber = 3;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP3::CP3()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-	m_fInputRequired = false;
-}
-
-CP3::~CP3()
-{
-}
 
 int CP3::nRun(int argc, const char * argv[])
 #else

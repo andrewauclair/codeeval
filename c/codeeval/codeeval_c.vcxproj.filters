@@ -85,6 +85,12 @@
     <Filter Include="Header Files\commands">
       <UniqueIdentifier>{e3be192b-8dd4-4a08-ad51-98cb487d5de6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\201-220">
+      <UniqueIdentifier>{a610b90a-dc8c-452d-9792-312fcb86d164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\221-240">
+      <UniqueIdentifier>{b15e27b5-70a0-4393-b040-165e95d8c226}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -117,7 +123,7 @@
     <ClCompile Include="commands\finishcheck.cpp">
       <Filter>Source Files\commands</Filter>
     </ClCompile>
-    <ClCompile Include="src\1_c.c">
+    <ClCompile Include="src\1c.c">
       <Filter>Source Files\1-20</Filter>
     </ClCompile>
   </ItemGroup>
@@ -491,18 +497,6 @@
     <ClInclude Include="problems_c.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\1_c.h">
-      <Filter>Header Files\1-20</Filter>
-    </ClInclude>
-    <ClInclude Include="include\2_c.h">
-      <Filter>Header Files\1-20</Filter>
-    </ClInclude>
-    <ClInclude Include="include\3_c.h">
-      <Filter>Header Files\1-20</Filter>
-    </ClInclude>
-    <ClInclude Include="include\4_c.h">
-      <Filter>Header Files\1-20</Filter>
-    </ClInclude>
     <ClInclude Include="include\5_c.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
@@ -549,6 +543,18 @@
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
     <ClInclude Include="include\20_c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\1c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\2c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\3c.h">
+      <Filter>Header Files\1-20</Filter>
+    </ClInclude>
+    <ClInclude Include="include\4c.h">
       <Filter>Header Files\1-20</Filter>
     </ClInclude>
   </ItemGroup>

@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "225.h"
-
-static const char * fsc_pChzName = "Testing";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/225/";
-static const int fsc_nNumber = 225;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP225::CP225()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP225::~CP225()
-{
-}
+#include "225cpp.h"
 
 int CP225::nRun(int argc, const char * argv[])
 #else

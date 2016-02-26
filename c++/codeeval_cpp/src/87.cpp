@@ -6,21 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "87.h"
-
-static const char * fsc_pChzName = "Query Board";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/87/";
-static const int fsc_nNumber = 87;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP87::CP87()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-CP87::~CP87()
-{
-}
+#include "87cpp.h"
 
 int CP87::nRun(int argc, const char * argv[])
 #else

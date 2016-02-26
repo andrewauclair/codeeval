@@ -1,174 +1,247 @@
 #pragma once
 
-#include "1_c.h"
-#include "2.h"
-#include "3.h"
-#include "4.h"
-#include "5.h"
-#include "6.h"
-#include "7.h"
-#include "8.h"
-#include "9.h"
-#include "10.h"
-#include "11.h"
-#include "12.h"
-#include "13.h"
-#include "14.h"
-#include "15.h"
-#include "16.h"
-#include "17.h"
-#include "18.h"
-#include "19.h"
-#include "20.h"
-#include "21.h"
-#include "22.h"
-#include "23.h"
-#include "24.h"
-#include "25.h"
-#include "26.h"
-#include "27.h"
-#include "28.h"
-#include "29.h"
-#include "30.h"
-#include "31.h"
-#include "32.h"
+#include "1c.h"
 
-#include "34.h"
+static bool g_afProblemsSolved_c[] =
+{
+	true, // 1
+	false, // 2
+	false, // 3
+	false, // 4
+	false, // 5
+	false, // 6
+	false, // 7
+	false, // 8
+	false, // 9
+	false, // 10
+	false, // 11
+	false, // 12
+	false, // 13
+	false, // 14
+	false, // 15
+	false, // 16
+	false, // 17
+	false, // 18
+	false, // 19
+	false, // 10
+	false, // 21
+	false, // 22
+	false, // 23
+	false, // 24
+	false, // 25
+	false, // 26
+	false, // 27
+	false, // 28
+	false, // 29
+	false, // 20
+	false, // 31
+	false, // 32
+	false, // 33
+	false, // 34
+	false, // 35
+	false, // 36
+	false, // 37
+	false, // 38
+	false, // 39
+	false, // 30
+	false, // 41
+	false, // 42
+	false, // 43
+	false, // 44
+	false, // 45
+	false, // 46
+	false, // 47
+	false, // 48
+	false, // 49
+	false, // 40
+	false, // 51
+	false, // 52
+	false, // 53
+	false, // 54
+	false, // 55
+	false, // 56
+	false, // 57
+	false, // 58
+	false, // 59
+	false, // 50
+	false, // 61
+	false, // 62
+	false, // 63
+	false, // 64
+	false, // 65
+	false, // 66
+	false, // 67
+	false, // 68
+	false, // 69
+	false, // 60
+	false, // 71
+	false, // 72
+	false, // 73
+	false, // 74
+	false, // 75
+	false, // 76
+	false, // 77
+	false, // 78
+	false, // 79
+	false, // 70
+	false, // 81
+	false, // 82
+	false, // 83
+	false, // 84
+	false, // 85
+	false, // 86
+	false, // 87
+	false, // 88
+	false, // 89
+	false, // 80
+	false, // 91
+	false, // 92
+	false, // 93
+	false, // 94
+	false, // 95
+	false, // 96
+	false, // 97
+	false, // 98
+	false, // 99
+	false, // 100
+	false, // 101
+	false, // 102
+	false, // 103
+	false, // 104
+	false, // 105
+	false, // 106
+	false, // 107
+	false, // 108
+	false, // 109
+	false, // 110
+	false, // 111
+	false, // 112
+	false, // 113
+	false, // 114
+	false, // 115
+	false, // 116
+	false, // 117
+	false, // 118
+	false, // 119
+	false, // 120
+	false, // 121
+	false, // 122
+	false, // 123
+	false, // 124
+	false, // 125
+	false, // 126
+	false, // 127
+	false, // 128
+	false, // 129
+	false, // 130
+	false, // 131
+	false, // 132
+	false, // 133
+	false, // 134
+	false, // 135
+	false, // 136
+	false, // 137
+	false, // 138
+	false, // 139
+	false, // 140
+	false, // 141
+	false, // 142
+	false, // 143
+	false, // 144
+	false, // 145
+	false, // 146
+	false, // 147
+	false, // 148
+	false, // 149
+	false, // 150
+	false, // 151
+	false, // 152
+	false, // 153
+	false, // 154
+	false, // 155
+	false, // 156
+	false, // 157
+	false, // 158
+	false, // 159
+	false, // 160
+	false, // 161
+	false, // 162
+	false, // 163
+	false, // 164
+	false, // 165
+	false, // 166
+	false, // 167
+	false, // 168
+	false, // 169
+	false, // 170
+	false, // 171
+	false, // 172
+	false, // 173
+	false, // 174
+	false, // 175
+	false, // 176
+	false, // 177
+	false, // 178
+	false, // 179
+	false, // 180
+	false, // 181
+	false, // 182
+	false, // 183
+	false, // 184
+	false, // 185
+	false, // 186
+	false, // 187
+	false, // 188
+	false, // 189
+	false, // 190
+	false, // 191
+	false, // 192
+	false, // 193
+	false, // 194
+	false, // 195
+	false, // 196
+	false, // 197
+	false, // 198
+	false, // 199
+	false, // 200
+	false, // 201
+	false, // 202
+	false, // 203
+	false, // 204
+	false, // 205
+	false, // 206
+	false, // 207
+	false, // 208
+	false, // 209
+	false, // 210
+	false, // 211
+	false, // 212
+	false, // 213
+	false, // 214
+	false, // 215
+	false, // 216
+	false, // 217
+	false, // 218
+	false, // 219
+	false, // 220
+	false, // 221
+	false, // 222
+	false, // 223
+	false, // 224
+	false, // 225
+	false, // 226
+	false, // 227
+	false, // 228
+	false, // 229
+	false, // 230
+	false, // 231
+	false, // 232
+	false, // 233
+	false, // 234
+	false, // 235
+};
 
-#include "37.h"
-
-#include "39.h"
-#include "40.h"
-#include "41.h"
-
-#include "43.h"
-#include "44.h"
-#include "45.h"
-#include "46.h"
-#include "47.h"
-
-#include "50.h"
-
-#include "52.h"
-
-#include "54.h"
-
-#include "59.h"
-
-#include "62.h"
-#include "63.h"
-
-#include "66.h"
-#include "67.h"
-#include "68.h"
-
-#include "70.h"
-#include "71.h"
-
-#include "73.h"
-#include "74.h"
-#include "75.h"
-#include "76.h"
-
-#include "78.h"
-#include "79.h"
-
-#include "82.h"
-#include "83.h"
-
-#include "87.h"
-
-#include "91.h"
-#include "92.h"
-#include "93.h"
-
-#include "96.h"
-#include "97.h"
-#include "98.h"
-#include "99.h"
-#include "100.h"
-#include "101.h"
-#include "102.h"
-#include "103.h"
-#include "104.h"
-
-#include "106.h"
-#include "107.h"
-#include "108.h"
-
-#include "110.h"
-#include "111.h"
-#include "112.h"
-#include "113.h"
-
-#include "115.h"
-#include "116.h"
-
-#include "121.h"
-#include "122.h"
-
-#include "124.h"
-
-#include "128.h"
-
-#include "131.h"
-#include "132.h"
-
-#include "136.h"
-
-#include "139.h"
-#include "140.h"
-
-#include "144.h"
-
-#include "146.h"
-#include "147.h"
-#include "148.h"
-#include "149.h"
-
-#include "152.h"
-#include "153.h"
-
-#include "156.h"
-
-#include "158.h"
-
-#include "160.h"
-#include "161.h"
-
-#include "163.h"
-
-#include "166.h"
-#include "167.h"
-
-#include "170.h"
-
-#include "172.h"
-#include "173.h"
-#include "174.h"
-
-#include "178.h"
-#include "179.h"
-#include "180.h"
-#include "181.h"
-
-#include "183.h"
-#include "184.h"
-
-#include "186.h"
-
-#include "189.h"
-
-#include "191.h"
-#include "192.h"
-#include "193.h"
-
-#include "196.h"
-#include "197.h"
-
-#include "199.h"
-
-static void (*g_apProblems_c[235])(int, const char*[]) =
+static void (*g_apProblems_c[])(int, const char*[]) =
 {
 	&vRun1, // 1
 	NULL, // 2

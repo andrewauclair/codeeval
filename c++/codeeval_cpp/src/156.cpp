@@ -8,22 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "156.h"
-
-static const char * fsc_pChzName = "Roller Coaster";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/156/";
-static const int fsc_nNumber = 156;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP156::CP156()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP156::~CP156()
-{
-}
+#include "156cpp.h"
 
 int CP156::nRun(int argc, const char * argv[])
 #else

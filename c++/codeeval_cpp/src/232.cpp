@@ -7,7 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "232.h"
+#include "232cpp.h"
 
 // Stupid sort is a bubble sort that restarts after the first swap of every iteration
 void CP232::vStupidSort(vector<int> &p_vector, int p_cIterations)
@@ -36,21 +36,6 @@ void vStupidSort(vector<int> &p_vector, int p_cIterations)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Not So Clever";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/232/";
-static const int fsc_nNumber = 232;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP232::CP232()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP232::~CP232()
-{
-}
 
 int CP232::nRun(int argc, const char * argv[])
 #else

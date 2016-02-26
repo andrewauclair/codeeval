@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "10.h"
-
-static const char * fsc_pChzName = "Mth To Last Element";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/10/";
-static const int fsc_nNumber = 10;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP10::CP10()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP10::~CP10()
-{
-}
+#include "10cpp.h"
 
 int CP10::nRun(int argc, const char * argv[])
 #else

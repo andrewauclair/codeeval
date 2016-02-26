@@ -5,7 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "73.h"
+#include "73cpp.h"
 
 int CP73::nDecode(const string &p_str, int p_i)
 #else
@@ -61,21 +61,6 @@ int nDecode(const string &p_str, int p_i)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Decode Numbers";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/73/";
-static const int fsc_nNumber = 73;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP73::CP73()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP73::~CP73()
-{
-}
 
 int CP73::nRun(int argc, const char * argv[])
 #else

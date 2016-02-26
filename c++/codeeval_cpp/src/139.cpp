@@ -20,22 +20,7 @@ struct SSpan
 
 #if _EDITOR
 
-#include "139.h"
-
-static const char * fsc_pChzName = "Working Experience";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/139/";
-static const int fsc_nNumber = 139;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP139::CP139()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP139::~CP139()
-{
-}
+#include "139cpp.h"
 
 int CP139::nRun(int argc, const char * argv[])
 #else

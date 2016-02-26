@@ -8,22 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "1.h"
-
-static const char * fsc_pChzName = "Fizz Buzz";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/1/";
-static const int fsc_nNumber = 1;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP1::CP1()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP1::~CP1()
-{
-}
+#include "1cpp.h"
 
 int CP1::nRun(int argc, const char * argv[])
 #else

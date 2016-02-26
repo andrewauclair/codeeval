@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "57.h"
-
-static const char * fsc_pChzName = "Spiral Printing";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/57/";
-static const int fsc_nNumber = 57;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP57::CP57()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP57::~CP57()
-{
-}
+#include "57cpp.h"
 
 int CP57::nRun(int argc, const char * argv[])
 #else

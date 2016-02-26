@@ -5,22 +5,9 @@ using namespace std;
 
 #if _EDITOR
 
-#include "23.h"
-static const char * fsc_pChzName = "Multiplication Tables";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/23/";
-static const int fsc_nNumber = 23;
+#include "23cpp.h"
+
 static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP23::CP23()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-	m_fInputRequired = false;
-}
-
-CP23::~CP23()
-{
-}
 
 int CP23::nRun(int argc, const char * argv[])
 #else

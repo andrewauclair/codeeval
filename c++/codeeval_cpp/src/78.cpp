@@ -7,23 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "78.h"
-
-static const char * fsc_pChzName = "Sudoku";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/78/";
-static const int fsc_nNumber = 78;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP78::CP78()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-
-}
-
-CP78::~CP78()
-{
-}
+#include "78cpp.h"
 
 int CP78::nRun(int argc, const char * argv[])
 #else

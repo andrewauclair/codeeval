@@ -5,22 +5,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "40.h"
-
-static const char * fsc_pChzName = "Self Describing Numbers";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/40/";
-static const int fsc_nNumber = 40;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP40::CP40()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP40::~CP40()
-{
-}
+#include "40cpp.h"
 
 int CP40::nRun(int argc, const char * argv[])
 #else

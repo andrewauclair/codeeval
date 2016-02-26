@@ -8,22 +8,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "113.h"
-
-static const char * fsc_pChzName = "Multiply Lists";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/113/";
-static const int fsc_nNumber = 113;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP113::CP113()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP113::~CP113()
-{
-}
+#include "113cpp.h"
 
 int CP113::nRun(int argc, const char * argv[])
 #else

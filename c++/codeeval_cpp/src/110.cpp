@@ -6,7 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "110.h"
+#include "110cpp.h"
 
 bool CP110::fNumber(string p_str)
 #else
@@ -180,21 +180,6 @@ int nCount(string p_str)
 }
 
 #if _EDITOR
-
-static const char * fsc_pChzName = "Text to Number";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/110/";
-static const int fsc_nNumber = 110;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Hard;
-
-CP110::CP110()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP110::~CP110()
-{
-}
 
 int CP110::nRun(int argc, const char * argv[])
 #else

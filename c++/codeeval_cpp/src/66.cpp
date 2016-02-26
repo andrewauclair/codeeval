@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "66.h"
-
-static const char * fsc_pChzName = "Pascals Triangle";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/66/";
-static const int fsc_nNumber = 66;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP66::CP66()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP66::~CP66()
-{
-}
+#include "66cpp.h"
 
 int CP66::nRun(int argc, const char * argv[])
 #else

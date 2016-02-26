@@ -6,7 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "116.h"
+#include "116cpp.h"
 
 void CP116::vMorse(string p_str)
 #else
@@ -164,20 +164,6 @@ void vMorse(string p_str)
 }
 
 #if _EDITOR
-static const char * fsc_pChzName = "Morse Code";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/116/";
-static const int fsc_nNumber = 116;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP116::CP116()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP116::~CP116()
-{
-}
 
 int CP116::nRun(int argc, const char * argv[])
 #else

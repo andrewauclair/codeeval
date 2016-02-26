@@ -7,22 +7,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "132.h"
-
-static const char * fsc_pChzName = "The Major Element";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/132/";
-static const int fsc_nNumber = 132;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Easy;
-
-CP132::CP132()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP132::~CP132()
-{
-}
+#include "132cpp.h"
 
 int CP132::nRun(int argc, const char * argv[])
 #else

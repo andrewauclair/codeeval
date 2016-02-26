@@ -6,22 +6,7 @@ using namespace std;
 
 #if _EDITOR
 
-#include "12.h"
-
-static const char * fsc_pChzName = "First Non-Repeated Character";
-static const char * fsc_pChzURL = "https://www.codeeval.com/open_challenges/12/";
-static const int fsc_nNumber = 12;
-static const bool fsc_fFinished = true;
-static const EDifficulty fsc_eDifficulty = eDiff_Moderate;
-
-CP12::CP12()
-	: super(string(fsc_pChzName), string(fsc_pChzURL), fsc_nNumber, fsc_fFinished, fsc_eDifficulty)
-{
-}
-
-CP12::~CP12()
-{
-}
+#include "12cpp.h"
 
 int CP12::nRun(int argc, const char * argv[])
 #else
