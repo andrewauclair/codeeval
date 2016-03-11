@@ -10,7 +10,7 @@ using namespace std;
 
 #include "144cpp.h"
 
-int CP144::nRun(int argc, const char * argv[])
+int C144::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
@@ -52,12 +52,12 @@ int main(int argc, char* argv[])
 
 		unsigned long t_ac[10] = {0,0,0,0,0,0,0,0,0,0};
 
-		int t_cpattern = t_n / t_aPattern.size();
+		int t_Cattern = t_n / t_aPattern.size();
 		int t_cmod = t_n % t_aPattern.size();
 
 		for (t_i = 0; t_i < t_aPattern.size(); ++t_i)
 		{
-			t_ac[t_aPattern[t_i]] += t_cpattern;
+			t_ac[t_aPattern[t_i]] += t_Cattern;
 
 			if (t_i < (unsigned)t_cmod)
 			{

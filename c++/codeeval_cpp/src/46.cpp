@@ -7,7 +7,7 @@ using namespace std;
 
 #include "46cpp.h"
 
-bool CP46::isPrime(long int p_nNum)
+bool C46::isPrime(long int p_nNum)
 #else
 bool isPrime(long int p_nNum)
 #endif
@@ -25,7 +25,7 @@ bool isPrime(long int p_nNum)
 
 #if _EDITOR
 
-int CP46::nRun(int argc, const char * argv[])
+int C46::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

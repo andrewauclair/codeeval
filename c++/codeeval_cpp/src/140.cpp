@@ -9,7 +9,7 @@ using namespace std;
 
 #include "140cpp.h"
 
-int CP140::nRun(int argc, const char * argv[])
+int C140::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -9,7 +9,7 @@ using namespace std;
 
 #include "14cpp.h"
 
-void CP14::vBubbleSort(vector<string> &p_vector)
+void C14::vBubbleSort(vector<string> &p_vector)
 #else
 void vBubbleSort(vector<string> &p_vector)
 #endif
@@ -35,7 +35,7 @@ void vBubbleSort(vector<string> &p_vector)
 
 #if _EDITOR
 
-vector<string> CP14::aryGetPermutations(string p_strNum)
+vector<string> C14::aryGetPermutations(string p_strNum)
 #else
 vector<string> aryGetPermutations(string p_strNum)
 #endif
@@ -109,7 +109,7 @@ vector<string> aryGetPermutations(string p_strNum)
 
 #if _EDITOR
 
-int CP14::nRun(int argc, const char * argv[])
+int C14::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

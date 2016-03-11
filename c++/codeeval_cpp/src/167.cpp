@@ -7,7 +7,7 @@ using namespace std;
 
 #include "167cpp.h"
 
-int CP167::nRun(int argc, const char * argv[])
+int C167::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

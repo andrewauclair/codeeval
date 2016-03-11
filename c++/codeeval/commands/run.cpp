@@ -37,7 +37,7 @@ void CRun::vRun(const vector<string> &p_aArgs)
 		g_outputConsole->vClear();
 
 		string t_strRun;
-		string t_strLanguage = "cpp";
+		string t_strLanguage = "Cp";
 
 		if (p_aArgs.size() >= 3)
 		{
@@ -53,7 +53,7 @@ void CRun::vRun(const vector<string> &p_aArgs)
 		cout.rdbuf(t_output.rdbuf());
 		stream = freopen("stdout.txt", "w", stdout);
 
-		if (t_strLanguage.compare("cpp") == 0)
+		if (t_strLanguage.compare("Cp") == 0)
 		{
 			const char * t_argv[] = { "main", t_strPath.c_str() };
 
@@ -98,7 +98,7 @@ void CRun::vRun(const vector<string> &p_aArgs)
 		t_file.close();
 		std::remove("stdout.txt");
 
-		//if (t_nProblem >= 1 && t_nProblem < fsc_cProblems + 1 && g_apProblems[t_nProblem - 1] != NULL)
+		//if (t_nProblem >= 1 && t_nProblem < fsc_Croblems + 1 && g_apProblems[t_nProblem - 1] != NULL)
 		{
 			stringstream t_ss;
 			t_ss << t_nProblem;
@@ -129,9 +129,9 @@ void CRun::vRun(const vector<string> &p_aArgs)
 			g_outputConsole->fCompare(t_output.str(), t_strCompare);
 			t_output.str("");
 		}
-		//else if (t_nProblem <= 0 || t_nProblem > fsc_cProblems)
+		//else if (t_nProblem <= 0 || t_nProblem > fsc_Croblems)
 		{
-			//cout << "The input was out of range, problem range is 1 to " << fsc_cProblems << endl;
+			//cout << "The input was out of range, problem range is 1 to " << fsc_Croblems << endl;
 		}
 		//else if (g_apProblems[t_nProblem - 1] == NULL)
 		{

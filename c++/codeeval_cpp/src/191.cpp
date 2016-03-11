@@ -151,7 +151,7 @@ int cLightsOffAdj(int p_x, int p_y)
 
 #include "191cpp.h"
 
-int CP191::nRun(int argc, const char * argv[])
+int C191::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

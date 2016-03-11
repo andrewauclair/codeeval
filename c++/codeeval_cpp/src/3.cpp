@@ -10,7 +10,7 @@ using namespace std;
 
 #include "3cpp.h"
 
-bool CP3::isPrime(long int p_nNum)
+bool C3::isPrime(long int p_nNum)
 #else
 bool isPrime(long int p_nNum)
 #endif
@@ -27,7 +27,7 @@ bool isPrime(long int p_nNum)
 }
 
 #if _EDITOR
-bool CP3::isPalindrome(string p_str)
+bool C3::isPalindrome(string p_str)
 #else
 bool isPalindrome(string p_str)
 #endif
@@ -45,7 +45,7 @@ bool isPalindrome(string p_str)
 
 #if _EDITOR
 
-int CP3::nRun(int argc, const char * argv[])
+int C3::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -14,7 +14,7 @@ struct SNum
 
 #include "11cpp.h"
 
-int CP11::nRun(int argc, const char * argv[])
+int C11::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

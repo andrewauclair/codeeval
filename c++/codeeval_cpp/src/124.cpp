@@ -9,7 +9,7 @@ using namespace std;
 
 #include "124cpp.h"
 
-void CP124::vBubbleSort(vector<int> &p_vector)
+void C124::vBubbleSort(vector<int> &p_vector)
 #else
 void vBubbleSort(vector<int> &p_vector)
 #endif
@@ -35,7 +35,7 @@ void vBubbleSort(vector<int> &p_vector)
 
 #if _EDITOR
 
-int CP124::nRun(int argc, const char * argv[])
+int C124::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

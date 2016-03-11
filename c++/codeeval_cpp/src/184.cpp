@@ -8,7 +8,7 @@ using namespace std;
 
 #include "184cpp.h"
 
-void CP184::vBubbleSort(vector<string> &p_vector)
+void C184::vBubbleSort(vector<string> &p_vector)
 #else
 void vBubbleSort(vector<string> &p_vector)
 #endif
@@ -34,7 +34,7 @@ void vBubbleSort(vector<string> &p_vector)
 
 #if _EDITOR
 
-string CP184::strDecodeBWT(string p_str)
+string C184::strDecodeBWT(string p_str)
 #else
 string strDecodeBWT(string p_str)
 #endif
@@ -72,7 +72,7 @@ string strDecodeBWT(string p_str)
 
 #if _EDITOR
 
-int CP184::nRun(int argc, const char * argv[])
+int C184::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

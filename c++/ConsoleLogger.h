@@ -145,7 +145,7 @@ class CConsoleLoggerEx : public CConsoleLogger
 	enum enumCommands
 	{
 		COMMAND_PRINT,
-		COMMAND_CPRINT,
+		COMMAND_CRINT,
 		COMMAND_CLEAR_SCREEN,
 		COMMAND_COLORED_CLEAR_SCREEN,
 		COMMAND_GOTOXY,
@@ -197,10 +197,10 @@ public:
 	void clear_eol(DWORD color);
 	
 	// write string , use specified color
-	int cprintf(int attributes,const char *format,...);
+	int Crintf(int attributes,const char *format,...);
 	
 	// write string , use current color
-	int cprintf(const char *format,...);
+	int Crintf(const char *format,...);
 	
 	// goto(x,y)
 	void gotoxy(int x, int y);
@@ -229,7 +229,7 @@ protected:
 	}
 	
 	virtual int _print(const char *lpszText,int iSize);
-	virtual int _cprint(int attributes,const char *lpszText,int iSize);
+	virtual int _Crint(int attributes,const char *lpszText,int iSize);
 
 
 };

@@ -10,7 +10,7 @@ using namespace std;
 
 #include "166cpp.h"
 
-int CP166::nRun(int argc, const char * argv[])
+int C166::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -8,7 +8,7 @@ using namespace std;
 
 #include "79cpp.h"
 
-void CP79::vPrintPos(int p_nPos)
+void C79::vPrintPos(int p_nPos)
 #else
 vector<char> m_aryPositions;
 int m_nX;
@@ -101,7 +101,7 @@ void vPrintPos(int p_nPos)
 
 #if _EDITOR
 
-int CP79::nRun(int argc, const char * argv[])
+int C79::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

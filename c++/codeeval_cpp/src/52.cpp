@@ -10,7 +10,7 @@ using namespace std;
 
 #include "52cpp.h"
 
-void CP52::vPrintNumber(int p_nNum)
+void C52::vPrintNumber(int p_nNum)
 #else
 void vPrintNumber(int p_nNum)
 #endif
@@ -190,7 +190,7 @@ void vPrintNumber(int p_nNum)
 
 #if _EDITOR
 
-int CP52::nRun(int argc, const char * argv[])
+int C52::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

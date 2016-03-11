@@ -25,7 +25,7 @@ void CDone::vRun(const vector<string> &p_aArgs)
 	//g_outputConsole->vClear();
 
 	//// call run on all non-NULL problems
-	//for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
+	//for (int t_i = 0; t_i < fsc_Croblems; ++t_i)
 	//{
 	//	if (t_i + 1 < 10)
 	//	{

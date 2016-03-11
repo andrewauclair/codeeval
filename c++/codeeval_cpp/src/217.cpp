@@ -10,7 +10,7 @@ using namespace std;
 
 static const bool fsc_fFinished = true;
 
-int CP217::nRun(int argc, const char * argv[])
+int C217::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

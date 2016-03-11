@@ -22,7 +22,7 @@ void CFileCheck::vRun(const vector<string> &p_aArgs)
 	ostringstream t_output;
 
 	// call run on all non-NULL problems
-	for (int t_i = 0; t_i < fsc_cProblems; ++t_i)
+	for (int t_i = 0; t_i < fsc_Croblems; ++t_i)
 	{
 		stringstream t_ss;
 		t_ss << t_i + 1;

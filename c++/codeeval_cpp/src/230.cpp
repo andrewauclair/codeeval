@@ -10,7 +10,7 @@ using namespace std;
 
 #include "230cpp.h"
 
-void CP230::vBubbleSort(vector<int> &p_vector)
+void C230::vBubbleSort(vector<int> &p_vector)
 #else
 void vBubbleSort(vector<int> &p_vector)
 #endif
@@ -35,7 +35,7 @@ void vBubbleSort(vector<int> &p_vector)
 }
 
 #if _EDITOR
-void CP230::vSortTeams(vector<vector<int>> &p_aCountries, vector<int> &p_aTeams)
+void C230::vSortTeams(vector<vector<int>> &p_aCountries, vector<int> &p_aTeams)
 #else
 void vSortTeams(vector<vector<int>> &p_aCountries, vector<int> &p_aTeams)
 #endif
@@ -66,7 +66,7 @@ void vSortTeams(vector<vector<int>> &p_aCountries, vector<int> &p_aTeams)
 
 #if _EDITOR
 
-int CP230::nRun(int argc, const char * argv[])
+int C230::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

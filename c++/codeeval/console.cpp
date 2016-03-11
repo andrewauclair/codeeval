@@ -16,7 +16,7 @@ CConsole::~CConsole()
 
 void CConsole::cout(string p_str)
 {
-	m_console.cprintf("%s", p_str.c_str());
+	m_console.Crintf("%s", p_str.c_str());
 }
 
 void CConsole::vSetPos(int p_x, int p_y)

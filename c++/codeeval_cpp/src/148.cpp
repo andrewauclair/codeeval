@@ -10,7 +10,7 @@ using namespace std;
 
 #include "148cpp.h"
 
-float CP148::hue2rgb(float p, float q, float t)
+float C148::hue2rgb(float p, float q, float t)
 #else
 float hue2rgb(float p, float q, float t)
 #endif
@@ -25,7 +25,7 @@ float hue2rgb(float p, float q, float t)
 
 #if _EDITOR
 
-int CP148::nRun(int argc, const char * argv[])
+int C148::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

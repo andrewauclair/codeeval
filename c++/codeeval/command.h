@@ -35,9 +35,9 @@ public:
 		{
 			return "codeeval_cs.exe " + p_aArgs[1];
 		}
-		else if (p_strLanguage.compare("cpp") == 0)
+		else if (p_strLanguage.compare("Cp") == 0)
 		{
-			return "codeeval_cpp.exe " + p_aArgs[1];
+			return "codeeval_Cp.exe " + p_aArgs[1];
 		}
 		else if (p_strLanguage.compare("py2") == 0 || p_strLanguage.compare("py3") == 0)
 		{

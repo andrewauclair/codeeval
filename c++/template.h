@@ -8,8 +8,8 @@ class CPPROBLEM_NUMBER : public CProblem
 	typedef CProblem super;
 	
 public:
-	CPPROBLEM_NUMBER();
-	virtual ~CPPROBLEM_NUMBER();
+	CPPROBLEM_NUMBER() {};
+	virtual ~CPPROBLEM_NUMBER() {};
 
 	virtual int nRun(int argc, const char * argv[]);
 

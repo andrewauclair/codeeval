@@ -7,7 +7,7 @@ using namespace std;
 
 #include "174cpp.h"
 
-int CP174::nRun(int argc, const char * argv[])
+int C174::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
@@ -28,7 +28,7 @@ int main(int argc, char* argv[])
 	};
 
 	
-	int t_cPunc = 0;
+	int t_Cunc = 0;
 	int t_cSlang = 0;
 
 	while (getline(t_file, t_strInput))
@@ -39,10 +39,10 @@ int main(int argc, char* argv[])
 		{
 			if ((t_strInput[t_i] == '.' || t_strInput[t_i] == '!' || t_strInput[t_i] == '?') && !t_fIgnore)
 			{
-				t_cPunc++;
+				t_Cunc++;
 
 				// insert some slang
-				if (t_cPunc % 2 == 0)
+				if (t_Cunc % 2 == 0)
 				{
 					t_strInput.erase(t_i, 1);
 					t_strInput.insert(t_i, t_aSlang[t_cSlang]);

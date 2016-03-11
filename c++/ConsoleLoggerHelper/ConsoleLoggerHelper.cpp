@@ -1,4 +1,4 @@
-// ConsoleLoggerHelper.cpp : Defines the entry point for the console application.
+// ConsoleLoggerHelper.Cp : Defines the entry point for the console application.
 //
 
 #include "stdio.h"
@@ -96,7 +96,7 @@ long ConsoleExLoop(void)
 	enum enumCommands
 	{
 		COMMAND_PRINT,
-		COMMAND_CPRINT,
+		COMMAND_CRINT,
 		COMMAND_CLEAR_SCREEN,
 		COMMAND_COLORED_CLEAR_SCREEN,
 		COMMAND_GOTOXY,
@@ -159,7 +159,7 @@ long ConsoleExLoop(void)
 
 				}
 				break;
-			case COMMAND_CPRINT:
+			case COMMAND_CRINT:
 				{
 					DWORD attributes;
 					ReadPipe(attributes);

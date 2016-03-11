@@ -7,7 +7,7 @@ using namespace std;
 
 #include "205cpp.h"
 
-int CP205::nRun(int argc, const char * argv[])
+int C205::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

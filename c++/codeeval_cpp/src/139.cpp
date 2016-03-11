@@ -22,7 +22,7 @@ struct SSpan
 
 #include "139cpp.h"
 
-int CP139::nRun(int argc, const char * argv[])
+int C139::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

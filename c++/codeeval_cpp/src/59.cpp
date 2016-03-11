@@ -9,7 +9,7 @@ using namespace std;
 #include "59cpp.h"
 
 
-void CP59::vBubbleSort(vector<string> &p_vector)
+void C59::vBubbleSort(vector<string> &p_vector)
 #else
 void vBubbleSort(vector<string> &p_vector)
 #endif
@@ -35,7 +35,7 @@ void vBubbleSort(vector<string> &p_vector)
 
 #if _EDITOR
 
-int CP59::nRun(int argc, const char * argv[])
+int C59::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

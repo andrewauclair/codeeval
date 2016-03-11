@@ -8,7 +8,7 @@ using namespace std;
 
 #include "21cpp.h"
 
-int CP21::nRun(int argc, const char * argv[])
+int C21::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

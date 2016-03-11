@@ -7,7 +7,7 @@ using namespace std;
 
 #include "106cpp.h"
 
-void CP106::vRomanNumeral(int p_nNum)
+void C106::vRomanNumeral(int p_nNum)
 #else
 void vRomanNumeral(int p_nNum)
 #endif
@@ -110,7 +110,7 @@ void vRomanNumeral(int p_nNum)
 
 #if _EDITOR
 
-int CP106::nRun(int argc, const char * argv[])
+int C106::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -8,7 +8,7 @@ using namespace std;
 
 #include "116cpp.h"
 
-void CP116::vMorse(string p_str)
+void C116::vMorse(string p_str)
 #else
 void vMorse(string p_str)
 #endif
@@ -165,7 +165,7 @@ void vMorse(string p_str)
 
 #if _EDITOR
 
-int CP116::nRun(int argc, const char * argv[])
+int C116::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

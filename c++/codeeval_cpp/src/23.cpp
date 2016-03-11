@@ -9,7 +9,7 @@ using namespace std;
 
 static const bool fsc_fFinished = true;
 
-int CP23::nRun(int argc, const char * argv[])
+int C23::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

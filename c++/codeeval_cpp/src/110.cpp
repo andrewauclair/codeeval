@@ -8,7 +8,7 @@ using namespace std;
 
 #include "110cpp.h"
 
-bool CP110::fNumber(string p_str)
+bool C110::fNumber(string p_str)
 #else
 bool fNumber(string p_str)
 #endif
@@ -24,7 +24,7 @@ bool fNumber(string p_str)
 }
 
 #if _EDITOR
-bool CP110::fCount(string p_str)
+bool C110::fCount(string p_str)
 #else
 bool fCount(string p_str)
 #endif
@@ -37,7 +37,7 @@ bool fCount(string p_str)
 }
 
 #if _EDITOR
-int CP110::nNumber(string p_str)
+int C110::nNumber(string p_str)
 #else
 int nNumber(string p_str)
 #endif
@@ -159,7 +159,7 @@ int nNumber(string p_str)
 }
 
 #if _EDITOR
-int CP110::nCount(string p_str)
+int C110::nCount(string p_str)
 #else
 int nCount(string p_str)
 #endif
@@ -181,7 +181,7 @@ int nCount(string p_str)
 
 #if _EDITOR
 
-int CP110::nRun(int argc, const char * argv[])
+int C110::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

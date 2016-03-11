@@ -12,11 +12,11 @@ enum EDifficulty
 	eDiff_Hard
 };
 
-class CProblemInfo
+class CChallengeInfo
 {
 public:
-	CProblemInfo() {};
-	CProblemInfo(string p_strName, string p_strURL, int p_nNumber, EDifficulty p_eDifficulty)
+	CChallengeInfo() {};
+	CChallengeInfo(string p_strName, string p_strURL, int p_nNumber, EDifficulty p_eDifficulty)
 		:	m_strName(p_strName),
 			m_strURL(p_strURL),
 			m_nNumber(p_nNumber),
@@ -34,12 +34,12 @@ private:
 	EDifficulty m_eDifficulty;
 };
 
-class CProblem
+class CChallenge
 {
 public:
-	CProblem() {};
+	CChallenge() {};
 
-	virtual ~CProblem() {};
+	virtual ~CChallenge() {};
 
 	bool fInputRequired() const { return m_fInputRequired; };
 

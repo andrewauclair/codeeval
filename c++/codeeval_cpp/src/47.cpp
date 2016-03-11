@@ -9,7 +9,7 @@ using namespace std;
 
 #include "47cpp.h"
 
-bool CP47::isPalindrome(string p_str)
+bool C47::isPalindrome(string p_str)
 #else
 bool isPalindrome(string p_str)
 #endif
@@ -27,7 +27,7 @@ bool isPalindrome(string p_str)
 
 #if _EDITOR
 
-int CP47::nRun(int argc, const char * argv[])
+int C47::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
@@ -61,16 +61,16 @@ int main(int argc, char* argv[])
 		{
 			for (unsigned int t_j = 0; t_j <= t_aValues.size() - t_i; ++t_j)
 			{
-				int t_cPalindromes = 0;
+				int t_Calindromes = 0;
 				for (unsigned int t_k = t_j; t_k < t_j + t_i; ++t_k)
 				{
 					if (t_afPalindromes[t_k])
 					{
-						t_cPalindromes++;
+						t_Calindromes++;
 					}
 				}
 
-				if (t_cPalindromes % 2 == 0)
+				if (t_Calindromes % 2 == 0)
 				{
 					t_cInteresting++;
 				}

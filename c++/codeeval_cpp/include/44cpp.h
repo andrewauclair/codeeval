@@ -5,13 +5,13 @@
 #include <string>
 using namespace std;
 
-class CP44 : public CProblem
+class C44 : public CChallenge
 {
-	typedef CProblem super;
+	typedef CChallenge super;
 	
 public:
-	CP44() {};
-	virtual ~CP44() {};
+	C44() {};
+	virtual ~C44() {};
 
 	virtual int nRun(int argc, const char * argv[]);
 

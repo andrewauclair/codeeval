@@ -8,7 +8,7 @@ using namespace std;
 
 #include "20cpp.h"
 
-int CP20::nRun(int argc, const char * argv[])
+int C20::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

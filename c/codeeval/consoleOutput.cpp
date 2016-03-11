@@ -10,7 +10,7 @@ CConsoleOutput::CConsoleOutput()
 
 void CConsoleOutput::cout(string p_str)
 {
-	console.cprintf(p_str.c_str());
+	console.printf(p_str.c_str());
 }
 
 bool CConsoleOutput::fCompare(string p_strOutput, string p_strExpected)

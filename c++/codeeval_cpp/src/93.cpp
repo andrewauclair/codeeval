@@ -8,7 +8,7 @@ using namespace std;
 
 #include "93cpp.h"
 
-int CP93::nRun(int argc, const char * argv[])
+int C93::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

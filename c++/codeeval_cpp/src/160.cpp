@@ -11,7 +11,7 @@ using namespace std;
 
 #include "160cpp.h"
 
-int CP160::nRun(int argc, const char * argv[])
+int C160::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -10,7 +10,7 @@ using namespace std;
 #include "232cpp.h"
 
 // Stupid sort is a bubble sort that restarts after the first swap of every iteration
-void CP232::vStupidSort(vector<int> &p_vector, int p_cIterations)
+void C232::vStupidSort(vector<int> &p_vector, int p_cIterations)
 #else
 void vStupidSort(vector<int> &p_vector, int p_cIterations)
 #endif
@@ -37,7 +37,7 @@ void vStupidSort(vector<int> &p_vector, int p_cIterations)
 
 #if _EDITOR
 
-int CP232::nRun(int argc, const char * argv[])
+int C232::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

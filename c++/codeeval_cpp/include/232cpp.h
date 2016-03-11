@@ -2,13 +2,13 @@
 
 #include "problem.h"
 
-class CP232 : public CProblem
+class C232 : public CChallenge
 {
-	typedef CProblem super;
+	typedef CChallenge super;
 	
 public:
-	CP232() {};
-	virtual ~CP232() {};
+	C232() {};
+	virtual ~C232() {};
 
 	virtual int nRun(int argc, const char * argv[]);
 

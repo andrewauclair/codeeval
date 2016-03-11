@@ -1,4 +1,4 @@
-// ConsoleLogger.cpp: implementation of the CConsoleLogger class.
+// ConsoleLogger.Cp: implementation of the CConsoleLogger class.
 //
 //////////////////////////////////////////////////////////////////////
 
@@ -464,9 +464,9 @@ void CConsoleLoggerEx::hide()
 	LeaveCriticalSection();
 }
 //////////////////////////////////////////////////////////////////////////
-// cprintf(attr,str,...) : prints a formatted string with the "attributes" color
+// Crintf(attr,str,...) : prints a formatted string with the "attributes" color
 //////////////////////////////////////////////////////////////////////////
-int CConsoleLoggerEx::cprintf(int attributes,const char *format,...)
+int CConsoleLoggerEx::Crintf(int attributes,const char *format,...)
 {
 	if (m_hPipe==INVALID_HANDLE_VALUE)
 		return -1;
@@ -487,15 +487,15 @@ int CConsoleLoggerEx::cprintf(int attributes,const char *format,...)
 	va_end(argList);
 
 
-	return _cprint(attributes,tmp,ret);
+	return _Crint(attributes,tmp,ret);
 
 }
 
 
 //////////////////////////////////////////////////////////////////////////
-// cprintf(str,...) : prints a formatted string with current color
+// Crintf(str,...) : prints a formatted string with current color
 //////////////////////////////////////////////////////////////////////////
-int CConsoleLoggerEx::cprintf(const char *format,...)
+int CConsoleLoggerEx::Crintf(const char *format,...)
 {
 	if (m_hPipe==INVALID_HANDLE_VALUE)
 		return -1;
@@ -516,21 +516,21 @@ int CConsoleLoggerEx::cprintf(const char *format,...)
 	va_end(argList);
 
 
-	return _cprint(m_dwCurrentAttributes,tmp,ret);
+	return _Crint(m_dwCurrentAttributes,tmp,ret);
 
 }
 
 
 //////////////////////////////////////////////////////////////////////////
-// the _cprintf() helper . do the actual output
+// the _Crintf() helper . do the actual output
 //////////////////////////////////////////////////////////////////////////
-int CConsoleLoggerEx::_cprint(int attributes,const char *lpszText,int iSize)
+int CConsoleLoggerEx::_Crint(int attributes,const char *lpszText,int iSize)
 {
 	
 	DWORD dwWritten=(DWORD)-1;
 	// we assume that in iSize < 2^24 , because we're using only 3 bytes of iSize 
-	// 32BIT: send DWORD = 4bytes: one byte is the command (COMMAND_CPRINT) , and 3 bytes for size
-	DWORD command_plus_size = (COMMAND_CPRINT <<24)| iSize;
+	// 32BIT: send DWORD = 4bytes: one byte is the command (COMMAND_CRINT) , and 3 bytes for size
+	DWORD command_plus_size = (COMMAND_CRINT <<24)| iSize;
 	EnterCriticalSection();
 	if ( !WriteFile (m_hPipe, &command_plus_size,sizeof(DWORD),&dwWritten,NULL) 
 		|| dwWritten != sizeof(DWORD))

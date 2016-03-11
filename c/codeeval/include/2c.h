@@ -4,7 +4,7 @@
 extern "C" {
 #endif
 
-	void vRun2(int argc, const char* argv[]);
+void vRun2(int argc, const char* argv[]);
 
 #ifdef __cplusplus
 }

@@ -11,13 +11,13 @@ struct SNode
 	int m_costSoFar;
 };
 
-class CP157 : public CProblem
+class C157 : public CChallenge
 {
-	typedef CProblem super;
+	typedef CChallenge super;
 	
 public:
-	CP157() {};
-	virtual ~CP157() {};
+	C157() {};
+	virtual ~C157() {};
 
 	virtual int nRun(int argc, const char * argv[]);
 

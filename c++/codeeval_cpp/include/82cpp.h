@@ -2,13 +2,13 @@
 
 #include "problem.h"
 
-class CP82 : public CProblem
+class C82 : public CChallenge
 {
-	typedef CProblem super;
+	typedef CChallenge super;
 	
 public:
-	CP82() {};
-	virtual ~CP82() {};
+	C82() {};
+	virtual ~C82() {};
 
 	virtual int nRun(int argc, const char * argv[]);
 

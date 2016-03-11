@@ -6,7 +6,7 @@ using namespace std;
 
 #include "18cpp.h"
 
-int CP18::nRun(int argc, const char * argv[])
+int C18::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

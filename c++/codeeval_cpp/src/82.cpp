@@ -8,7 +8,7 @@ using namespace std;
 
 #include "82cpp.h"
 
-int CP82::power(int p_x, int p_y)
+int C82::power(int p_x, int p_y)
 #else
 int power(int p_x, int p_y)
 #endif
@@ -25,7 +25,7 @@ int power(int p_x, int p_y)
 
 #if _EDITOR
 
-int CP82::nRun(int argc, const char * argv[])
+int C82::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

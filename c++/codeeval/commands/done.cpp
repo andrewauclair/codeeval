@@ -17,6 +17,20 @@ CDone::~CDone()
 
 void CDone::vRun(const vector<string> &p_aArgs)
 {
+	// run -a
+	// run all
+	bool t_fAll = p_aArgs.size() > 0 && (p_aArgs[0].compare("all") || p_aArgs[0].compare("-a"));
+	
+	string t_strLang = "";
+
+	if (p_aArgs.size() > 0)
+	{
+		t_strLang = p_aArgs[0];
+	}
+
+	// check if the language exists
+	// check if t_fAll == true or t_strLang != ""
+
 	// done will have 2 modes now
 	// mode 1 shows done with a single language
 	// mode 2 shows counts of how many languages a problem has been solved in
@@ -32,12 +46,17 @@ void CDone::vRun(const vector<string> &p_aArgs)
 
 	g_outputConsole->vClear();
 	g_outputConsole->cout("Problem Progress\n\n");
+
+	// --------------------------------------------------------------------------------
+	// 200:[X] 200:[X] 200:[X] 200:[X] 200:[X] 200:[X] 200:[X] 200:[X] 200:[X] 200:[X] 
+	// 200:[XX] 200:[XX] 200:[XX] 200:[XX] 200:[XX] 200:[XX] 200:[XX] 200:[XX] 200:[XX]
+	// --------------------------------------------------------------------------------
 	int t_i = 0;
 	//for (int t_i = 0; t_i <= eDiff_Hard; ++t_i)
 	{
 		//EDifficulty t_eDiff = (EDifficulty)t_i;
 
-		//for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
+		//for (int t_j = 0; t_j < fsc_Croblems; ++t_j)
 		{
 			//if (g_apProblems[t_j] == NULL || g_apProblems[t_j]->eDifficulty() != t_eDiff) continue;
 
@@ -95,7 +114,7 @@ void CDone::vRun(const vector<string> &p_aArgs)
 			}break;
 		}
 
-		for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
+		for (int t_j = 0; t_j < fsc_Croblems; ++t_j)
 		{
 			if (g_apProblems[t_j] == NULL || g_apProblems[t_j]->eDifficulty() != t_eDiff) continue;
 
@@ -128,7 +147,7 @@ void CDone::vRun(const vector<string> &p_aArgs)
 
 	g_outputConsole->cout("\n\nProblems With No Source Code\n\n");
 
-	for (int t_j = 0; t_j < fsc_cProblems; ++t_j)
+	for (int t_j = 0; t_j < fsc_Croblems; ++t_j)
 	{
 		if (g_apProblems[t_j] != NULL) continue;
 

@@ -30,7 +30,7 @@ void CRun::vRun(const vector<string> &p_aArgs)
 		g_inputConsole->vClear();
 		g_outputConsole->vClear();
 
-		//if (t_nProblem >= 1 && t_nProblem < fsc_cProblems + 1 && g_apProblems_c[t_nProblem - 1] != NULL)
+		//if (t_nProblem >= 1 && t_nProblem < fsc_Croblems + 1 && g_apProblems_c[t_nProblem - 1] != NULL)
 		{
 			vWriteProblemInput(t_nProblem);
 
@@ -64,9 +64,9 @@ void CRun::vRun(const vector<string> &p_aArgs)
 			g_outputConsole->fCompare(t_output.str(), t_strCompare);
 			t_output.str("");
 		}
-		//else if (t_nProblem <= 0 || t_nProblem > fsc_cProblems)
+		//else if (t_nProblem <= 0 || t_nProblem > fsc_Croblems)
 		{
-			//cout << "The input was out of range, problem range is 1 to " << fsc_cProblems << endl;
+			//cout << "The input was out of range, problem range is 1 to " << fsc_Croblems << endl;
 		}
 		//else if (g_apProblems_c[t_nProblem - 1] == NULL)
 		{

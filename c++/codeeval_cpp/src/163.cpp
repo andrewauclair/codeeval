@@ -94,7 +94,7 @@ static const char* fsc_aChzNumbers[10][6] =
 
 #include "163cpp.h"
 
-int CP163::nRun(int argc, const char * argv[])
+int C163::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

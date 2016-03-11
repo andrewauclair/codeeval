@@ -8,7 +8,7 @@ using namespace std;
 
 #include "227cpp.h"
 
-int CP227::nRun(int argc, const char * argv[])
+int C227::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

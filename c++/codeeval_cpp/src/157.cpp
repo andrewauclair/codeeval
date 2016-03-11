@@ -17,7 +17,7 @@ struct SNode
 
 #include "157cpp.h"
 
-SNode * CP157::nodeSmallest(vector<SNode> &p_list)
+SNode * C157::nodeSmallest(vector<SNode> &p_list)
 #else
 SNode * nodeSmallest(vector<SNode> &p_list)
 #endif
@@ -36,7 +36,7 @@ SNode * nodeSmallest(vector<SNode> &p_list)
 }
 
 #if _EDITOR
-vector<SNode> CP157::getConnections(vector<vector<int>> &p_graph, SNode* p_pCurrent)
+vector<SNode> C157::getConnections(vector<vector<int>> &p_graph, SNode* p_pCurrent)
 #else
 vector<SNode> getConnections(vector<vector<int>> &p_graph, SNode* p_pCurrent)
 #endif
@@ -109,7 +109,7 @@ vector<SNode> getConnections(vector<vector<int>> &p_graph, SNode* p_pCurrent)
 }
 
 #if _EDITOR
-SNode * CP157::shortestPath(vector<vector<int>> &p_graph, int * p_pStart, int * p_pEnd)
+SNode * C157::shortestPath(vector<vector<int>> &p_graph, int * p_pStart, int * p_pEnd)
 #else
 SNode * shortestPath(vector<vector<int>> &p_graph, int * p_pStart, int * p_pEnd)
 #endif
@@ -194,7 +194,7 @@ SNode * shortestPath(vector<vector<int>> &p_graph, int * p_pStart, int * p_pEnd)
 
 #if _EDITOR
 
-int CP157::nRun(int argc, const char * argv[])
+int C157::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

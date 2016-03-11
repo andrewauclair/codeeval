@@ -8,7 +8,7 @@ using namespace std;
 
 #include "146cpp.h"
 
-void CP146::vBubbleSort(vector<int> &p_vector)
+void C146::vBubbleSort(vector<int> &p_vector)
 #else
 void vBubbleSort(vector<int> &p_vector)
 #endif
@@ -34,7 +34,7 @@ void vBubbleSort(vector<int> &p_vector)
 
 #if _EDITOR
 
-int CP146::nRun(int argc, const char * argv[])
+int C146::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

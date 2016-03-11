@@ -11,7 +11,7 @@ using namespace std;
 
 #include "147cpp.h"
 
-int CP147::nRun(int argc, const char * argv[])
+int C147::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -8,7 +8,7 @@ using namespace std;
 
 #include "220cpp.h"
 
-int CP220::nRun(int argc, const char * argv[])
+int C220::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

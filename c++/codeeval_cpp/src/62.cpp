@@ -6,7 +6,7 @@ using namespace std;
 
 #include "62cpp.h"
 
-int CP62::nRun(int argc, const char * argv[])
+int C62::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

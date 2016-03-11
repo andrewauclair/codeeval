@@ -8,7 +8,7 @@ using namespace std;
 
 #include "32cpp.h"
 
-int CP32::nRun(int argc, const char * argv[])
+int C32::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

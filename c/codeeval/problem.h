@@ -11,11 +11,11 @@ enum EDifficulty
 	eDiff_Hard
 };
 
-class CProblem
+class Croblem
 {
 public:
-	CProblem() {};
-	CProblem(string p_strName, string p_strURL, int p_nNumber, bool p_fFinished, EDifficulty p_eDifficulty) 
+	Croblem() {};
+	Croblem(string p_strName, string p_strURL, int p_nNumber, bool p_fFinished, EDifficulty p_eDifficulty) 
 		: m_strName(p_strName), 
 		  m_strURL(p_strURL), 
 		  m_nNumber(p_nNumber),
@@ -24,7 +24,7 @@ public:
 		  m_eDifficulty(p_eDifficulty)
 	{}
 
-	virtual ~CProblem() {};
+	virtual ~Croblem() {};
 
 	string strName() const { return m_strName; };
 	string strURL() const { return m_strURL; };

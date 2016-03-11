@@ -10,7 +10,7 @@ using namespace std;
 
 #include "7cpp.h"
 
-float CP7::rEval(vector<string>::iterator &p_it)
+float C7::rEval(vector<string>::iterator &p_it)
 #else
 float rEval(vector<string>::iterator &p_it)
 #endif
@@ -35,7 +35,7 @@ float rEval(vector<string>::iterator &p_it)
 
 #if _EDITOR
 
-int CP7::nRun(int argc, const char * argv[])
+int C7::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

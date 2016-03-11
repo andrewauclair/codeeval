@@ -9,7 +9,7 @@ using namespace std;
 
 #include "34cpp.h"
 
-int CP34::nRun(int argc, const char * argv[])
+int C34::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
@@ -40,7 +40,7 @@ int main(int argc, char* argv[])
 
 		t_x = atoi(t_str.c_str());
 
-		int t_cPairs = 0;
+		int t_Cairs = 0;
 		bool t_fFirst = true;
 
 		vector<int> t_anFirst = vector<int>();
@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 						}
 
 						t_fFirst = false;
-						t_cPairs++;
+						t_Cairs++;
 
 						cout << t_anValues[t_i] << "," << t_anValues[t_j];
 
@@ -84,7 +84,7 @@ int main(int argc, char* argv[])
 
 		t_anValues.clear();
 
-		if (t_cPairs == 0)
+		if (t_Cairs == 0)
 		{
 			cout << "NULL";
 		}

@@ -9,7 +9,7 @@ using namespace std;
 
 #include "81cpp.h"
 
-int CP81::nFactorial(int p_nNum)
+int C81::nFactorial(int p_nNum)
 #else
 int nFactorial(int p_nNum)
 #endif
@@ -26,7 +26,7 @@ int nFactorial(int p_nNum)
 
 #if _EDITOR
 
-int CP81::nRun(int argc, const char * argv[])
+int C81::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

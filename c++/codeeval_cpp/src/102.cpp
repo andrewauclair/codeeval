@@ -7,7 +7,7 @@ using namespace std;
 
 #include "102cpp.h"
 
-int CP102::nRun(int argc, const char * argv[])
+int C102::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -6,7 +6,7 @@ using namespace std;
 
 #include "22cpp.h"
 
-int CP22::fib(int p_nNum)
+int C22::fib(int p_nNum)
 #else
 int fib(int p_nNum)
 #endif
@@ -21,7 +21,7 @@ int fib(int p_nNum)
 
 #if _EDITOR
 
-int CP22::nRun(int argc, const char * argv[])
+int C22::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

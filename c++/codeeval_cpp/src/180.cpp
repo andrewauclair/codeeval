@@ -8,7 +8,7 @@ using namespace std;
 
 #include "180cpp.h"
 
-void CP180::vBubbleSort(vector<char> &p_v1, vector<int> &p_v2)
+void C180::vBubbleSort(vector<char> &p_v1, vector<int> &p_v2)
 #else
 void vBubbleSort(vector<char> &p_v1, vector<int> &p_v2)
 #endif
@@ -39,7 +39,7 @@ void vBubbleSort(vector<char> &p_v1, vector<int> &p_v2)
 
 #if _EDITOR
 
-int CP180::nRun(int argc, const char * argv[])
+int C180::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

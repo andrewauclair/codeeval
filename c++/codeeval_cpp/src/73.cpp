@@ -7,7 +7,7 @@ using namespace std;
 
 #include "73cpp.h"
 
-int CP73::nDecode(const string &p_str, int p_i)
+int C73::nDecode(const string &p_str, int p_i)
 #else
 int nDecode(const string &p_str, int p_i)
 #endif
@@ -62,7 +62,7 @@ int nDecode(const string &p_str, int p_i)
 
 #if _EDITOR
 
-int CP73::nRun(int argc, const char * argv[])
+int C73::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

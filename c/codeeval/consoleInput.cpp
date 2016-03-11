@@ -7,7 +7,7 @@ CConsoleInput::CConsoleInput()
 
 void CConsoleInput::cout(string p_str)
 {
-	console.cprintf(p_str.c_str());
+	console.printf(p_str.c_str());
 }
 
 void CConsoleInput::vSetPos(int p_x, int p_y)

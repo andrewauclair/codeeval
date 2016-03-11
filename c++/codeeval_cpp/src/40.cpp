@@ -7,7 +7,7 @@ using namespace std;
 
 #include "40cpp.h"
 
-int CP40::nRun(int argc, const char * argv[])
+int C40::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -9,7 +9,7 @@ using namespace std;
 
 #include "39cpp.h"
 
-int CP39::nNext(int p_nNum)
+int C39::nNext(int p_nNum)
 #else
 int nNext(int p_nNum)
 #endif
@@ -37,7 +37,7 @@ int nNext(int p_nNum)
 
 #if _EDITOR
 
-int CP39::nRun(int argc, const char * argv[])
+int C39::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

@@ -10,7 +10,7 @@ using namespace std;
 
 #include "193cpp.h"
 
-bool CP193::fMagicNumber(int p_nNum)
+bool C193::fMagicNumber(int p_nNum)
 #else
 bool fMagicNumber(int p_nNum)
 #endif
@@ -67,7 +67,7 @@ bool fMagicNumber(int p_nNum)
 
 #if _EDITOR
 
-int CP193::nRun(int argc, const char * argv[])
+int C193::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

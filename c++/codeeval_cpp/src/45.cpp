@@ -9,7 +9,7 @@ using namespace std;
 
 #include "45cpp.h"
 
-bool CP45::isPalindrome(string p_str)
+bool C45::isPalindrome(string p_str)
 #else
 bool isPalindrome(string p_str)
 #endif
@@ -27,7 +27,7 @@ bool isPalindrome(string p_str)
 
 #if _EDITOR
 
-int CP45::nRun(int argc, const char * argv[])
+int C45::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

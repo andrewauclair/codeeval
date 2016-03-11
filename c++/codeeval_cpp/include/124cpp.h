@@ -4,13 +4,13 @@
 #include <vector>
 using namespace std;
 
-class CP124 : public CProblem
+class C124 : public CChallenge
 {
-	typedef CProblem super;
+	typedef CChallenge super;
 	
 public:
-	CP124() {};
-	virtual ~CP124() {};
+	C124() {};
+	virtual ~C124() {};
 
 	virtual int nRun(int argc, const char * argv[]);
 

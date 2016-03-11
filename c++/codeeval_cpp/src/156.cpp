@@ -10,7 +10,7 @@ using namespace std;
 
 #include "156cpp.h"
 
-int CP156::nRun(int argc, const char * argv[])
+int C156::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif

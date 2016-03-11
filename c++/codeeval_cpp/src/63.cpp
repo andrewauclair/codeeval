@@ -8,7 +8,7 @@ using namespace std;
 
 #include "63cpp.h"
 
-bool CP63::isPrime(long int p_nNum)
+bool C63::isPrime(long int p_nNum)
 #else
 bool isPrime(long int p_nNum)
 #endif
@@ -26,7 +26,7 @@ bool isPrime(long int p_nNum)
 
 #if _EDITOR
 
-int CP63::nRun(int argc, const char * argv[])
+int C63::nRun(int argc, const char * argv[])
 #else
 int main(int argc, char* argv[])
 #endif
